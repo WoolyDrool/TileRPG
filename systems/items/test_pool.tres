@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LootPool" format=3 uid="uid://bo1su0jxujgea"]
+
+[ext_resource type="Resource" uid="uid://c6ebwj0bfj5vb" path="res://content/items/weapon_test.tres" id="1_l4y7w"]
+[ext_resource type="Script" uid="uid://br1mb1l2ob0xn" path="res://systems/items/loot_pool.gd" id="1_uly07"]
+
+[resource]
+script = ExtResource("1_uly07")
+pool = [ExtResource("1_l4y7w"), ExtResource("1_l4y7w")]
+metadata/_custom_type_script = "uid://br1mb1l2ob0xn"

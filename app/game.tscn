@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bj1a7gl2uctao"]
+
+[ext_resource type="PackedScene" uid="uid://do1ffgq4hy3nm" path="res://content/maps/debug/map_debug.tscn" id="1_o85h2"]
+[ext_resource type="PackedScene" uid="uid://b5ishl1x04ti5" path="res://ui/global_ui.tscn" id="2_bwvno"]
+[ext_resource type="Script" uid="uid://cs58lipjxi85e" path="res://ui/global_ui.gd" id="3_430kh"]
+[ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="4_430kh"]
+
+[node name="Game" type="Node" unique_id=1808958490]
+
+[node name="Debug" parent="." unique_id=311414116 instance=ExtResource("1_o85h2")]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=366516759]
+
+[node name="GlobalUI" parent="UI" unique_id=276288661 instance=ExtResource("2_bwvno")]
+script = ExtResource("3_430kh")
+
+[node name="PlayerCharacter" parent="." unique_id=1681947254 instance=ExtResource("4_430kh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00846863, -1.90735e-06, -46.0968)
+turn_speed = 0.15
+
+[editable path="PlayerCharacter"]

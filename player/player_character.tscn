@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cr3dnxvimj2x1"]
+
+[ext_resource type="Script" uid="uid://rmokn461gvk3" path="res://player/player_character.gd" id="1_1v1wt"]
+[ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid_navigator.tscn" id="2_6ahhe"]
+[ext_resource type="Script" uid="uid://bj7bry48b4mty" path="res://player/player_combat_manager.gd" id="3_ni121"]
+[ext_resource type="Resource" uid="uid://c6ebwj0bfj5vb" path="res://content/items/weapon_test.tres" id="4_834sp"]
+[ext_resource type="PackedScene" uid="uid://djwcmupkcl2ff" path="res://systems/grid_combat_manager.tscn" id="4_tncax"]
+[ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/entity_health_component.tscn" id="5_2brt4"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6ahhe"]
+top_radius = 0.1
+height = 1.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_847q7"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ni121"]
+top_radius = 0.1
+height = 1.5
+
+[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("navigator", "combat_manager", "cam_container")]
+collision_mask = 3
+script = ExtResource("1_1v1wt")
+navigator = NodePath("CamContainer/GridNavigator")
+combat_manager = NodePath("CamContainer/GridCombatManager")
+tween_speed = 0.15
+cam_container = NodePath("CamContainer")
+
+[node name="VisibleMesh" type="CSGMesh3D" parent="." unique_id=2035766676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+mesh = SubResource("CylinderMesh_6ahhe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=832767915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("SphereShape3D_847q7")
+
+[node name="WeaponManager" type="Node" parent="." unique_id=1542456085]
+
+[node name="HealthManager" type="Node" parent="." unique_id=1882575551]
+
+[node name="UIManager" type="Node" parent="." unique_id=1559257321]
+
+[node name="CamContainer" type="Node3D" parent="." unique_id=1454873512]
+
+[node name="VisibleMesh2" type="CSGMesh3D" parent="CamContainer" unique_id=1262449637]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.85, 0.4)
+mesh = SubResource("CylinderMesh_ni121")
+
+[node name="GridNavigator" parent="CamContainer" unique_id=604307972 instance=ExtResource("2_6ahhe")]
+tween_speed = 0.15
+
+[node name="Camera3D" type="Camera3D" parent="CamContainer" unique_id=976305980]
+transform = Transform3D(-1, 0, 1.19209e-07, 0, 1, 0, -1.19209e-07, 0, -1, 0, 1.5, 0)
+current = true
+fov = 90.0
+
+[node name="GridCombatManager" parent="CamContainer" unique_id=462554474 instance=ExtResource("4_tncax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="MovementCooldownTimer" type="Timer" parent="." unique_id=1656178780]
+wait_time = 0.2
+one_shot = true
+
+[node name="PlayerCombatManager" type="Node" parent="." unique_id=822963634 node_paths=PackedStringArray("combat_manager")]
+script = ExtResource("3_ni121")
+combat_manager = NodePath("../CamContainer/GridCombatManager")
+current_weapon = ExtResource("4_834sp")
+
+[node name="HealthComponent" parent="." unique_id=1802190528 instance=ExtResource("5_2brt4")]
+
+[connection signal="area_entered" from="." to="." method="_on_tile_enter"]
+[connection signal="area_exited" from="." to="." method="_on_tile_exit"]
+[connection signal="timeout" from="MovementCooldownTimer" to="." method="_on_movement_cooldown_timer_timeout"]

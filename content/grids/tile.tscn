@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dh6ntme65fvou"]
+
+[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://content/grids/tile.gd" id="1_fhi0k"]
+[ext_resource type="Shape3D" uid="uid://duabt5ca64avh" path="res://content/grids/tile_collider.tres" id="1_ke5ak"]
+
+[node name="Tile" type="Area3D" unique_id=289986669 groups=["Tile"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_fhi0k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1909541418 groups=["Tile"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = ExtResource("1_ke5ak")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

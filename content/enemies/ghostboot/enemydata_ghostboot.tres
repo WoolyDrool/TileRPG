@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://cfkwge475q2wk"]
+
+[ext_resource type="Script" uid="uid://dfo57vjntmja" path="res://content/enemies/enemy_data.gd" id="1_08lcu"]
+
+[resource]
+script = ExtResource("1_08lcu")
+enemy_name = "Ghost Boot"
+enemy_type = 1
+metadata/_custom_type_script = "uid://dfo57vjntmja"

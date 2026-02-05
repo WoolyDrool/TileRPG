@@ -1,0 +1,643 @@
+[gd_scene format=3 uid="uid://do1ffgq4hy3nm"]
+
+[ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
+[ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
+[ext_resource type="PackedScene" uid="uid://k4tx0182d6u" path="res://content/enemies/enemy.tscn" id="5_bc7kb"]
+
+[node name="Debug" type="Node3D" unique_id=1061115125]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1881711492]
+
+[node name="GridManager" type="Node3D" parent="." unique_id=1470997479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00846863, -1.90735e-06, -34.0968)
+script = ExtResource("2_ogp0g")
+
+[node name="Hallway" type="Node3D" parent="GridManager" unique_id=2093001941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+
+[node name="Room" parent="GridManager/Hallway" unique_id=294829525 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -28)
+
+[node name="Back Wall" parent="GridManager/Hallway/Room" index="6" unique_id=470220356]
+visible = true
+
+[node name="Room2" parent="GridManager/Hallway" unique_id=1763476416 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24)
+
+[node name="Room3" parent="GridManager/Hallway" unique_id=1114430728 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="Room4" parent="GridManager/Hallway" unique_id=288365816 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="Room8" parent="GridManager/Hallway" unique_id=1648564655 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+
+[node name="Room9" parent="GridManager/Hallway" unique_id=1349850067 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+
+[node name="Room10" parent="GridManager/Hallway" unique_id=1529038810 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Room11" parent="GridManager/Hallway" unique_id=219626000 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 0)
+
+[node name="Room12" parent="GridManager/Hallway" unique_id=2054662005 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 0)
+
+[node name="Room13" parent="GridManager/Hallway" unique_id=1575830173 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 0)
+
+[node name="Room14" parent="GridManager/Hallway" unique_id=814949135 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 0)
+
+[node name="Room15" parent="GridManager/Hallway" unique_id=911146262 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway/Room15" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room5" parent="GridManager/Hallway" unique_id=195668634 instance=ExtResource("3_gcj5q")]
+
+[node name="Left Wall" parent="GridManager/Hallway/Room5" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway/Room5" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Front Wall" parent="GridManager/Hallway/Room5" index="5" unique_id=647514496]
+visible = true
+
+[node name="Room6" parent="GridManager/Hallway" unique_id=1120746985 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
+
+[node name="Left Wall" parent="GridManager/Hallway/Room6" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Front Wall" parent="GridManager/Hallway/Room6" index="5" unique_id=647514496]
+visible = true
+
+[node name="Back Wall" parent="GridManager/Hallway/Room6" index="6" unique_id=470220356]
+visible = true
+
+[node name="Room7" parent="GridManager/Hallway" unique_id=746925521 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway/Room7" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Front Wall" parent="GridManager/Hallway/Room7" index="5" unique_id=647514496]
+visible = true
+
+[node name="Back Wall" parent="GridManager/Hallway/Room7" index="6" unique_id=470220356]
+visible = true
+
+[node name="Hallway2" type="Node3D" parent="GridManager" unique_id=1440543530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 48)
+
+[node name="Room" parent="GridManager/Hallway2" unique_id=1662377207 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -28)
+
+[node name="Room2" parent="GridManager/Hallway2" unique_id=1479788334 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24)
+
+[node name="Room3" parent="GridManager/Hallway2" unique_id=108498849 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="Room4" parent="GridManager/Hallway2" unique_id=2028354514 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="Room8" parent="GridManager/Hallway2" unique_id=973348159 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+
+[node name="Room9" parent="GridManager/Hallway2" unique_id=1993068575 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+
+[node name="Room10" parent="GridManager/Hallway2" unique_id=1626039118 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Room11" parent="GridManager/Hallway2" unique_id=259310984 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room11" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room12" parent="GridManager/Hallway2" unique_id=1949763519 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room12" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room13" parent="GridManager/Hallway2" unique_id=1478503958 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room13" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room14" parent="GridManager/Hallway2" unique_id=98199211 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room14" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room15" parent="GridManager/Hallway2" unique_id=1850376790 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room15" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room5" parent="GridManager/Hallway2" unique_id=272510079 instance=ExtResource("3_gcj5q")]
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room5" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room5" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room6" parent="GridManager/Hallway2" unique_id=396503183 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room6" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Back Wall" parent="GridManager/Hallway2/Room6" index="6" unique_id=470220356]
+visible = true
+
+[node name="Room7" parent="GridManager/Hallway2" unique_id=470724223 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room7" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Back Wall" parent="GridManager/Hallway2/Room7" index="6" unique_id=470220356]
+visible = true
+
+[node name="Room16" parent="GridManager/Hallway2" unique_id=2112389000 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room16" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room16" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room17" parent="GridManager/Hallway2" unique_id=744746100 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room17" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room17" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room18" parent="GridManager/Hallway2" unique_id=1671671609 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room18" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room18" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room19" parent="GridManager/Hallway2" unique_id=1285702154 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room19" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room19" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room20" parent="GridManager/Hallway2" unique_id=1550974552 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room20" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room20" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room21" parent="GridManager/Hallway2" unique_id=1111387599 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room21" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room21" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room22" parent="GridManager/Hallway2" unique_id=836090738 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 4)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room22" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room23" parent="GridManager/Hallway2" unique_id=1639075007 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room23" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room24" parent="GridManager/Hallway2" unique_id=885765538 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room24" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room24" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room25" parent="GridManager/Hallway2" unique_id=1942253787 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room25" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room25" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room26" parent="GridManager/Hallway2" unique_id=810136471 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room26" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room26" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room27" parent="GridManager/Hallway2" unique_id=599382198 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room27" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room27" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room28" parent="GridManager/Hallway2" unique_id=1361373272 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room28" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room28" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room29" parent="GridManager/Hallway2" unique_id=25526637 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room29" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room29" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room30" parent="GridManager/Hallway2" unique_id=2115600900 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 8)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room30" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room31" parent="GridManager/Hallway2" unique_id=919923895 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room31" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room32" parent="GridManager/Hallway2" unique_id=577757168 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room32" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room32" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room33" parent="GridManager/Hallway2" unique_id=1873417309 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room33" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room33" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room34" parent="GridManager/Hallway2" unique_id=1275898029 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room34" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room34" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room35" parent="GridManager/Hallway2" unique_id=840984049 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room35" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room35" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room36" parent="GridManager/Hallway2" unique_id=199774142 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room36" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room36" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room37" parent="GridManager/Hallway2" unique_id=1954343889 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room37" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room37" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room38" parent="GridManager/Hallway2" unique_id=705087048 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 12)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room38" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room39" parent="GridManager/Hallway2" unique_id=454657544 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room39" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room40" parent="GridManager/Hallway2" unique_id=1828954601 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room40" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room40" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room41" parent="GridManager/Hallway2" unique_id=469892988 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room41" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room41" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room42" parent="GridManager/Hallway2" unique_id=63876518 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room42" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room42" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room43" parent="GridManager/Hallway2" unique_id=2139730166 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room43" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room43" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room44" parent="GridManager/Hallway2" unique_id=1238916801 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room44" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room44" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room45" parent="GridManager/Hallway2" unique_id=1134099591 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room45" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room45" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room46" parent="GridManager/Hallway2" unique_id=1360456914 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 16)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room46" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room47" parent="GridManager/Hallway2" unique_id=1243209596 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 16)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room47" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room48" parent="GridManager/Hallway2" unique_id=1302885286 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room48" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room48" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room49" parent="GridManager/Hallway2" unique_id=495536946 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room49" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room49" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room50" parent="GridManager/Hallway2" unique_id=418896520 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room50" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room50" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room51" parent="GridManager/Hallway2" unique_id=127873326 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room51" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room51" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room52" parent="GridManager/Hallway2" unique_id=1419039977 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room52" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room52" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room53" parent="GridManager/Hallway2" unique_id=772110601 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room53" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room53" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room54" parent="GridManager/Hallway2" unique_id=413357919 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 20)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room54" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room55" parent="GridManager/Hallway2" unique_id=794450801 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 20)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room55" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room56" parent="GridManager/Hallway2" unique_id=342044322 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -4, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room56" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room56" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room57" parent="GridManager/Hallway2" unique_id=1954956723 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -8, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room57" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room57" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room58" parent="GridManager/Hallway2" unique_id=963999075 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -12, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room58" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room58" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room59" parent="GridManager/Hallway2" unique_id=934428661 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -16, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room59" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room59" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room60" parent="GridManager/Hallway2" unique_id=445673807 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1.47027e-07, 0, 1, 0, 1, 0, -1, 0, 1.47027e-07, -20, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room60" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room60" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room61" parent="GridManager/Hallway2" unique_id=500706451 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room61" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room61" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Room62" parent="GridManager/Hallway2" unique_id=964010628 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 24)
+
+[node name="Left Wall" parent="GridManager/Hallway2/Room62" index="3" unique_id=1413165694]
+visible = false
+
+[node name="Room63" parent="GridManager/Hallway2" unique_id=1510214561 instance=ExtResource("3_gcj5q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 24)
+
+[node name="Right Wall" parent="GridManager/Hallway2/Room63" index="4" unique_id=1398637669]
+visible = false
+
+[node name="Enemy" parent="GridManager" unique_id=1473598131 instance=ExtResource("5_bc7kb")]
+
+[node name="Enemy2" parent="GridManager" unique_id=959259837 instance=ExtResource("5_bc7kb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 60)
+
+[node name="Enemy3" parent="GridManager" unique_id=1249600835 instance=ExtResource("5_bc7kb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 60)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2125193747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -41)
+
+[editable path="GridManager/Hallway/Room"]
+[editable path="GridManager/Hallway/Room15"]
+[editable path="GridManager/Hallway/Room5"]
+[editable path="GridManager/Hallway/Room6"]
+[editable path="GridManager/Hallway/Room7"]
+[editable path="GridManager/Hallway2/Room"]
+[editable path="GridManager/Hallway2/Room11"]
+[editable path="GridManager/Hallway2/Room12"]
+[editable path="GridManager/Hallway2/Room13"]
+[editable path="GridManager/Hallway2/Room14"]
+[editable path="GridManager/Hallway2/Room15"]
+[editable path="GridManager/Hallway2/Room5"]
+[editable path="GridManager/Hallway2/Room6"]
+[editable path="GridManager/Hallway2/Room7"]
+[editable path="GridManager/Hallway2/Room16"]
+[editable path="GridManager/Hallway2/Room17"]
+[editable path="GridManager/Hallway2/Room18"]
+[editable path="GridManager/Hallway2/Room19"]
+[editable path="GridManager/Hallway2/Room20"]
+[editable path="GridManager/Hallway2/Room21"]
+[editable path="GridManager/Hallway2/Room22"]
+[editable path="GridManager/Hallway2/Room23"]
+[editable path="GridManager/Hallway2/Room24"]
+[editable path="GridManager/Hallway2/Room25"]
+[editable path="GridManager/Hallway2/Room26"]
+[editable path="GridManager/Hallway2/Room27"]
+[editable path="GridManager/Hallway2/Room28"]
+[editable path="GridManager/Hallway2/Room29"]
+[editable path="GridManager/Hallway2/Room30"]
+[editable path="GridManager/Hallway2/Room31"]
+[editable path="GridManager/Hallway2/Room32"]
+[editable path="GridManager/Hallway2/Room33"]
+[editable path="GridManager/Hallway2/Room34"]
+[editable path="GridManager/Hallway2/Room35"]
+[editable path="GridManager/Hallway2/Room36"]
+[editable path="GridManager/Hallway2/Room37"]
+[editable path="GridManager/Hallway2/Room38"]
+[editable path="GridManager/Hallway2/Room39"]
+[editable path="GridManager/Hallway2/Room40"]
+[editable path="GridManager/Hallway2/Room41"]
+[editable path="GridManager/Hallway2/Room42"]
+[editable path="GridManager/Hallway2/Room43"]
+[editable path="GridManager/Hallway2/Room44"]
+[editable path="GridManager/Hallway2/Room45"]
+[editable path="GridManager/Hallway2/Room46"]
+[editable path="GridManager/Hallway2/Room47"]
+[editable path="GridManager/Hallway2/Room48"]
+[editable path="GridManager/Hallway2/Room49"]
+[editable path="GridManager/Hallway2/Room50"]
+[editable path="GridManager/Hallway2/Room51"]
+[editable path="GridManager/Hallway2/Room52"]
+[editable path="GridManager/Hallway2/Room53"]
+[editable path="GridManager/Hallway2/Room54"]
+[editable path="GridManager/Hallway2/Room55"]
+[editable path="GridManager/Hallway2/Room56"]
+[editable path="GridManager/Hallway2/Room57"]
+[editable path="GridManager/Hallway2/Room58"]
+[editable path="GridManager/Hallway2/Room59"]
+[editable path="GridManager/Hallway2/Room60"]
+[editable path="GridManager/Hallway2/Room61"]
+[editable path="GridManager/Hallway2/Room62"]
+[editable path="GridManager/Hallway2/Room63"]

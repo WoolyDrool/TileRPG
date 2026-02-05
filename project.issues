@@ -1,0 +1,25 @@
+{
+	"version": 1.0,
+	"meta": {
+		"tag_colors": {
+			"bug": "ff6663",
+			"to-do": "9ec1cf"
+		}
+	},
+	"issues": {
+		"nina": [
+			{
+				"text": "when player tries to move forward while facing wall, they will move in whatever direction their last rotation was. but only once\n",
+				"tags": [
+					"bug"
+				],
+				"timestamp": 1765589762.11
+			},
+			{
+				"text": "",
+				"tags": [],
+				"timestamp": 1765589847.019
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ccy8xm3m0vhwv"]
+
+[ext_resource type="Script" uid="uid://bwsl276adydos" path="res://systems/entities/entity_death_component.gd" id="1_p6q5x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ujaom"]
+
+[node name="DeathComponent" type="Area3D" unique_id=88210399]
+collision_layer = 8
+script = ExtResource("1_p6q5x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1311180611]
+shape = SubResource("BoxShape3D_ujaom")
+debug_color = Color(0.785216, 0, 0.277875, 0.419608)

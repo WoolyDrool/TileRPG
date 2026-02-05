@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://brq5ev6pqg7f"]
+
+[ext_resource type="Script" uid="uid://t16w31ob40kh" path="res://systems/entities/entity_health_component.gd" id="1_tddhs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ujaom"]
+
+[node name="HealthComponent" type="Area3D" unique_id=88210399 groups=["EntityHealth"]]
+collision_layer = 8
+script = ExtResource("1_tddhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1311180611]
+shape = SubResource("BoxShape3D_ujaom")
+debug_color = Color(0.785216, 0, 0.277875, 0.419608)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Weapon" format=3 uid="uid://c6ebwj0bfj5vb"]
+
+[ext_resource type="Script" uid="uid://bydlogjov2weq" path="res://systems/items/weapons/weapon.gd" id="1_xail8"]
+
+[resource]
+script = ExtResource("1_xail8")
+weapon_damage = 1
+item_name = "Iron Sword"
+item_type = 1
+metadata/_custom_type_script = "uid://bydlogjov2weq"

@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://djwcmupkcl2ff"]
+
+[ext_resource type="Script" uid="uid://cq5f7vu1jyip7" path="res://systems/grid_combat_manager.gd" id="1_ep8t1"]
+
+[node name="GridCombatManager" type="Node3D"]
+script = ExtResource("1_ep8t1")
+
+[node name="ForwardRay" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, 4)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(0.909171, 0.0294368, 1.05888e-06, 1)
+debug_shape_thickness = 5
+
+[node name="BackwardRay" type="RayCast3D" parent="."]
+target_position = Vector3(0, 0, -4)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(0.909171, 0.0294368, 1.05888e-06, 1)
+debug_shape_thickness = 5
+
+[node name="LeftRay" type="RayCast3D" parent="."]
+target_position = Vector3(4, 0, 0)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(0.909171, 0.0294368, 1.05888e-06, 1)
+debug_shape_thickness = 5
+
+[node name="RightRay" type="RayCast3D" parent="."]
+target_position = Vector3(-4, 0, 0)
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(0.909171, 0.0294368, 1.05888e-06, 1)
+debug_shape_thickness = 5

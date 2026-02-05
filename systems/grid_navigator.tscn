@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cti74wklfmaq"]
+
+[ext_resource type="Script" uid="uid://7qky3hibifaw" path="res://systems/grid_navigator.gd" id="1_5t0ls"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5t0ls"]
+
+[node name="GridNavigator" type="Node3D" unique_id=1613287353 node_paths=PackedStringArray("wallcheck_front", "wallcheck_back")]
+script = ExtResource("1_5t0ls")
+wallcheck_front = NodePath("ScannerBody/WallCheckForward")
+wallcheck_back = NodePath("ScannerBody/WallCheckBackward")
+
+[node name="ScannerBody" type="Node3D" parent="." unique_id=1344576221]
+
+[node name="ScannerFront" type="RayCast3D" parent="ScannerBody" unique_id=2064741628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+target_position = Vector3(0, 0, 1)
+collision_mask = 2
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(4.668683e-06, 0.74589175, 0.42142642, 1)
+debug_shape_thickness = 5
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ScannerBody/ScannerFront" unique_id=59479124]
+visible = false
+
+[node name="ScannerBack" type="RayCast3D" parent="ScannerBody" unique_id=1521867617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -3)
+target_position = Vector3(0, 0, -1)
+collision_mask = 2
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+debug_shape_custom_color = Color(4.668683e-06, 0.74589175, 0.42142642, 1)
+debug_shape_thickness = 5
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="ScannerBody/ScannerBack" unique_id=753886264]
+visible = false
+radius = 0.25
+
+[node name="WallCheckForward" type="RayCast3D" parent="ScannerBody" unique_id=1043675916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(0, 0, 2)
+collision_mask = 4
+debug_shape_custom_color = Color(0.749102, 0.592539, 0, 1)
+debug_shape_thickness = 3
+
+[node name="WallCheckBackward" type="RayCast3D" parent="ScannerBody" unique_id=1541731297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+target_position = Vector3(0, 0, -2)
+collision_mask = 4
+debug_shape_custom_color = Color(0.749102, 0.592539, 0, 1)
+debug_shape_thickness = 3
+
+[node name="TileDetector" type="Area3D" parent="." unique_id=802838778]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TileDetector" unique_id=1331091831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_5t0ls")
+debug_color = Color(0.974639, 0, 0.425302, 0.42)
+
+[connection signal="area_entered" from="TileDetector" to="." method="_on_tile_detector_area_entered"]
+[connection signal="area_exited" from="TileDetector" to="." method="_on_tile_detector_area_exited"]
