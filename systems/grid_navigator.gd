@@ -17,6 +17,9 @@ extends Node3D
 @export var wall_in_ront : bool = false
 @export var wall_in_back : bool = false
 
+@export var foostep_sfx : AudioStreamPlayer3D
+@export var turn_sfx : AudioStreamPlayer3D
+
 var current_rot_in_deg : float 
 
 func _ready():
@@ -53,7 +56,8 @@ func movement_tween(new_position : Vector3, parent : Node3D):
 	#print("GridNav: Moving to ", position)
 	movement_tween.tween_property(parent, "position", new_position, tween_speed)
 	moving = true
-
+	foostep_sfx.play()
+	
 	movement_tween.play()
 	await movement_tween.finished
 	#print("GridNav: Finished movement operation")
@@ -76,6 +80,7 @@ func rotation_tween(new_rotation : float, parent : Node3D):
 	turn_rotation = Vector3(0, parent.rotation.y + deg_to_rad(new_rotation), 0)
 	turn_quat = Quaternion.from_euler(turn_rotation)
 	rotation_tween.tween_property(parent, "quaternion", turn_quat, tween_speed)
+	turn_sfx.play()
 	
 	rotation_tween.play()
 	await rotation_tween.finished
@@ -83,6 +88,7 @@ func rotation_tween(new_rotation : float, parent : Node3D):
 	rescan()
 	moving = false
 	rotation_tween = null 
+	
 	
 func _on_tile_detector_area_entered(area: Area3D) -> void:
 	if area.is_in_group("Tile"):

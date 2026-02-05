@@ -26,6 +26,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="LeftBorder" type="ColorRect" parent="Borders" unique_id=1901083748]
+visible = false
 custom_minimum_size = Vector2(480, 0)
 layout_mode = 1
 anchors_preset = 9
@@ -35,16 +36,15 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="RightBorder" type="ColorRect" parent="Borders" unique_id=2039122124]
-custom_minimum_size = Vector2(480, 0)
 layout_mode = 1
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -480.0
+offset_left = -832.0
 grow_horizontal = 0
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+color = Color(0.05882353, 0.019607844, 0.1764706, 1)
 
 [node name="EnemyHealthBar" type="Control" parent="." unique_id=1515953931]
 visible = false

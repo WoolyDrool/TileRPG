@@ -4,9 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://k4tx0182d6u" path="res://content/enemies/enemy.tscn" id="5_bc7kb"]
 
+[sub_resource type="Environment" id="Environment_cgag5"]
+background_mode = 1
+background_color = Color(0.08, 0.08, 0.08, 1)
+
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1881711492]
+environment = SubResource("Environment_cgag5")
 
 [node name="GridManager" type="Node3D" parent="." unique_id=1470997479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00846863, -1.90735e-06, -34.0968)
@@ -578,6 +583,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 60)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2125193747]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -41)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1369588831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -18)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=590929594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, -18)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1544007809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, 14)
+omni_range = 10.0
 
 [editable path="GridManager/Hallway/Room"]
 [editable path="GridManager/Hallway/Room15"]

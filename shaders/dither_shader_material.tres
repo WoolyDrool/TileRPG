@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cun5aepcu7xrv"]
+
+[ext_resource type="Shader" uid="uid://deg4di51ttjo4" path="res://shaders/dither.gdshader" id="1_5mxp5"]
+[ext_resource type="Texture2D" uid="uid://mx62nfnxir5i" path="res://shaders/shader textures/palette_moonlight.png" id="2_f68xn"]
+[ext_resource type="Texture2D" uid="uid://dv3ekoowqxt57" path="res://shaders/shader textures/bayer16tile2.png" id="3_4qdgr"]
+
+[resource]
+shader = ExtResource("1_5mxp5")
+shader_parameter/u_dither_tex = ExtResource("3_4qdgr")
+shader_parameter/u_color_tex = ExtResource("2_f68xn")
+shader_parameter/u_bit_depth = 16
+shader_parameter/u_contrast = 1.065
+shader_parameter/u_offset = 0.145
+shader_parameter/u_dither_size = 3
