@@ -7,6 +7,15 @@
 [sub_resource type="Environment" id="Environment_cgag5"]
 background_mode = 1
 background_color = Color(0.113112986, 0.113112986, 0.113112986, 1)
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.19714966, 0.21763703, 0.24951535, 1)
+fog_density = 1.0
+volumetric_fog_density = 0.2577
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+volumetric_fog_temporal_reprojection_enabled = false
+adjustment_enabled = true
+adjustment_saturation = 2.0
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
