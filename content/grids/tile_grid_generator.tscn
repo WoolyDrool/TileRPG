@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://bqaiw6ilboars"]
 
 [ext_resource type="Script" uid="uid://oexhfcxegagy" path="res://content/grids/grid_generator.gd" id="1_26rg8"]
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="2_lcg70"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lcg70"]
-size = Vector3(4, 4, 4)
+size = Vector3(20, 4, 20)
 
 [node name="TileGridGenerator" type="Area3D" unique_id=2060964577]
 script = ExtResource("1_26rg8")
+tile_scene = ExtResource("2_lcg70")
 
 [node name="GridVolume" type="CollisionShape3D" parent="." unique_id=525575400]
 shape = SubResource("BoxShape3D_lcg70")
-debug_color = Color(0.88, 0, 0.36666653, 1)
+debug_color = Color(1.347661e-06, 0.83449334, 0.3610547, 1)
