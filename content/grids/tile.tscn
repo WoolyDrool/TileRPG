@@ -11,6 +11,7 @@ script = ExtResource("1_fhi0k")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1909541418 groups=["Tile"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 shape = ExtResource("1_ke5ak")
+debug_color = Color(0.7823083, 0.4460051, 7.70092e-07, 1)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
