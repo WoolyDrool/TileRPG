@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://q4kj2ke3tq7x"]
+
+[ext_resource type="Texture2D" uid="uid://bmoaamyut4yi8" path="res://content/rooms/room tiles/test/spr_tile_wall.png" id="1_aepug"]
+
+[resource]
+albedo_texture = ExtResource("1_aepug")
+uv1_scale = Vector3(0.25, 0.25, 0.25)
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dyptijh0tdu05"]
+
+[ext_resource type="Material" uid="uid://q4kj2ke3tq7x" path="res://content/rooms/room tiles/test/mat_tile_wall_triplanar.tres" id="1_38cks"]
+
+[node name="TestWall" type="CSGBox3D" unique_id=453475011]
+size = Vector3(4, 4, 4)
+material = ExtResource("1_38cks")

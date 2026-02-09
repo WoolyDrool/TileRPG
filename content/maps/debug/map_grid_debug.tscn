@@ -1,7 +1,14 @@
 [gd_scene format=3 uid="uid://djau68aarpxvx"]
 
+[ext_resource type="Script" uid="uid://bkih48cfsj1cv" path="res://content/maps/map.gd" id="1_b2f61"]
 [ext_resource type="PackedScene" uid="uid://bqaiw6ilboars" path="res://content/grids/tile_grid_generator.tscn" id="1_g6cm6"]
+[ext_resource type="PackedScene" uid="uid://dyptijh0tdu05" path="res://content/rooms/room tiles/test/test_wall.tscn" id="3_yjwxv"]
 
 [node name="GridDebug" type="Node3D" unique_id=1583658363]
+script = ExtResource("1_b2f61")
 
 [node name="TileGridGenerator" parent="." unique_id=2060964577 instance=ExtResource("1_g6cm6")]
+
+[node name="TestWall" parent="." unique_id=453475011 instance=ExtResource("3_yjwxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+size = Vector3(20, 4, 12)
