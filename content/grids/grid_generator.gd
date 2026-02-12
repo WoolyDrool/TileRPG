@@ -55,7 +55,7 @@ func generate_grid():
 func generate_next_x_row():
 	# Create the new tile
 	var new_tile : Node3D = tile_scene.instantiate()
-	new_tile.position.y = position.y - tile_size
+	new_tile.position.y = position.y - (tile_size / 2)
 	new_tile.position.z = cur_gen_index_z
 	
 	if !cur_x_grid_done():
