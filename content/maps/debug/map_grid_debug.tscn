@@ -8,7 +8,16 @@
 script = ExtResource("1_b2f61")
 
 [node name="TileGridGenerator" parent="." unique_id=2060964577 instance=ExtResource("1_g6cm6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="GridVolume" parent="TileGridGenerator" index="0" unique_id=525575400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 6)
 
 [node name="TestWall" parent="." unique_id=453475011 instance=ExtResource("3_yjwxv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+visible = false
 size = Vector3(20, 4, 12)
+
+[connection signal="editor_state_changed" from="TileGridGenerator/GridVolume" to="TileGridGenerator" method="_on_grid_volume_editor_state_changed"]
+
+[editable path="TileGridGenerator"]

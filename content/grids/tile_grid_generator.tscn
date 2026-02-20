@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="2_lcg70"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lcg70"]
-size = Vector3(20, 4, 20)
+size = Vector3(4, 4, 4)
 
 [node name="TileGridGenerator" type="Area3D" unique_id=2060964577]
 script = ExtResource("1_26rg8")
