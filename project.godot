@@ -55,7 +55,7 @@ folder_colors={
 "res://app/": "blue",
 "res://content/": "green",
 "res://player/": "red",
-"res://shaders/": "blue",
+"res://shaders/": "green",
 "res://sound/": "green",
 "res://systems/": "purple",
 "res://textures/": "green",
