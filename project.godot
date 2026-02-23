@@ -42,7 +42,7 @@ window/stretch/mode="viewport"
 
 [dotnet]
 
-project/assembly_name="boomer-rpg"
+project/assembly_name="tile-rpg"
 
 [editor_plugins]
 
