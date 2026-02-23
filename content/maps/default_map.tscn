@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://hrvhsycjxexl"]
+
+[ext_resource type="Script" uid="uid://bkih48cfsj1cv" path="res://content/maps/map.gd" id="1_as7w2"]
+[ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="2_xrubx"]
+
+[node name="Map" type="Node3D" unique_id=566139984 node_paths=PackedStringArray("environment")]
+script = ExtResource("1_as7w2")
+environment = NodePath("WorldEnvironment")
+metadata/_custom_type_script = "uid://bkih48cfsj1cv"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=916951810]
+environment = ExtResource("2_xrubx")

@@ -1,26 +1,14 @@
 [gd_scene format=3 uid="uid://do1ffgq4hy3nm"]
 
+[ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="1_208r0"]
 [ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://k4tx0182d6u" path="res://content/enemies/enemy.tscn" id="5_bc7kb"]
 
-[sub_resource type="Environment" id="Environment_cgag5"]
-background_mode = 1
-background_color = Color(0.113112986, 0.113112986, 0.113112986, 1)
-fog_enabled = true
-fog_mode = 1
-fog_light_color = Color(0.19714966, 0.21763703, 0.24951535, 1)
-fog_density = 1.0
-volumetric_fog_density = 0.2577
-volumetric_fog_albedo = Color(0, 0, 0, 1)
-volumetric_fog_temporal_reprojection_enabled = false
-adjustment_enabled = true
-adjustment_saturation = 2.0
-
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1881711492]
-environment = SubResource("Environment_cgag5")
+environment = ExtResource("1_208r0")
 
 [node name="GridManager" type="Node3D" parent="." unique_id=1470997479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00846863, -1.90735e-06, -34.0968)
