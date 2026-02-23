@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ccy8xm3m0vhwv"]
 
-[ext_resource type="Script" uid="uid://bwsl276adydos" path="res://systems/entities/entity_death_component.gd" id="1_p6q5x"]
+[ext_resource type="Script" uid="uid://bwsl276adydos" path="res://systems/entities/enemies/entity_death_component.gd" id="1_p6q5x"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ujaom"]
 

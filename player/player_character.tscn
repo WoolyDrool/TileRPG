@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://c6ebwj0bfj5vb" path="res://content/items/weapon_test.tres" id="4_834sp"]
 [ext_resource type="AudioStream" uid="uid://ccdfvawvyy52j" path="res://player/player sfx/click.wav" id="4_rjqbx"]
 [ext_resource type="PackedScene" uid="uid://djwcmupkcl2ff" path="res://systems/grid_combat_manager.tscn" id="4_tncax"]
-[ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/entity_health_component.tscn" id="5_2brt4"]
+[ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="5_2brt4"]
 [ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://player/player sfx/hitHurt.wav" id="5_mydv8"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6ahhe"]
