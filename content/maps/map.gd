@@ -1,12 +1,17 @@
 class_name Map
 extends Node3D
 
+@export var map_name : String = "Default Map Name"
+@export var environment : WorldEnvironment
+@export var grids : Dictionary
+@export var player_current_x_pos : int
+@export var player_current_z_pos : int
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func on_map_enter() -> void:
+	pass
 
+func on_map_tick_update() -> void:
+	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func on_map_exit() -> void:
 	pass
