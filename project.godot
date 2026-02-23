@@ -58,6 +58,7 @@ folder_colors={
 "res://shaders/": "blue",
 "res://sound/": "green",
 "res://systems/": "purple",
+"res://textures/": "green",
 "res://ui/": "orange"
 }
 
