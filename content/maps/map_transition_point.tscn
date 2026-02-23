@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c4hsdq2nqxfix"]
+
+[ext_resource type="Script" uid="uid://phuga3ns8jgi" path="res://content/maps/map_transition_point.gd" id="1_gajfh"]
+[ext_resource type="Texture2D" uid="uid://egblh3ws5tuk" path="res://content/sprites/editor_icons/spr_ed_playerSpawn.png" id="2_ynhef"]
+[ext_resource type="Texture2D" uid="uid://bquoqqyevs7u2" path="res://content/sprites/editor_icons/spr_ed_playerSpawn_forwardArrow.png" id="3_gvvvs"]
+
+[node name="MapTransitionPoint" type="Node3D" unique_id=1937683722]
+script = ExtResource("1_gajfh")
+metadata/_custom_type_script = "uid://phuga3ns8jgi"
+
+[node name="Sprites" type="Node3D" parent="." unique_id=1751073848]
+
+[node name="spr_player_x" type="Sprite3D" parent="Sprites" unique_id=2926739]
+modulate = Color(1, 0.31098664, 0.42485672, 1)
+texture = ExtResource("2_ynhef")
+
+[node name="spr_player_z" type="Sprite3D" parent="Sprites" unique_id=1395168958]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+modulate = Color(1, 0.31098664, 0.42485672, 1)
+texture = ExtResource("2_ynhef")
+
+[node name="spr_facingdir_x" type="Sprite3D" parent="Sprites" unique_id=498083185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+modulate = Color(6.2569975e-06, 0.8484912, 0.70592475, 1)
+pixel_size = 0.005
+texture = ExtResource("3_gvvvs")
+
+[node name="spr_facingdir_z" type="Sprite3D" parent="Sprites" unique_id=929836251]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1, 0, 0)
+modulate = Color(6.2569975e-06, 0.8484912, 0.70592475, 1)
+pixel_size = 0.005
+texture = ExtResource("3_gvvvs")
