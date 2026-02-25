@@ -129,3 +129,4 @@ dialogic_default_action={
 3d_physics/layer_2="Tiles"
 3d_physics/layer_3="Walls"
 3d_physics/layer_4="Entities"
+3d_physics/layer_5="Interactables"
