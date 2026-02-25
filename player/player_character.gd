@@ -67,7 +67,6 @@ func start_movement_cooldown():
 
 func _on_movement_cooldown_timer_timeout() -> void:
 	can_move = true
-	combat_manager.rescan_for_targets()
 	Globals.time_advance_tick.emit()
 	pass # Replace with function body.
 #endregion
