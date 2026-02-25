@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://chan5muuudj58"]
+
+[ext_resource type="Script" uid="uid://drnse1eshaouf" path="res://systems/interaction/interaction_manager.gd" id="1_mj4ui"]
+[ext_resource type="Texture2D" uid="uid://bv6r6ltpijf84" path="res://systems/interaction/spr_interaction_selector.png" id="2_bp6m8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bp6m8"]
+radius = 2.318
+height = 4.636
+
+[node name="InteractionManager" type="Node3D" unique_id=1112212086]
+script = ExtResource("1_mj4ui")
+metadata/_custom_type_script = "uid://drnse1eshaouf"
+
+[node name="SelectorSprite" type="Sprite3D" parent="." unique_id=426738485]
+pixel_size = 0.005
+billboard = 1
+texture = ExtResource("2_bp6m8")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="." unique_id=41784081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+shape = SubResource("CapsuleShape3D_bp6m8")
+target_position = Vector3(0, 0, 0)
+collision_mask = 16
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="InteractionCooldownTimer" type="Timer" parent="." unique_id=1578487442]
+one_shot = true
+
+[connection signal="timeout" from="InteractionCooldownTimer" to="." method="_on_interaction_cooldown_timer_timeout"]
