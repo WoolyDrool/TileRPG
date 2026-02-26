@@ -5,6 +5,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_s035k"]
 
 [sub_resource type="Gradient" id="Gradient_mhnwm"]
+colors = PackedColorArray(0, 0, 0, 1, 0.46618086, 0.4661808, 0.4661808, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_s035k"]
 gradient = SubResource("Gradient_mhnwm")
