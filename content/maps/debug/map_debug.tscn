@@ -3,7 +3,8 @@
 [ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="1_208r0"]
 [ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
-[ext_resource type="PackedScene" uid="uid://k4tx0182d6u" path="res://content/enemies/enemy.tscn" id="5_bc7kb"]
+[ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="6_wsils"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
@@ -570,14 +571,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 24)
 [node name="Right Wall" parent="GridManager/Hallway2/Room63" index="4" unique_id=1398637669]
 visible = false
 
-[node name="Enemy" parent="GridManager" unique_id=1473598131 instance=ExtResource("5_bc7kb")]
-
-[node name="Enemy2" parent="GridManager" unique_id=959259837 instance=ExtResource("5_bc7kb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 60)
-
-[node name="Enemy3" parent="GridManager" unique_id=1249600835 instance=ExtResource("5_bc7kb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, 60)
-
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2125193747]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -41)
 
@@ -602,6 +595,216 @@ omni_range = 10.0
 [node name="OmniLight3D7" type="OmniLight3D" parent="." unique_id=2096058097]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 2, 21)
 omni_range = 10.0
+
+[node name="ScannableEntity" parent="." unique_id=137746738 instance=ExtResource("4_208r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.56326807, 26)
+entity_name = "Entity 1"
+
+[node name="32X28Z Grid" type="Node3D" parent="." unique_id=548656464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2, 13.827801)
+
+[node name="@Area3D@52982" parent="32X28Z Grid" unique_id=2037171113 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 24)
+
+[node name="@Area3D@52983" parent="32X28Z Grid" unique_id=143260912 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 24)
+
+[node name="@Area3D@52984" parent="32X28Z Grid" unique_id=1660021983 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 24)
+
+[node name="@Area3D@52985" parent="32X28Z Grid" unique_id=780609788 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 24)
+
+[node name="@Area3D@52986" parent="32X28Z Grid" unique_id=1917649337 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 24)
+
+[node name="@Area3D@52987" parent="32X28Z Grid" unique_id=200044099 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 24)
+
+[node name="@Area3D@52988" parent="32X28Z Grid" unique_id=756655859 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 24)
+
+[node name="@Area3D@52989" parent="32X28Z Grid" unique_id=585308528 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
+
+[node name="@Area3D@52990" parent="32X28Z Grid" unique_id=1792544435 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 20)
+
+[node name="@Area3D@52991" parent="32X28Z Grid" unique_id=976029178 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 20)
+
+[node name="@Area3D@52992" parent="32X28Z Grid" unique_id=1088216521 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 20)
+
+[node name="@Area3D@52993" parent="32X28Z Grid" unique_id=1674396433 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 20)
+
+[node name="@Area3D@52994" parent="32X28Z Grid" unique_id=1733478634 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 20)
+
+[node name="@Area3D@52995" parent="32X28Z Grid" unique_id=556075131 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 20)
+
+[node name="@Area3D@52996" parent="32X28Z Grid" unique_id=1238300495 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20)
+
+[node name="@Area3D@52997" parent="32X28Z Grid" unique_id=628958771 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
+
+[node name="@Area3D@52998" parent="32X28Z Grid" unique_id=1806225009 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 16)
+
+[node name="@Area3D@52999" parent="32X28Z Grid" unique_id=1575331123 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 16)
+
+[node name="@Area3D@53000" parent="32X28Z Grid" unique_id=814213075 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 16)
+
+[node name="@Area3D@53001" parent="32X28Z Grid" unique_id=1847220209 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 16)
+
+[node name="@Area3D@53002" parent="32X28Z Grid" unique_id=318187226 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 16)
+
+[node name="@Area3D@53003" parent="32X28Z Grid" unique_id=492846419 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 16)
+
+[node name="@Area3D@53004" parent="32X28Z Grid" unique_id=412559735 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 16)
+
+[node name="@Area3D@53005" parent="32X28Z Grid" unique_id=756563582 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
+
+[node name="@Area3D@53006" parent="32X28Z Grid" unique_id=1625372722 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 12)
+
+[node name="@Area3D@53007" parent="32X28Z Grid" unique_id=1452336925 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
+
+[node name="@Area3D@53008" parent="32X28Z Grid" unique_id=2050898877 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 12)
+
+[node name="@Area3D@53009" parent="32X28Z Grid" unique_id=797185380 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 12)
+
+[node name="@Area3D@53010" parent="32X28Z Grid" unique_id=302867200 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 12)
+
+[node name="@Area3D@53011" parent="32X28Z Grid" unique_id=1012381131 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 12)
+
+[node name="@Area3D@53012" parent="32X28Z Grid" unique_id=99970979 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 12)
+
+[node name="@Area3D@53013" parent="32X28Z Grid" unique_id=1011403409 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
+
+[node name="@Area3D@53014" parent="32X28Z Grid" unique_id=1631435156 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 8)
+
+[node name="@Area3D@53015" parent="32X28Z Grid" unique_id=551805761 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
+
+[node name="@Area3D@53016" parent="32X28Z Grid" unique_id=1664601785 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 8)
+
+[node name="@Area3D@53017" parent="32X28Z Grid" unique_id=69607891 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 8)
+
+[node name="@Area3D@53018" parent="32X28Z Grid" unique_id=1271369968 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 8)
+
+[node name="@Area3D@53019" parent="32X28Z Grid" unique_id=1316494963 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
+
+[node name="@Area3D@53020" parent="32X28Z Grid" unique_id=968943 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
+
+[node name="@Area3D@53021" parent="32X28Z Grid" unique_id=892842210 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
+
+[node name="@Area3D@53022" parent="32X28Z Grid" unique_id=2063118418 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 4)
+
+[node name="@Area3D@53023" parent="32X28Z Grid" unique_id=1802900583 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
+
+[node name="@Area3D@53024" parent="32X28Z Grid" unique_id=1108421273 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 4)
+
+[node name="@Area3D@53025" parent="32X28Z Grid" unique_id=459736392 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 4)
+
+[node name="@Area3D@53026" parent="32X28Z Grid" unique_id=1918207477 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
+
+[node name="@Area3D@53027" parent="32X28Z Grid" unique_id=614026719 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
+
+[node name="@Area3D@53028" parent="32X28Z Grid" unique_id=1482708920 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
+
+[node name="@Area3D@53029" parent="32X28Z Grid" unique_id=235152152 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
+
+[node name="@Area3D@53030" parent="32X28Z Grid" unique_id=1062961724 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 0)
+
+[node name="@Area3D@53031" parent="32X28Z Grid" unique_id=953594325 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
+
+[node name="@Area3D@53032" parent="32X28Z Grid" unique_id=1646431044 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 0)
+
+[node name="@Area3D@53033" parent="32X28Z Grid" unique_id=1647883205 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 0)
+
+[node name="@Area3D@53034" parent="32X28Z Grid" unique_id=1994203329 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 0)
+
+[node name="@Area3D@53035" parent="32X28Z Grid" unique_id=35082138 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
+
+[node name="@Area3D@53036" parent="32X28Z Grid" unique_id=1707860576 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
+
+[node name="@Area3D@53037" parent="32X28Z Grid" unique_id=128261782 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+
+[node name="4X32Z Grid" type="Node3D" parent="." unique_id=1647390935]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, -22.1722)
+
+[node name="Tile X4Z32" parent="4X32Z Grid" unique_id=750505521 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 32)
+
+[node name="@Area3D@55242" parent="4X32Z Grid" unique_id=552769744 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 28)
+
+[node name="@Area3D@55243" parent="4X32Z Grid" unique_id=1885832893 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
+
+[node name="@Area3D@55244" parent="4X32Z Grid" unique_id=84238215 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
+
+[node name="@Area3D@55245" parent="4X32Z Grid" unique_id=1661371200 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
+
+[node name="@Area3D@55246" parent="4X32Z Grid" unique_id=812903349 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
+
+[node name="@Area3D@55247" parent="4X32Z Grid" unique_id=1536398774 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
+
+[node name="@Area3D@55248" parent="4X32Z Grid" unique_id=1859928698 instance=ExtResource("6_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
+
+[node name="ScannableEntity2" parent="." unique_id=1182918526 instance=ExtResource("4_208r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 2, 25.8278)
+entity_name = "Entity 2"
+
+[node name="ScannableEntity3" parent="." unique_id=562619946 instance=ExtResource("4_208r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 2, 28)
+entity_name = "Entity 3"
 
 [editable path="GridManager/Hallway/Room"]
 [editable path="GridManager/Hallway/Room15"]

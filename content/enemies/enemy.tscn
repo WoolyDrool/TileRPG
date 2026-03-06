@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid_navigator.tscn" id="2_def8a"]
 [ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="3_def8a"]
 [ext_resource type="PackedScene" uid="uid://ccy8xm3m0vhwv" path="res://systems/entities/enemies/entity_death_component.tscn" id="5_usgvq"]
+[ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="7_btayh"]
 
 [node name="Enemy" type="Node3D" unique_id=400886387 node_paths=PackedStringArray("health_component", "death_component")]
 script = ExtResource("1_12jub")
@@ -24,5 +25,9 @@ texture = ExtResource("1_ggs1w")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="DeathComponent" parent="." unique_id=88210399 instance=ExtResource("5_usgvq")]
+
+[node name="ScannableEntity" parent="." unique_id=137746738 instance=ExtResource("7_btayh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+entity_name = "Ghostboot"
 
 [editable path="HealthComponent"]
