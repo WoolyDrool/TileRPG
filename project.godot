@@ -30,11 +30,6 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-<<<<<<< HEAD
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
-=======
 directories/dch_directory={
 "arthur": "res://content/dialogic/arthur.dch",
 "brunor": "res://content/dialogic/brunor.dch",
@@ -89,7 +84,6 @@ audio/channel_defaults={
 layout/style_list=["res://content/dialogic/Basic Style.tres"]
 layout/default_style="res://content/dialogic/Basic Style.tres"
 variables={}
->>>>>>> ca3c4dde23cbdf3b9c81ba3057f245aeb466d656
 
 [display]
 
