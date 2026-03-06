@@ -18,7 +18,15 @@ var can_move = true
 var turn_deg = 90
 
 func _ready() -> void:
-	pass
+	Globals.player_seize_controls.connect(seize_controls)
+	Globals.player_return_controls.connect(return_controls)
+	return_controls()
+
+func seize_controls():
+	can_move = false
+
+func return_controls():
+	can_move = true
 	
 func _process(delta: float) -> void:
 	facing_dir = self.rotation.y
