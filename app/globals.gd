@@ -9,3 +9,8 @@ signal time_advance_tick
 #region Maps/Map Transitions
 signal map_transition(new_map : Map, trans_point : MapTransitionPoint)
 #endregion
+
+#region Player
+signal player_seize_controls
+signal player_return_controls
+#endregion
