@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bed2dqw5osw64"]
+
+[ext_resource type="Script" uid="uid://yg85av1jgtxr" path="res://systems/entities/entity_scannable.gd" id="1_mhnwm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s035k"]
+
+[sub_resource type="Gradient" id="Gradient_mhnwm"]
+colors = PackedColorArray(0, 0, 0, 1, 0.46618086, 0.4661808, 0.4661808, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_s035k"]
+gradient = SubResource("Gradient_mhnwm")
+
+[node name="ScannableEntity" type="Area3D" unique_id=137746738]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("1_mhnwm")
+metadata/_custom_type_script = "uid://yg85av1jgtxr"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1602212228]
+shape = SubResource("BoxShape3D_s035k")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=321509298]
+billboard = 1
+texture = SubResource("GradientTexture2D_s035k")

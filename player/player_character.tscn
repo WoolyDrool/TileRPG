@@ -2,11 +2,9 @@
 
 [ext_resource type="Script" uid="uid://rmokn461gvk3" path="res://player/player_character.gd" id="1_1v1wt"]
 [ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid_navigator.tscn" id="2_6ahhe"]
-[ext_resource type="Script" uid="uid://bj7bry48b4mty" path="res://player/player_combat_manager.gd" id="3_ni121"]
-[ext_resource type="Resource" uid="uid://c6ebwj0bfj5vb" path="res://content/items/weapon_test.tres" id="4_834sp"]
 [ext_resource type="AudioStream" uid="uid://ccdfvawvyy52j" path="res://player/player sfx/click.wav" id="4_rjqbx"]
-[ext_resource type="PackedScene" uid="uid://djwcmupkcl2ff" path="res://systems/grid_combat_manager.tscn" id="4_tncax"]
-[ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/entity_health_component.tscn" id="5_2brt4"]
+[ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="5_2brt4"]
+[ext_resource type="PackedScene" uid="uid://chan5muuudj58" path="res://systems/interaction/interaction_manager.tscn" id="5_avj6n"]
 [ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://player/player sfx/hitHurt.wav" id="5_mydv8"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6ahhe"]
@@ -19,11 +17,10 @@ height = 1.5
 top_radius = 0.1
 height = 1.5
 
-[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("navigator", "combat_manager", "cam_container")]
+[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("navigator", "cam_container")]
 collision_mask = 3
 script = ExtResource("1_1v1wt")
 navigator = NodePath("CamContainer/GridNavigator")
-combat_manager = NodePath("CamContainer/GridCombatManager")
 tween_speed = 0.15
 cam_container = NodePath("CamContainer")
 
@@ -52,9 +49,6 @@ tween_speed = 0.15
 foostep_sfx = NodePath("../FootstepSFX")
 turn_sfx = NodePath("../TurnSFX")
 
-[node name="GridCombatManager" parent="CamContainer" unique_id=462554474 instance=ExtResource("4_tncax")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-
 [node name="Camera3D" type="Camera3D" parent="CamContainer" unique_id=976305980]
 transform = Transform3D(-1, 0, 1.19209e-07, 0, 1, 0, -1.19209e-07, 0, -1, 0, 1.5, 0)
 current = true
@@ -68,14 +62,12 @@ volume_db = -20.0
 stream = ExtResource("4_rjqbx")
 volume_db = -10.0
 
+[node name="InteractionManager" parent="CamContainer" unique_id=1112212086 instance=ExtResource("5_avj6n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+
 [node name="MovementCooldownTimer" type="Timer" parent="." unique_id=1656178780]
 wait_time = 0.2
 one_shot = true
-
-[node name="PlayerCombatManager" type="Node" parent="." unique_id=822963634 node_paths=PackedStringArray("combat_manager")]
-script = ExtResource("3_ni121")
-combat_manager = NodePath("../CamContainer/GridCombatManager")
-current_weapon = ExtResource("4_834sp")
 
 [node name="HealthComponent" parent="." unique_id=1802190528 instance=ExtResource("5_2brt4")]
 
