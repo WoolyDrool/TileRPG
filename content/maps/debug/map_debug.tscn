@@ -4,7 +4,9 @@
 [ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
+[ext_resource type="Script" uid="uid://cmlnfwluunft8" path="res://systems/entities/entity_npc.gd" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="6_wsils"]
+[ext_resource type="Resource" uid="uid://tt8ugojj2ewg" path="res://content/dialogic/testing.dtl" id="7_q8f5d"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
@@ -802,9 +804,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 2, 25.8278)
 entity_name = "Entity 2"
 
-[node name="ScannableEntity3" parent="." unique_id=562619946 instance=ExtResource("4_208r0")]
+[node name="NPC Test" type="Node3D" parent="." unique_id=854827582]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 2, 28)
+script = ExtResource("6_l43fq")
+dialogic_timeline = ExtResource("7_q8f5d")
+
+[node name="ScannableEntity3" parent="NPC Test" unique_id=562619946 instance=ExtResource("4_208r0")]
 entity_name = "Entity 3"
+entity_interaction_method = "start_conversation"
 
 [editable path="GridManager/Hallway/Room"]
 [editable path="GridManager/Hallway/Room15"]
