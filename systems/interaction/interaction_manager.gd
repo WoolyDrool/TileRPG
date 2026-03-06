@@ -24,8 +24,10 @@ func _process(delta: float) -> void:
 	#if Input.is_action_just_pressed("scan_for_interacts") and can_scan:
 		#scan_for_new_interactables()
 	
+	if Input.is_action_just_pressed("interact"):
+		in_range_interactables[current_interaction_index].on_entity_interact()
+	
 	selector_cycle_next() 
-
 
 func _physics_process(delta: float) -> void:
 	selection_sprite.global_position = lerp(selection_sprite.global_position, wanted_position, lerp_speed * delta)
@@ -74,3 +76,4 @@ func selector_cycle_next():
 	
 func _on_interaction_cooldown_timer_timeout() -> void:
 	can_scan = true
+	
