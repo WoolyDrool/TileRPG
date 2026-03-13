@@ -30,11 +30,6 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-<<<<<<< HEAD
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
-=======
 directories/dch_directory={
 "arthur": "res://content/dialogic/arthur.dch",
 "brunor": "res://content/dialogic/brunor.dch",
@@ -49,9 +44,11 @@ directories/dtl_directory={
 "testing": "res://content/dialogic/testing.dtl"
 }
 layout/style_directory={
-"": "res://content/dialogic/Basic Style.tres",
-"Basic Style": "res://content/dialogic/Basic Style.tres"
+"": "res://content/dialogic/CruxStyle.tres",
+"CruxStyle": "res://content/dialogic/CruxStyle.tres"
 }
+layout/style_list=["res://content/dialogic/CruxStyle.tres"]
+layout/default_style="res://content/dialogic/CruxStyle.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -71,6 +68,7 @@ choices/reveal_delay=0
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
+history/visited_event_history_enabled=false
 text/autopauses={}
 audio/channel_defaults={
 "": {
@@ -86,10 +84,6 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-layout/style_list=["res://content/dialogic/Basic Style.tres"]
-layout/default_style="res://content/dialogic/Basic Style.tres"
-variables={}
->>>>>>> ca3c4dde23cbdf3b9c81ba3057f245aeb466d656
 
 [display]
 
