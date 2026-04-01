@@ -31,19 +31,19 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
-"arthur": "res://content/dialogic/arthur.dch",
-"brunor": "res://content/dialogic/brunor.dch",
-"galahad": "res://content/dialogic/galahad.dch",
-"gawain": "res://content/dialogic/gawain.dch",
-"lancelot": "res://content/dialogic/lancelot.dch",
-"merlin": "res://content/dialogic/merlin.dch",
-"merrok": "res://content/dialogic/merrok.dch",
-"nimue": "res://content/dialogic/nimue.dch"
+"arthur": "res://content/dialogic/characters/arthur.dch",
+"brunor": "res://content/dialogic/characters/brunor.dch",
+"galahad": "res://content/dialogic/characters/galahad.dch",
+"gawain": "res://content/dialogic/characters/gawain.dch",
+"lancelot": "res://content/dialogic/characters/lancelot.dch",
+"merlin": "res://content/dialogic/characters/merlin.dch",
+"merrok": "res://content/dialogic/characters/merrok.dch",
+"nimue": "res://content/dialogic/characters/nimue.dch"
 }
 directories/dtl_directory={
-"BrunorSolo": "res://content/dialogic/BrunorSolo.dtl",
-"gawainSolo": "res://content/dialogic/gawainSolo.dtl",
-"testing": "res://content/dialogic/testing.dtl"
+"BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
+"gawainSolo": "res://content/dialogic/timelines/gawainSolo.dtl",
+"testing": "res://content/dialogic/timelines/testing/testing.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/CruxStyle.tres",

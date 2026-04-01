@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
 [ext_resource type="Script" uid="uid://cmlnfwluunft8" path="res://systems/entities/entity_npc.gd" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="6_wsils"]
-[ext_resource type="Resource" uid="uid://tt8ugojj2ewg" path="res://content/dialogic/testing.dtl" id="7_q8f5d"]
+[ext_resource type="Resource" uid="uid://tt8ugojj2ewg" path="res://content/dialogic/timelines/testing/testing.dtl" id="7_q8f5d"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 

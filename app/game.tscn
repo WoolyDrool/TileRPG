@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="4_430kh"]
 [ext_resource type="Material" uid="uid://cun5aepcu7xrv" path="res://shaders/dither_shader_material.tres" id="4_h3mk6"]
 [ext_resource type="AudioStream" uid="uid://dhpn0vn3makv2" path="res://sound/music/music_OST test.mp3" id="6_l0u5n"]
-[ext_resource type="Texture2D" uid="uid://bvkv1utkoqfts" path="res://content/Placeholder_Spirit_NOT_MY_OC.png" id="7_w4dt1"]
-[ext_resource type="Texture2D" uid="uid://djq7piso0pbn5" path="res://content/Placeholder_Zathu.png" id="8_emn11"]
+[ext_resource type="Texture2D" uid="uid://bvkv1utkoqfts" path="res://content/sprites/placeholders/Placeholder_Spirit_NOT_MY_OC.png" id="7_w4dt1"]
+[ext_resource type="Texture2D" uid="uid://djq7piso0pbn5" path="res://content/sprites/placeholders/Placeholder_Zathu.png" id="8_emn11"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
