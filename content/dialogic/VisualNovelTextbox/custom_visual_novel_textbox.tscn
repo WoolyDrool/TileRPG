@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b0rpqfg4fhebk" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.svg" id="6_uch03"]
 [ext_resource type="Script" uid="uid://bak74s0kcr0ao" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="7_bi7sh"]
 [ext_resource type="StyleBox" uid="uid://m7gyepkysu83" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_name_label_panel.tres" id="9_yg8ig"]
+[ext_resource type="PackedScene" uid="uid://bbd0xwdaq15qn" path="res://systems/journal/journal_selector.tscn" id="11_63nhq"]
 
 [sub_resource type="Animation" id="Animation_au0a2"]
 length = 0.001
@@ -341,3 +342,10 @@ theme_override_font_sizes/font_size = 15
 text = "S"
 script = ExtResource("7_bi7sh")
 name_label_root = NodePath("..")
+
+[node name="JournalSelector" parent="Anchor/AnimationParent/Sizer" unique_id=1341089273 instance=ExtResource("11_63nhq")]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 285.0
+offset_bottom = 35.0
