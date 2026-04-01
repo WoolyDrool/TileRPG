@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bbd0xwdaq15qn"]
+
+[ext_resource type="Script" uid="uid://cebmkb41do7u5" path="res://systems/journal/journal_selector.gd" id="1_rbaf6"]
+[ext_resource type="Texture2D" uid="uid://dt2gomgbgv10j" path="res://content/sprites/ui/ui_journal_selector_quill.png" id="2_xkpsk"]
+
+[node name="JournalSelector" type="TextEdit" unique_id=1341089273]
+offset_right = 627.0
+offset_bottom = 212.0
+text = "This is the JournalSelector Node. Its functionality is to allow the player to select words and save them to the journal."
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+empty_selection_clipboard_enabled = false
+wrap_mode = 1
+virtual_keyboard_enabled = false
+caret_blink = true
+caret_move_on_right_click = false
+caret_multiple = false
+script = ExtResource("1_rbaf6")
+metadata/_custom_type_script = "uid://cebmkb41do7u5"
+
+[node name="QuillSprite" type="TextureRect" parent="." unique_id=681499218]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(0, 1)
+texture = ExtResource("2_xkpsk")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
