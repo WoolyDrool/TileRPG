@@ -7,6 +7,7 @@ var selected_words = []
 @onready var quill_sprite : TextureRect = $QuillSprite
 @export var selector_mode_activated : bool = true
 
+@export var test_ : Dictionary
 
 # TODO:
 # Move the caret with the D-Pad
@@ -15,7 +16,7 @@ var selected_words = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	Dialogic.timeline_started.connect(update_selector_textedit_text)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -27,7 +28,8 @@ func _process(delta: float) -> void:
 
 func update_selector_textedit_text():
 	# NOTE: This will receive the current conversation box from Dialogic and update the invisible text edit box with the appropriate text
-	pass
+	current_dialogic_timeline = Dialogic.current_timeline
+	text = current_dialogic_timeline.as_text()
 
 func update_quill_sprite_position():
 	var current_caret_pos = get_caret_draw_pos(get_caret_line())

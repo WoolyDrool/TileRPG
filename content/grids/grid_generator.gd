@@ -117,4 +117,4 @@ func finish_generate_grid():
 	
 func reset_grid():
 	grid_volume.shape.size = Vector3(tile_size, tile_size, tile_size)
-	grid_volume.shape.transform.position = Vector3.ZERO
+	grid_volume.shape.position = global_position

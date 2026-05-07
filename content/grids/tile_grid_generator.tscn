@@ -12,4 +12,4 @@ tile_scene = ExtResource("2_lcg70")
 
 [node name="GridVolume" type="CollisionShape3D" parent="." unique_id=525575400]
 shape = SubResource("BoxShape3D_lcg70")
-debug_color = Color(1.347661e-06, 0.83449334, 0.3610547, 1)
+debug_color = Color(0.92900765, 0, 0.27199128, 1)

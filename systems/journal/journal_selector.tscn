@@ -2,10 +2,31 @@
 
 [ext_resource type="Script" uid="uid://cebmkb41do7u5" path="res://systems/journal/journal_selector.gd" id="1_rbaf6"]
 [ext_resource type="Texture2D" uid="uid://dt2gomgbgv10j" path="res://content/sprites/ui/ui_journal_selector_quill.png" id="2_xkpsk"]
+[ext_resource type="Script" uid="uid://ctfwsx5e8oe6d" path="res://systems/journal/phrases_dict.gd" id="3_tqokl"]
+[ext_resource type="Resource" uid="uid://bmh84l58rxpdj" path="res://systems/journal/gawain.tres" id="4_ftuuq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkpsk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tqokl"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="JournalSelector" type="TextEdit" unique_id=1341089273]
-offset_right = 627.0
-offset_bottom = 212.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -313.5
+offset_top = -106.0
+offset_right = 313.5
+offset_bottom = 106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xkpsk")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_tqokl")
 text = "This is the JournalSelector Node. Its functionality is to allow the player to select words and save them to the journal."
 editable = false
 context_menu_enabled = false
@@ -31,3 +52,7 @@ pivot_offset = Vector2(0, 1)
 texture = ExtResource("2_xkpsk")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="Node" type="Node" parent="." unique_id=360471640]
+script = ExtResource("3_tqokl")
+character_reference = ExtResource("4_ftuuq")

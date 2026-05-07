@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="JournalPhraseCharacter" format=3 uid="uid://bmh84l58rxpdj"]
+
+[ext_resource type="Script" uid="uid://cfpyvrbnskg1x" path="res://systems/journal/JournalPhraseCharacter.gd" id="1_ar3sf"]
+
+[resource]
+script = ExtResource("1_ar3sf")
+character_name = "Gawain"
+character_text_1 = "That broken sword"
+character_journal_text_1 = "Your broken sword"
+metadata/_custom_type_script = "uid://cfpyvrbnskg1x"

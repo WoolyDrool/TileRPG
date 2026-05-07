@@ -46,11 +46,11 @@ directories/dtl_directory={
 "testing": "res://content/dialogic/timelines/testing/testing.dtl"
 }
 layout/style_directory={
-"": "res://content/dialogic/CruxStyle.tres",
+"Basic Style": "res://content/dialogic/Basic Style.tres",
 "CruxStyle": "res://content/dialogic/CruxStyle.tres"
 }
-layout/style_list=["res://content/dialogic/CruxStyle.tres"]
-layout/default_style="res://content/dialogic/CruxStyle.tres"
+layout/style_list=["res://content/dialogic/CruxStyle.tres", "res://content/dialogic/Basic Style.tres"]
+layout/default_style=""
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -87,6 +87,7 @@ audio/channel_defaults={
 }
 }
 variables={}
+glossary/glossary_files=["uid://ql82xcoxcnyg"]
 
 [display]
 
