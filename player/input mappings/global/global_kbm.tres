@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="GUIDEMappingContext" format=3 uid="uid://dlysjhr7w6pr"]
+
+[ext_resource type="Script" uid="uid://b1qdlfltrtoml" path="res://addons/guide/guide_action_mapping.gd" id="1_nvn1i"]
+[ext_resource type="Script" uid="uid://d0s1stvqup31e" path="res://addons/guide/guide_mapping_context.gd" id="2_pmca6"]
+[ext_resource type="Resource" uid="uid://dm21mlqiyc8pj" path="res://player/input mappings/global/switch_to_gamepad.tres" id="2_yft38"]
+[ext_resource type="Script" uid="uid://c2rin08sbgwqp" path="res://addons/guide/guide_input_mapping.gd" id="3_nkeho"]
+[ext_resource type="Script" uid="uid://w3fbpe7r01n8" path="res://addons/guide/inputs/guide_input_any.gd" id="4_avjc5"]
+[ext_resource type="Script" uid="uid://bl8rjl4oaldje" path="res://addons/guide/modifiers/guide_modifier.gd" id="5_348bp"]
+[ext_resource type="Script" uid="uid://x74mnwgr08a7" path="res://addons/guide/triggers/guide_trigger.gd" id="6_2tkab"]
+
+[sub_resource type="Resource" id="Resource_qelte"]
+script = ExtResource("4_avjc5")
+mouse = false
+joy = false
+
+[sub_resource type="Resource" id="Resource_0su8y"]
+script = ExtResource("3_nkeho")
+input = SubResource("Resource_qelte")
+
+[sub_resource type="Resource" id="Resource_a2u6n"]
+script = ExtResource("1_nvn1i")
+action = ExtResource("2_yft38")
+input_mappings = Array[ExtResource("3_nkeho")]([SubResource("Resource_0su8y")])
+
+[resource]
+script = ExtResource("2_pmca6")
+mappings = Array[ExtResource("1_nvn1i")]([SubResource("Resource_a2u6n")])
+metadata/_custom_type_script = "uid://d0s1stvqup31e"
