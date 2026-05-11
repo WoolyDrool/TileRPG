@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d1jrscrvyl4lq"]
 
-[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="1_bbgrt"]
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="1_bbgrt"]
 [ext_resource type="Script" uid="uid://c1yy57fe3ccu7" path="res://content/rooms/room.gd" id="1_jt3jd"]
 [ext_resource type="Material" uid="uid://w1nofopeeh3i" path="res://content/rooms/room tiles/test/mat_tile_floor.tres" id="2_26v8h"]
 [ext_resource type="Material" uid="uid://b5tblb8hmbq04" path="res://content/rooms/room tiles/test/mat_tile_ceiling.tres" id="3_7ci1y"]

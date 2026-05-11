@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dh6ntme65fvou"]
 
-[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://content/grids/tile.gd" id="1_fhi0k"]
-[ext_resource type="Shape3D" uid="uid://duabt5ca64avh" path="res://content/grids/tile_collider.tres" id="1_ke5ak"]
+[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://systems/grid/tile.gd" id="1_fhi0k"]
+[ext_resource type="Shape3D" uid="uid://duabt5ca64avh" path="res://systems/grid/tile_collider.tres" id="1_ke5ak"]
 
 [node name="Tile" type="Area3D" unique_id=289986669 groups=["Tile"]]
 collision_layer = 2

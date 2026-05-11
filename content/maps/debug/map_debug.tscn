@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://do1ffgq4hy3nm"]
 
 [ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="1_208r0"]
-[ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
+[ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://systems/grid/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
 [ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
-[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="6_wsils"]
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="6_wsils"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 

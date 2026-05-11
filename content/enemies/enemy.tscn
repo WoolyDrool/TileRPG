@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b508ooppygk05" path="res://systems/entities/enemies/enemy.gd" id="1_12jub"]
 [ext_resource type="Texture2D" uid="uid://dtgjqi7caav2a" path="res://content/enemies/ghostboot/spr_enemy_ghostboot.png" id="1_ggs1w"]
 [ext_resource type="Resource" uid="uid://cfkwge475q2wk" path="res://content/enemies/ghostboot/enemydata_ghostboot.tres" id="2_asitb"]
-[ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid_navigator.tscn" id="2_def8a"]
+[ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid/grid_navigator.tscn" id="2_def8a"]
 [ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="3_def8a"]
 [ext_resource type="PackedScene" uid="uid://ccy8xm3m0vhwv" path="res://systems/entities/enemies/entity_death_component.tscn" id="5_usgvq"]
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="7_btayh"]

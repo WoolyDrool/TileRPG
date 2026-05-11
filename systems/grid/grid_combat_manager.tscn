@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://djwcmupkcl2ff"]
+[gd_scene format=3 uid="uid://djwcmupkcl2ff"]
 
-[ext_resource type="Script" uid="uid://cq5f7vu1jyip7" path="res://systems/grid_combat_manager.gd" id="1_ep8t1"]
+[ext_resource type="Script" uid="uid://cq5f7vu1jyip7" path="res://systems/grid/grid_combat_manager.gd" id="1_ep8t1"]
 
 [node name="GridCombatManager" type="Node3D"]
 script = ExtResource("1_ep8t1")
