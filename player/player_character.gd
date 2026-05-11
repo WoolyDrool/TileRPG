@@ -44,22 +44,22 @@ func _process(delta: float) -> void:
 func handle_movement_input() -> void:
 	if can_move:
 		if !navigator.moving:
-			if Input.is_action_just_pressed("move_forward") && !navigator.wall_in_ront:
+			if move_forward_action.is_triggered() && !navigator.wall_in_ront:
 				if !navigator.tile_front:
 					navigator.rescan()
 				navigator.movement_tween(navigator.tile_front.center, self)
 				start_movement_cooldown()
-			if Input.is_action_just_pressed("move_backward") && !navigator.wall_in_back:
+			if move_backward_action.is_triggered() && !navigator.wall_in_back:
 				if !navigator.tile_behind:
 					navigator.rescan()
 				navigator.movement_tween(navigator.tile_behind.center, self)
 				start_movement_cooldown()
 			
 		if !turning:
-			if Input.is_action_just_pressed("turn_left"):
+			if turn_left_action.is_triggered():
 				navigator.rotation_tween(turn_deg, cam_container)
 				start_movement_cooldown()
-			if Input.is_action_just_pressed("turn_right"):
+			if turn_right_action.is_triggered():
 				navigator.rotation_tween(-turn_deg, cam_container)
 				start_movement_cooldown()
 

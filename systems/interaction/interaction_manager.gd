@@ -1,6 +1,9 @@
 class_name InteractionManager
 extends Node3D
 
+@export var interaction_action : GUIDEAction
+@export var cycle_left_interaction : GUIDEAction
+@export var cycle_right_interaction : GUIDEAction
 @onready var selection_sprite : Sprite3D = $SelectorSprite
 @onready var shapecast : ShapeCast3D = $ShapeCast3D
 @onready var cooldown_timer : Timer = $InteractionCooldownTimer
@@ -24,7 +27,7 @@ func _process(delta: float) -> void:
 	#if Input.is_action_just_pressed("scan_for_interacts") and can_scan:
 		#scan_for_new_interactables()
 	
-	if Input.is_action_just_pressed("interact"):
+	if interaction_action.is_triggered():
 		in_range_interactables[current_interaction_index].on_entity_interact()
 	
 	selector_cycle_next() 
@@ -48,11 +51,11 @@ func scan_for_new_interactables() -> void:
 		cooldown_timer.start()
 	
 func selector_cycle_next():
-	if Input.is_action_just_pressed("attack_right"):
+	if cycle_right_interaction.is_triggered():
 		current_interaction_index += 1
 		clampi(current_interaction_index, 0, current_interaction_index_max)
 		print("InteractionManager: Cycling interaction to ", current_interaction_index)
-	elif Input.is_action_just_pressed("attack_left"):
+	elif cycle_left_interaction.is_triggered():
 		current_interaction_index += -1
 		clampi(current_interaction_index, 0, current_interaction_index_max)
 		print("InteractionManager: Cycling interaction to ", current_interaction_index)

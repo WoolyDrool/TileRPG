@@ -10,6 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://chan5muuudj58" path="res://systems/interaction/interaction_manager.tscn" id="5_avj6n"]
 [ext_resource type="Resource" uid="uid://xrnflpp6tupi" path="res://player/input mappings/movement/actions/movement_turn_right.tres" id="5_l18q3"]
 [ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://player/player sfx/hitHurt.wav" id="5_mydv8"]
+[ext_resource type="Resource" uid="uid://dq7mi3ofafxn8" path="res://player/input mappings/movement/actions/movement_interact.tres" id="10_qep63"]
+[ext_resource type="Resource" uid="uid://bs4jsrvptrbcw" path="res://player/input mappings/movement/actions/movement_cycle_interact_left.tres" id="11_l18q3"]
+[ext_resource type="Resource" uid="uid://chp7ydqml3btk" path="res://player/input mappings/movement/actions/movement_cycle_interact_right.tres" id="12_20tpk"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6ahhe"]
 top_radius = 0.1
@@ -70,6 +73,9 @@ volume_db = -10.0
 
 [node name="InteractionManager" parent="CamContainer" unique_id=1112212086 instance=ExtResource("5_avj6n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+interaction_action = ExtResource("10_qep63")
+cycle_left_interaction = ExtResource("11_l18q3")
+cycle_right_interaction = ExtResource("12_20tpk")
 
 [node name="MovementCooldownTimer" type="Timer" parent="." unique_id=1656178780]
 wait_time = 0.2
