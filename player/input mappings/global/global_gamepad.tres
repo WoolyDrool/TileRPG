@@ -7,15 +7,20 @@
 [ext_resource type="Script" uid="uid://w3fbpe7r01n8" path="res://addons/guide/inputs/guide_input_any.gd" id="4_kajcx"]
 [ext_resource type="Script" uid="uid://bl8rjl4oaldje" path="res://addons/guide/modifiers/guide_modifier.gd" id="5_pc641"]
 [ext_resource type="Script" uid="uid://x74mnwgr08a7" path="res://addons/guide/triggers/guide_trigger.gd" id="6_gvusw"]
+[ext_resource type="Script" uid="uid://clxhclh6vchh6" path="res://addons/guide/triggers/guide_trigger_pressed.gd" id="7_xsuc5"]
 
 [sub_resource type="Resource" id="Resource_60dej"]
 script = ExtResource("4_kajcx")
 mouse = false
 joy = false
 
+[sub_resource type="Resource" id="Resource_kajcx"]
+script = ExtResource("7_xsuc5")
+
 [sub_resource type="Resource" id="Resource_ur6gm"]
 script = ExtResource("3_xsuc5")
 input = SubResource("Resource_60dej")
+triggers = Array[ExtResource("6_gvusw")]([SubResource("Resource_kajcx")])
 
 [sub_resource type="Resource" id="Resource_bhqa2"]
 script = ExtResource("1_a72k7")

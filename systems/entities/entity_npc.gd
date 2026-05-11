@@ -16,6 +16,8 @@ func start_conversation():
 	Dialogic.start(dialogic_timeline)
 	Dialogic.timeline_ended.connect(end_conversation)
 	Globals.player_seize_controls.emit()
+	SignalBus.change_input_mode_to_ui.emit()
 	
 func end_conversation():
 	Globals.player_return_controls.emit()
+	SignalBus.change_input_mode_to_gameplay.emit()

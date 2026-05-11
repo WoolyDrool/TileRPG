@@ -1,5 +1,3 @@
-[style name="CruxStyle"]
-[background scene="res://ui/global_ui.tscn" arg="res://ui/UI First Pass.png" fade="0.0"]
 brunor: Percy! What a surprise! I thought you'd left us all behind. How's life on the outside?
 - It's alright
 	brunor: Just alright?
