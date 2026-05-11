@@ -1,20 +1,26 @@
 class_name Player
 extends Area3D
 
-@export var navigator : GridNavigator
-@export var combat_manager : GridCombatManager
+@export_category("Input")
+@export var move_forward_action : GUIDEAction
+@export var move_backward_action : GUIDEAction
+@export var turn_left_action : GUIDEAction
+@export var turn_right_action : GUIDEAction
+
+@export_category("Controller Settings")
+@export var tween_speed : float = 1
+@export var turn_speed : float = 1
+
+@onready var navigator : GridNavigator = $CamContainer/GridNavigator
+@onready var cam_container : Node3D = $CamContainer
+@onready var movement_cooldown_timer : Timer = $MovementCooldownTimer
+
+var can_move = true
 var moving : bool = false
 var turning : bool = false
 var movement_length : int = 4
 var turning_deg : float = 90
 var facing_dir : float 
-@export var tween_speed : float = 1
-@export var turn_speed : float = 1
-@export var cam_container : Node3D
-
-@onready var movement_cooldown_timer : Timer = $MovementCooldownTimer
-var can_move = true
-
 var turn_deg = 90
 
 func _ready() -> void:
@@ -60,19 +66,7 @@ func handle_movement_input() -> void:
 func start_movement_cooldown():
 	can_move = false
 	movement_cooldown_timer.start()
-#func handle_camera_turning(leftright : bool):
-	#pass
-	#turning = true
-	#if !leftright:
-		#var turn_rotation = Vector3(0, cam_container.rotation.y + deg_to_rad(turning_deg), 0)
-		#var turn_quat = Quaternion.from_euler(turn_rotation)
-		#await get_tree().create_tween().tween_property(cam_container, "quaternion", turn_quat, turn_speed)
-	#else:
-		#var turn_rotation = Vector3(0, cam_container.rotation.y - deg_to_rad(turning_deg), 0)
-		#var turn_quat = Quaternion.from_euler(turn_rotation)
-		#await get_tree().create_tween().tween_property(cam_container, "quaternion", turn_quat, turn_speed)
-		#turning = false
-
+	
 func _on_movement_cooldown_timer_timeout() -> void:
 	can_move = true
 	Globals.time_advance_tick.emit()

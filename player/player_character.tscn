@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://rmokn461gvk3" path="res://player/player_character.gd" id="1_1v1wt"]
 [ext_resource type="PackedScene" uid="uid://cti74wklfmaq" path="res://systems/grid_navigator.tscn" id="2_6ahhe"]
+[ext_resource type="Resource" uid="uid://d3qr3wfxtg03k" path="res://player/input mappings/movement/actions/movement_forward.tres" id="2_wi17q"]
+[ext_resource type="Resource" uid="uid://c87et6b7sljp8" path="res://player/input mappings/movement/actions/movement_backward.tres" id="3_qep63"]
+[ext_resource type="Resource" uid="uid://bamxcbppxl3x" path="res://player/input mappings/movement/actions/movement_turn_left.tres" id="4_3d672"]
 [ext_resource type="AudioStream" uid="uid://ccdfvawvyy52j" path="res://player/player sfx/click.wav" id="4_rjqbx"]
 [ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="5_2brt4"]
 [ext_resource type="PackedScene" uid="uid://chan5muuudj58" path="res://systems/interaction/interaction_manager.tscn" id="5_avj6n"]
+[ext_resource type="Resource" uid="uid://xrnflpp6tupi" path="res://player/input mappings/movement/actions/movement_turn_right.tres" id="5_l18q3"]
 [ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://player/player sfx/hitHurt.wav" id="5_mydv8"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6ahhe"]
@@ -17,12 +21,14 @@ height = 1.5
 top_radius = 0.1
 height = 1.5
 
-[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("navigator", "cam_container")]
+[node name="PlayerCharacter" type="Area3D" unique_id=1809113002]
 collision_mask = 3
 script = ExtResource("1_1v1wt")
-navigator = NodePath("CamContainer/GridNavigator")
+move_forward_action = ExtResource("2_wi17q")
+move_backward_action = ExtResource("3_qep63")
+turn_left_action = ExtResource("4_3d672")
+turn_right_action = ExtResource("5_l18q3")
 tween_speed = 0.15
-cam_container = NodePath("CamContainer")
 
 [node name="VisibleMesh" type="CSGMesh3D" parent="." unique_id=2035766676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
