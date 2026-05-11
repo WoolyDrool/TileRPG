@@ -111,7 +111,7 @@ func check_finished() -> bool:
 		return true
 	else:
 		return false
-	
+
 func finish_generate_grid():
 	pass
 	
