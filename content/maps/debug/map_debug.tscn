@@ -4,10 +4,8 @@
 [ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://content/grids/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
-[ext_resource type="Script" uid="uid://cmlnfwluunft8" path="res://systems/entities/entity_npc.gd" id="6_l43fq"]
+[ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://content/grids/tile.tscn" id="6_wsils"]
-[ext_resource type="Resource" uid="uid://b4436vqbfn774" path="res://content/dialogic/timelines/BrunorSolo.dtl" id="7_q8f5d"]
-[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://content/grids/tile.gd" id="8_j4fdq"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
@@ -802,82 +800,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 2, 25.8278)
 entity_name = "Entity 2"
 
-[node name="NPC Test" type="Node3D" parent="." unique_id=854827582]
+[node name="NPC Test" parent="." unique_id=1255377170 instance=ExtResource("6_l43fq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 2, 28)
-script = ExtResource("6_l43fq")
-dialogic_timeline = ExtResource("7_q8f5d")
-
-[node name="ScannableEntity3" parent="NPC Test" unique_id=562619946 instance=ExtResource("4_208r0")]
-entity_name = "Entity 3"
-entity_interaction_method = "start_conversation"
 
 [node name="32X4Z Grid" type="Node3D" parent="." unique_id=2130742709]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -18)
 
-[node name="@Area3D@95022" type="Area3D" parent="32X4Z Grid" unique_id=289986669 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95022" parent="32X4Z Grid" unique_id=289986669 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95023" type="Area3D" parent="32X4Z Grid" unique_id=1746413671 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95023" parent="32X4Z Grid" unique_id=1746413671 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95024" type="Area3D" parent="32X4Z Grid" unique_id=1644432189 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95024" parent="32X4Z Grid" unique_id=1644432189 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95025" type="Area3D" parent="32X4Z Grid" unique_id=1658415844 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95025" parent="32X4Z Grid" unique_id=1658415844 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95026" type="Area3D" parent="32X4Z Grid" unique_id=491440193 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95026" parent="32X4Z Grid" unique_id=491440193 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95027" type="Area3D" parent="32X4Z Grid" unique_id=8920864 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95027" parent="32X4Z Grid" unique_id=8920864 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95028" type="Area3D" parent="32X4Z Grid" unique_id=1121058237 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95028" parent="32X4Z Grid" unique_id=1121058237 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
 
-[node name="@Area3D@95029" type="Area3D" parent="32X4Z Grid" unique_id=907145936 groups=["Tile"] instance=ExtResource("6_wsils")]
+[node name="@Area3D@95029" parent="32X4Z Grid" unique_id=907145936 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("8_j4fdq")
-
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95022" to="32X4Z Grid/@Area3D@95022" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95022" to="32X4Z Grid/@Area3D@95022" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95023" to="32X4Z Grid/@Area3D@95023" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95023" to="32X4Z Grid/@Area3D@95023" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95024" to="32X4Z Grid/@Area3D@95024" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95024" to="32X4Z Grid/@Area3D@95024" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95025" to="32X4Z Grid/@Area3D@95025" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95025" to="32X4Z Grid/@Area3D@95025" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95026" to="32X4Z Grid/@Area3D@95026" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95026" to="32X4Z Grid/@Area3D@95026" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95027" to="32X4Z Grid/@Area3D@95027" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95027" to="32X4Z Grid/@Area3D@95027" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95028" to="32X4Z Grid/@Area3D@95028" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95028" to="32X4Z Grid/@Area3D@95028" method="_on_body_exited"]
-[connection signal="body_entered" from="32X4Z Grid/@Area3D@95029" to="32X4Z Grid/@Area3D@95029" method="_on_body_entered"]
-[connection signal="body_exited" from="32X4Z Grid/@Area3D@95029" to="32X4Z Grid/@Area3D@95029" method="_on_body_exited"]
 
 [editable path="GridManager/Hallway/Room"]
 [editable path="GridManager/Hallway/Room15"]
