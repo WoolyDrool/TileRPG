@@ -5,10 +5,7 @@
 [resource]
 script = ExtResource("1_b7cbv")
 entries = {
-"oh my god": {
-"case_sensitive": true,
-"name": "oh my god",
-"text": "is this the thing i need",
-"title": "Oh my god"
+"This is a test phrase.": {
+"name": "This is a test phrase."
 }
 }
