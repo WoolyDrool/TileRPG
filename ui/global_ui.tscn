@@ -20,16 +20,15 @@ offset_bottom = 40.0
 scale = Vector2(2.15, 2.15)
 texture = ExtResource("1_a31wk")
 
-[node name="BottomText" type="Control" parent="." unique_id=1634138305]
-visible = false
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=537318667]
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 274.0
-offset_top = -218.0
-offset_right = -545.0
-offset_bottom = -32.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
