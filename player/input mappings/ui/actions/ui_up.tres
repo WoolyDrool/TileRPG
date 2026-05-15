@@ -4,5 +4,4 @@
 
 [resource]
 script = ExtResource("1_d513y")
-emit_as_godot_actions = true
 metadata/_custom_type_script = "uid://kgsi1hgkjhlv"

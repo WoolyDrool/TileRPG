@@ -333,7 +333,7 @@ func handle_event(event_index:int) -> void:
 ## Resets Dialogic's state fully or partially.
 ## By using the clear flags from the [member ClearFlags] enum you can specify
 ## what info should be kept.
-## For example, at timeline end usually it doesn't clear node or subsystem info.
+## For example, at timeline end usually it doesn't clear node or Fsubsystem info.
 func clear(clear_flags := ClearFlags.FULL_CLEAR) -> void:
 	_cleanup_previous_event()
 

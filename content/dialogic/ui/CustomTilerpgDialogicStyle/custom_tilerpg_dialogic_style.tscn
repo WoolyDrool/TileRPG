@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bgm7vye3j5bgi" path="res://ui/UI First Pass.png" id="2_gl0qv"]
 [ext_resource type="Script" uid="uid://bldt7xlfum7ov" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="3_20v0l"]
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_xjro8"]
+[ext_resource type="Script" uid="uid://5kgcim8dx82l" path="res://content/dialogic/ui/CustomTilerpgDialogicStyle/text_selector.gd" id="5_20v0l"]
+[ext_resource type="Resource" uid="uid://d6axyn134xo5" path="res://player/input mappings/ui/actions/ui_enter_selection_mode.tres" id="6_1swcf"]
 
 [node name="TileRPGDialogue" type="CanvasLayer" unique_id=1279563650]
 script = ExtResource("1_ifsho")
@@ -26,8 +28,6 @@ offset_right = 416.0
 offset_bottom = -32.0
 grow_horizontal = 2
 grow_vertical = 0
-focus_mode = 2
-selection_enabled = true
 script = ExtResource("3_xjro8")
 metadata/_custom_type_script = "uid://drhfq6rmdeuri"
 
@@ -63,3 +63,22 @@ metadata/_custom_type_script = "uid://bldt7xlfum7ov"
 layout_mode = 2
 script = ExtResource("3_20v0l")
 metadata/_custom_type_script = "uid://bldt7xlfum7ov"
+
+[node name="TextSelector" type="Control" parent="." unique_id=1070818421 node_paths=PackedStringArray("dialogic_text_node")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_20v0l")
+dialogic_text_node = NodePath("../DialogicNode_DialogText")
+enter_selector_action = ExtResource("6_1swcf")
+
+[connection signal="finished_revealing_text" from="DialogicNode_DialogText" to="TextSelector" method="_on_dialogic_node_dialog_text_finished_revealing_text"]
