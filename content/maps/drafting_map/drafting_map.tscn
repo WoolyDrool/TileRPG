@@ -1,0 +1,1321 @@
+[gd_scene format=3 uid="uid://dymoaf4fhfvr7"]
+
+[ext_resource type="Script" uid="uid://bkih48cfsj1cv" path="res://content/maps/map.gd" id="1_1u3kj"]
+[ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="2_583s2"]
+[ext_resource type="PackedScene" uid="uid://bhx7cgn7eeneu" path="res://content/maps/drafting_map/map_ChateauxCamlann_workingfile.blend" id="3_4gcwt"]
+[ext_resource type="PackedScene" uid="uid://bqaiw6ilboars" path="res://systems/grid/tile_grid_generator.tscn" id="3_cmg8b"]
+[ext_resource type="Material" uid="uid://0jx30dukpo2q" path="res://textures/texture_placeholder_nobackfacecull.tres" id="4_oij1o"]
+[ext_resource type="Material" uid="uid://w1nofopeeh3i" path="res://content/rooms/room tiles/test/mat_tile_floor.tres" id="5_5txb8"]
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="5_cmgu4"]
+[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://systems/grid/tile.gd" id="6_oij1o"]
+
+[node name="Map" type="Node3D" unique_id=566139984 node_paths=PackedStringArray("environment")]
+script = ExtResource("1_1u3kj")
+environment = NodePath("WorldEnvironment")
+metadata/_custom_type_script = "uid://bkih48cfsj1cv"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=916951810]
+environment = ExtResource("2_583s2")
+
+[node name="map_ChateauxCamlann_workingfile" parent="WorldEnvironment" unique_id=747230745 instance=ExtResource("3_4gcwt")]
+
+[node name="final_dungeon" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="0" unique_id=431963631]
+visible = false
+
+[node name="Art Wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(747230745, 734046213) index="2" unique_id=1549397140]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="Eatery_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(747230745, 734046213) index="11" unique_id=829996254]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="Entry_Floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(747230745, 734046213) index="13" unique_id=626401179]
+material_override = ExtResource("5_5txb8")
+
+[node name="Lobby_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(747230745, 734046213) index="21" unique_id=1253162833]
+surface_material_override/0 = ExtResource("5_5txb8")
+
+[node name="Reception_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(747230745, 734046213) index="37" unique_id=1574113210]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="sorting_2ndFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="3" unique_id=1208314181]
+visible = false
+
+[node name="sorting_3rdFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="4" unique_id=1456556651]
+visible = false
+
+[node name="sorting_4thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="5" unique_id=2073683219]
+visible = false
+
+[node name="sorting_5thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="6" unique_id=1877553358]
+visible = false
+
+[node name="props_extra_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="13" unique_id=1417454095]
+visible = false
+
+[node name="TileGridGenerator" parent="WorldEnvironment" unique_id=2060964577 instance=ExtResource("3_cmg8b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 10)
+visible = false
+
+[node name="tile_grid" type="Node3D" parent="WorldEnvironment" unique_id=50385748]
+
+[node name="groundfloor_hall" type="Node3D" parent="WorldEnvironment/tile_grid" unique_id=1796045407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -4)
+
+[node name="Tile X68Z8" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=289986669 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60378" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1693731650 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60379" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=497072863 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60380" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2121090721 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60381" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=172187005 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60382" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=997114863 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60383" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1594726148 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60384" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2025895781 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60385" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=537235222 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60386" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1541672768 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60387" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=858448798 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60388" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1832312046 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60389" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=823570140 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60390" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2114800184 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60391" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=155810331 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60392" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=911968674 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60393" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1190171968 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60394" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=863291287 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60395" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2090266221 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60396" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2014136500 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60397" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=359951708 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60398" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1457457002 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60399" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1754488274 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60400" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1074978075 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60401" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=573366003 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60402" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1157621312 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60403" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=896039450 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60404" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=360673599 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60405" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=529053780 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60406" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=293173565 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60407" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2056477669 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60408" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1798860523 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60409" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1353209983 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60410" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=355284186 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60411" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1586634943 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60412" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=53994475 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60413" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=129152407 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60414" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=63500455 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60415" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1574081143 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60416" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1215040656 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60417" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=447601606 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60418" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1453746971 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60419" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=128884983 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60420" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=589215014 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60421" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=37446066 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60422" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=520236588 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60423" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1614606375 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60424" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=85549321 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60425" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=2035200414 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60426" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=685092577 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@60427" type="Area3D" parent="WorldEnvironment/tile_grid/groundfloor_hall" unique_id=1373356616 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="grid_diningarea" type="Node3D" parent="WorldEnvironment/tile_grid" unique_id=1185906798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -36)
+visible = false
+
+[node name="Tile X28Z28" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=279303308 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69268" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1279565062 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69269" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=306760680 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69270" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=316890560 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69271" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1693741777 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69272" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1345137075 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69273" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1361804281 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 28)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69274" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1944549338 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69275" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=303105597 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69276" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=996156915 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69277" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=2121519609 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69278" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1438312388 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69279" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=111345126 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69280" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1178376783 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69281" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1886722451 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69282" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=803187981 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69283" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=376343621 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69284" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1947027043 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69285" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=285678646 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69286" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1775018303 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69287" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=105300847 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69288" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1468350640 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69289" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=56263624 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69290" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1076734363 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69291" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1336692397 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69292" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1382561231 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69293" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=693731628 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69294" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=38369902 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69295" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1100963887 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69296" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=646690212 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69297" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=90824846 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69298" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1534858534 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69299" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=2003145483 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69300" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=2062496049 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69301" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1721434451 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69302" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=135263627 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69303" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1119707861 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69304" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1723728338 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69305" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=167722904 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69306" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1409302256 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69307" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=295446152 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69308" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=881622903 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69309" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=514831856 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69310" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1680830398 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69311" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1408070294 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69312" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1658233929 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69313" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=538282147 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69314" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1695640653 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69315" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=371680882 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69316" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=2028645960 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69317" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1215962178 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69318" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=267076745 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69319" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=381284792 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69320" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1989680577 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69321" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1124128627 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@69322" type="Area3D" parent="WorldEnvironment/tile_grid/grid_diningarea" unique_id=1422687927 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="reception_grid" type="Node3D" parent="WorldEnvironment/tile_grid" unique_id=1520690400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 8)
+
+[node name="Tile X28Z24" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1732992284 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89385" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1905181776 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89386" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1755775270 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89387" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1480360798 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89388" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1424459413 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89389" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=69075132 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89390" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=324490159 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89391" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1882342402 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89392" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1508349988 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89393" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=221961435 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89394" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1462923713 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89395" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1164394424 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89396" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=305266464 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89397" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=451533779 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89398" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1352102839 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89399" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1814836179 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89400" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=419261063 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89401" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1046893634 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89402" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=2064377469 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89403" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=967814452 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89404" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1639214297 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89405" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=74200957 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89406" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=78738886 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89407" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1866447507 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89408" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1041280831 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89409" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1796024843 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89410" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1463588479 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89411" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1580252961 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89412" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1022728975 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89413" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1983466984 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89414" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=250710075 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89415" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=14458323 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89416" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=188966132 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89417" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=480848966 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89418" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=387223194 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89419" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1362937187 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89420" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1260294709 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89421" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=69473461 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89422" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=628650733 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89423" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=718845172 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89424" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1637335809 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89425" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=2101481992 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89426" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=614420285 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89427" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1604986931 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89428" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1182227440 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89429" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=179335837 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89430" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1498205465 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89431" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=268630184 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[node name="@Area3D@89432" type="Area3D" parent="WorldEnvironment/tile_grid/reception_grid" unique_id=1988417904 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_oij1o")
+
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/Tile X68Z8" to="WorldEnvironment/tile_grid/groundfloor_hall/Tile X68Z8" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/Tile X68Z8" to="WorldEnvironment/tile_grid/groundfloor_hall/Tile X68Z8" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60378" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60378" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60378" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60378" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60379" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60379" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60379" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60379" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60380" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60380" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60380" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60380" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60381" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60381" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60381" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60381" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60382" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60382" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60382" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60382" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60383" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60383" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60383" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60383" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60384" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60384" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60384" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60384" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60385" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60385" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60385" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60385" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60386" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60386" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60386" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60386" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60387" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60387" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60387" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60387" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60388" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60388" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60388" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60388" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60389" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60389" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60389" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60389" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60390" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60390" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60390" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60390" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60391" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60391" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60391" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60391" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60392" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60392" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60392" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60392" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60393" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60393" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60393" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60393" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60394" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60394" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60394" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60394" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60395" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60395" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60395" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60395" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60396" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60396" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60396" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60396" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60397" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60397" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60397" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60397" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60398" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60398" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60398" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60398" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60399" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60399" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60399" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60399" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60400" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60400" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60400" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60400" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60401" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60401" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60401" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60401" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60402" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60402" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60402" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60402" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60403" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60403" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60403" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60403" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60404" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60404" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60404" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60404" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60405" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60405" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60405" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60405" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60406" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60406" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60406" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60406" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60407" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60407" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60407" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60407" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60408" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60408" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60408" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60408" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60409" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60409" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60409" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60409" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60410" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60410" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60410" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60410" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60411" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60411" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60411" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60411" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60412" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60412" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60412" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60412" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60413" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60413" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60413" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60413" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60414" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60414" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60414" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60414" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60415" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60415" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60415" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60415" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60416" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60416" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60416" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60416" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60417" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60417" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60417" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60417" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60418" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60418" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60418" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60418" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60419" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60419" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60419" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60419" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60420" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60420" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60420" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60420" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60421" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60421" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60421" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60421" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60422" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60422" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60422" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60422" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60423" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60423" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60423" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60423" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60424" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60424" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60424" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60424" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60425" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60425" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60425" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60425" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60426" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60426" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60426" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60426" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60427" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60427" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60427" to="WorldEnvironment/tile_grid/groundfloor_hall/@Area3D@60427" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/Tile X28Z28" to="WorldEnvironment/tile_grid/grid_diningarea/Tile X28Z28" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/Tile X28Z28" to="WorldEnvironment/tile_grid/grid_diningarea/Tile X28Z28" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69268" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69268" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69268" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69268" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69269" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69269" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69269" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69269" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69270" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69270" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69270" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69270" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69271" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69271" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69271" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69271" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69272" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69272" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69272" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69272" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69273" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69273" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69273" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69273" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69274" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69274" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69274" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69274" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69275" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69275" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69275" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69275" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69276" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69276" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69276" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69276" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69277" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69277" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69277" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69277" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69278" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69278" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69278" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69278" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69279" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69279" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69279" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69279" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69280" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69280" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69280" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69280" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69281" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69281" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69281" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69281" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69282" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69282" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69282" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69282" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69283" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69283" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69283" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69283" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69284" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69284" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69284" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69284" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69285" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69285" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69285" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69285" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69286" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69286" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69286" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69286" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69287" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69287" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69287" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69287" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69288" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69288" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69288" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69288" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69289" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69289" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69289" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69289" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69290" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69290" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69290" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69290" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69291" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69291" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69291" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69291" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69292" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69292" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69292" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69292" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69293" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69293" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69293" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69293" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69294" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69294" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69294" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69294" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69295" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69295" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69295" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69295" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69296" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69296" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69296" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69296" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69297" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69297" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69297" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69297" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69298" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69298" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69298" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69298" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69299" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69299" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69299" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69299" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69300" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69300" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69300" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69300" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69301" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69301" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69301" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69301" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69302" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69302" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69302" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69302" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69303" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69303" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69303" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69303" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69304" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69304" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69304" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69304" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69305" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69305" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69305" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69305" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69306" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69306" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69306" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69306" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69307" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69307" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69307" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69307" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69308" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69308" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69308" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69308" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69309" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69309" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69309" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69309" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69310" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69310" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69310" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69310" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69311" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69311" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69311" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69311" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69312" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69312" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69312" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69312" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69313" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69313" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69313" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69313" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69314" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69314" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69314" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69314" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69315" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69315" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69315" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69315" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69316" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69316" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69316" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69316" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69317" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69317" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69317" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69317" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69318" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69318" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69318" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69318" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69319" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69319" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69319" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69319" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69320" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69320" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69320" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69320" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69321" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69321" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69321" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69321" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69322" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69322" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69322" to="WorldEnvironment/tile_grid/grid_diningarea/@Area3D@69322" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/Tile X28Z24" to="WorldEnvironment/tile_grid/reception_grid/Tile X28Z24" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/Tile X28Z24" to="WorldEnvironment/tile_grid/reception_grid/Tile X28Z24" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89385" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89385" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89385" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89385" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89386" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89386" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89386" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89386" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89387" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89387" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89387" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89387" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89388" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89388" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89388" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89388" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89389" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89389" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89389" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89389" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89390" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89390" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89390" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89390" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89391" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89391" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89391" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89391" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89392" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89392" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89392" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89392" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89393" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89393" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89393" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89393" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89394" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89394" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89394" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89394" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89395" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89395" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89395" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89395" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89396" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89396" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89396" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89396" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89397" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89397" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89397" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89397" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89398" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89398" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89398" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89398" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89399" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89399" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89399" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89399" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89400" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89400" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89400" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89400" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89401" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89401" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89401" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89401" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89402" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89402" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89402" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89402" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89403" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89403" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89403" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89403" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89404" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89404" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89404" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89404" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89405" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89405" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89405" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89405" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89406" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89406" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89406" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89406" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89407" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89407" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89407" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89407" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89408" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89408" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89408" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89408" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89409" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89409" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89409" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89409" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89410" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89410" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89410" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89410" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89411" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89411" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89411" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89411" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89412" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89412" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89412" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89412" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89413" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89413" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89413" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89413" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89414" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89414" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89414" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89414" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89415" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89415" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89415" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89415" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89416" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89416" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89416" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89416" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89417" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89417" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89417" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89417" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89418" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89418" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89418" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89418" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89419" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89419" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89419" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89419" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89420" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89420" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89420" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89420" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89421" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89421" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89421" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89421" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89422" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89422" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89422" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89422" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89423" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89423" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89423" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89423" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89424" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89424" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89424" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89424" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89425" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89425" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89425" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89425" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89426" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89426" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89426" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89426" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89427" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89427" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89427" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89427" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89428" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89428" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89428" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89428" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89429" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89429" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89429" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89429" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89430" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89430" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89430" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89430" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89431" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89431" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89431" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89431" method="_on_body_exited"]
+[connection signal="body_entered" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89432" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89432" method="_on_body_entered"]
+[connection signal="body_exited" from="WorldEnvironment/tile_grid/reception_grid/@Area3D@89432" to="WorldEnvironment/tile_grid/reception_grid/@Area3D@89432" method="_on_body_exited"]
+
+[editable path="WorldEnvironment/map_ChateauxCamlann_workingfile"]
+[editable path="WorldEnvironment/TileGridGenerator"]

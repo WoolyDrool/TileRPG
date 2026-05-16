@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://bj1a7gl2uctao"]
+
+[ext_resource type="PackedScene" uid="uid://dymoaf4fhfvr7" path="res://content/maps/drafting_map/drafting_map.tscn" id="1_mjcjk"]
+[ext_resource type="Material" uid="uid://cun5aepcu7xrv" path="res://shaders/dither_shader_material.tres" id="2_8jbh8"]
+[ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="3_8sf1g"]
+[ext_resource type="PackedScene" uid="uid://b5ishl1x04ti5" path="res://ui/global_ui.tscn" id="4_c8cqg"]
+[ext_resource type="Script" uid="uid://cs58lipjxi85e" path="res://ui/global_ui.gd" id="5_r1sfh"]
+[ext_resource type="AudioStream" uid="uid://dhpn0vn3makv2" path="res://sound/music/music_OST test.mp3" id="6_21s7y"]
+[ext_resource type="Texture2D" uid="uid://bvkv1utkoqfts" path="res://content/sprites/placeholders/Placeholder_Spirit_NOT_MY_OC.png" id="7_bhvht"]
+[ext_resource type="Texture2D" uid="uid://djq7piso0pbn5" path="res://content/sprites/placeholders/Placeholder_Zathu.png" id="8_yooro"]
+[ext_resource type="Script" uid="uid://bshvjc00ycfjl" path="res://app/input_manager.gd" id="9_u60vq"]
+[ext_resource type="Resource" uid="uid://dm21mlqiyc8pj" path="res://player/input mappings/global/switch_to_gamepad.tres" id="10_h1rds"]
+[ext_resource type="Resource" uid="uid://fs7cixgaxcv4" path="res://player/input mappings/global/global_gamepad.tres" id="11_2likf"]
+[ext_resource type="Resource" uid="uid://cwhn2n0d6600x" path="res://player/input mappings/movement/movement_gamepad.tres" id="12_pqdm3"]
+[ext_resource type="Resource" uid="uid://bixb6iq53exhl" path="res://player/input mappings/ui/ui_gamepad.tres" id="13_pyjq0"]
+[ext_resource type="Resource" uid="uid://buy5ivywlqtay" path="res://player/input mappings/global/switch_to_kbm.tres" id="14_hucmu"]
+[ext_resource type="Resource" uid="uid://dlysjhr7w6pr" path="res://player/input mappings/global/global_kbm.tres" id="15_hh7ij"]
+[ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_kc86d"]
+[ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_8payr"]
+
+[node name="Game" type="Node" unique_id=1808958490]
+
+[node name="Transitions" type="CanvasLayer" parent="." unique_id=1402470627]
+
+[node name="Drafting_Map" parent="." unique_id=566139984 instance=ExtResource("1_mjcjk")]
+
+[node name="DitherShader" type="SubViewportContainer" parent="." unique_id=123320664]
+material = ExtResource("2_8jbh8")
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 274.0
+offset_top = -506.0
+offset_right = 1377.0
+offset_bottom = 323.0
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="DitherShader" unique_id=216484173]
+handle_input_locally = false
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+size = Vector2i(1103, 829)
+render_target_update_mode = 4
+
+[node name="PlayerCharacter" parent="DitherShader/SubViewport" unique_id=1681947254 instance=ExtResource("3_8sf1g")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0.111169815, -1.90735e-06, -2.0244026)
+turn_speed = 0.15
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=366516759]
+
+[node name="GlobalUI" parent="UI" unique_id=276288661 instance=ExtResource("4_c8cqg")]
+mouse_filter = 2
+script = ExtResource("5_r1sfh")
+
+[node name="GlobalAudio" type="Node" parent="." unique_id=332572738]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="GlobalAudio" unique_id=1885079773]
+stream = ExtResource("6_21s7y")
+volume_db = -15.0
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1851928710]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -36, 2, -4.5782795)
+billboard = 1
+texture = ExtResource("7_bhvht")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=21567885]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -13.871601, 2, 15.818937)
+billboard = 1
+texture = ExtResource("8_yooro")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1699129836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, 24)
+
+[node name="InputManager" type="Node" parent="." unique_id=216562538]
+script = ExtResource("9_u60vq")
+switch_to_gamepad = ExtResource("10_h1rds")
+global_gamepad = ExtResource("11_2likf")
+move_mode_gamepad = ExtResource("12_pqdm3")
+ui_mode_gamepad = ExtResource("13_pyjq0")
+switch_to_kbm = ExtResource("14_hucmu")
+global_kbm = ExtResource("15_hh7ij")
+move_mode_kbm = ExtResource("16_kc86d")
+ui_mode_kbm = ExtResource("17_8payr")
+metadata/_custom_type_script = "uid://bshvjc00ycfjl"
+
+[editable path="DitherShader/SubViewport/PlayerCharacter"]
