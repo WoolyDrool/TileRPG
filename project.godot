@@ -32,6 +32,7 @@ GUIDE="*uid://daex7o8hw0efa"
 [dialogic]
 
 directories/dch_directory={
+"Viktor": "res://content/dialogic/characters/Viktor.dch",
 "arthur": "res://content/dialogic/characters/arthur.dch",
 "brunor": "res://content/dialogic/characters/brunor.dch",
 "galahad": "res://content/dialogic/characters/galahad.dch",
@@ -43,8 +44,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
-"gawainSolo": "res://content/dialogic/timelines/gawainSolo.dtl",
-"testing": "res://content/dialogic/timelines/testing/testing.dtl"
+"gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
+"gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
+"glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
+"introSegment": "res://content/dialogic/timelines/introSegment.dtl",
+"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",
@@ -52,7 +56,7 @@ layout/style_directory={
 }
 layout/style_list=["res://content/dialogic/ui/tilerpg_dialogic_style.tres"]
 layout/default_style="res://content/dialogic/ui/tilerpg_dialogic_style.tres"
-glossary/default_case_sensitive=true
+glossary/default_case_sensitive=false
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -87,8 +91,17 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={}
-glossary/glossary_files=["uid://ql82xcoxcnyg"]
+variables={
+"convo_progress": {
+"gawain": {
+"tutorialSeen": false
+},
+"merlin": {
+"merlinSolved": false
+}
+}
+}
+glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d"]
 
 [display]
 

@@ -1,0 +1,31 @@
+gawain: Percy! Didn't think I'd be seeing you again any time soon, or, well, ever again, really. You been holding out alright out there? Having your own little adventures? You'll have to tell me all about it; barely anything new happens here.
+- (Catch up later.)
+	gawain: I'm gonna hold you to that, friend. What's brought you here, then?
+- (It's nothing interesting.)
+	gawain: Hey, don't say that, friend! Anything's interesting after you've been holed up here for ages and ages. Come on, tell me what's brought you back here?
+- (I'm here for a reason.)
+	gawain: Have you now? Spit it out then, my friend! What's brought you here?
+I've been seeing a kingfisher lately, everywhere I go. I have to imagine it was calling me back to Camlann. Don't you remember the Fisher King?
+gawain: I remember you swanning off to meet up with him, sure thing, but nothing really came of it, did it?
+I broke my sword and failed to get the grail, Gawain.
+gawain: Oh.
+gawain: Right.
+gawain: Well, who pays attention to the failures? All's well that ends well, I say, and Galahad got the grail in the end anyway.
+Yes, he did.
+gawain: You think that kingfisher was a sign to come back here then. What for?
+- (Unfinished business)
+	gawain: Unfinished business? That's probably a good guess, actually. Lord knows we all have some of that here.
+- (Who knows?)
+	gawain: Merlin, maybe. Seems like he always knows what's supposed to come next, though ever since we've gotten stuck here, he's been a bit preoccupied...
+gawain: Might be a good idea for you to scurry around and catch up with everyone, just in general. If it's a quest you've been given, then helping us will probably help you with whatever it is you're here to do. You still carry your little book everywhere with you, don't you?\
+Mind if I give you a few tips?
+- (View tutorial.)
+	gawain: You may find it useful to note down things which people say, so that you may bring them up in later conversations.
+	gawain: I would advise you to limit such notes to a length of three. It is a pleasant, holy number, but it would also be in poor taste to record every word someone said to you.
+	gawain: Possessions are quite often important to people and meaningless without context. Such is the same as their feelings towards others. In absence of the subject, these feelings may be misconstrued as mere traits of the original speaker.
+	gawain: People often talk about things in a roundabout way, so you may need to talk to folks multiple times to get the whole picture. Pay special attention to anything they seem to think bears repeating.
+	gawain: And, before you go, just know...
+- (Skip tutorial)
+	gawain: Don't need me yapping about what to do? Fine then. Off you trot. Just know...
+gawain: I have always believed in you, Ser Percivel. Here and now, despite this changed world, that has remained the same.
+set {convo_progress.gawain.tutorialSeen} = true
