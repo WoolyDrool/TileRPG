@@ -112,7 +112,7 @@ input_mappings = Array[ExtResource("3_wrp07")]([SubResource("Resource_de2rc")])
 
 [sub_resource type="Resource" id="Resource_c8rax"]
 script = ExtResource("4_pw2qh")
-key = 4194305
+key = 71
 
 [sub_resource type="Resource" id="Resource_w4gxb"]
 script = ExtResource("7_yr5a8")
