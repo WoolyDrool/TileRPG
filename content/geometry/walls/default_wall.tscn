@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://erbpgyfnc06i"]
+
+[ext_resource type="Material" uid="uid://ciwu7lb1jmjq5" path="res://content/rooms/room tiles/test/mat_tile_wall.tres" id="1_gu63w"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_iljgw"]
+lightmap_size_hint = Vector2i(22, 22)
+size = Vector2(4, 4)
+
+[sub_resource type="QuadMesh" id="QuadMesh_gu63w"]
+lightmap_size_hint = Vector2i(22, 22)
+flip_faces = true
+size = Vector2(4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uh40l"]
+size = Vector3(4, 4, 1)
+
+[node name="Wall" type="StaticBody3D" unique_id=1334455553]
+collision_layer = 4
+
+[node name="Front" type="MeshInstance3D" parent="." unique_id=77310845]
+transform = Transform3D(-1, 4.3711395e-08, 8.7422784e-08, -4.3711395e-08, -1, 4.37114e-08, 8.742279e-08, 4.3711395e-08, 1, 8.742279e-08, -1.1920929e-07, 2.6226837e-07)
+material_override = ExtResource("1_gu63w")
+mesh = SubResource("QuadMesh_iljgw")
+
+[node name="Back" type="MeshInstance3D" parent="." unique_id=1127236384]
+transform = Transform3D(-1, 4.3711395e-08, 8.7422784e-08, -4.3711395e-08, -1, 4.37114e-08, 8.742279e-08, 4.3711395e-08, 1, 8.742279e-08, -1.1920929e-07, 2.6226837e-07)
+material_override = ExtResource("1_gu63w")
+mesh = SubResource("QuadMesh_gu63w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=507932291]
+shape = SubResource("BoxShape3D_uh40l")
