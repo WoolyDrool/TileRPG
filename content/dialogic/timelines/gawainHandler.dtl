@@ -34,6 +34,15 @@ label discussionTree
 	- (Yes.)
 	- (No.)
 		jump reviewTree
+- (I'm a bit lost.)
+	if {questProgress.sequenceRepair.sequenceStatus} == "broken":
+		if {convo_progress.bedivere.bedivereGreeted} == false:
+			gawain: Sequence still looks broken. You talked to Bedivere about fixing it yet? I haven't seen him around here, so I bet he's still working on whatever went wrong in the executive suites. That's on the top floor.
+		else:
+			Can you tell me what Bedivere was working on?
+			gawain: Huh? Sure, I'll check my little logbook. Well, I say book. It's all on the computer now. Saves paper, apparently, but our paper just sorta... appears so I'm not sure if it even comes from anywhere. Anyway, looks like he was called up for [insert problem here.]
+	if {convo_progress.merlin.merlinGreeted} == false:
+		gawain: Have you talked to Merlin yet? He's good with all that magic stuff. Maybe he's got some idea what that kingfisher of yours means.
 gawain: So, that everything, Percy, or do you got something else on your mind?
 - (That's it, thanks.)
 	gawain: See you around, then!

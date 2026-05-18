@@ -1,0 +1,3 @@
+if {convo_progress.lucan.lucanGreeted} == false:
+	jump lucanIntro/
+lucan: <Empty Text Event>

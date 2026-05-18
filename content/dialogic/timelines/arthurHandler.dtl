@@ -1,0 +1,3 @@
+if {convo_progress.arthur.arthurSolved} == false:
+elif {convo_progress.arthur.arthurGreeted} == false:
+	jump arthurIntro/

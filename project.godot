@@ -28,7 +28,6 @@ PhantomCameraManager="*uid://duq6jhf6unyis"
 GlobalUI="*res://ui/global_ui.gd"
 Dialogic="*uid://ds2q0uclmolvu"
 GUIDE="*uid://daex7o8hw0efa"
-SaveManager="*uid://wi0ywrkgjx7f"
 
 [dialogic]
 
@@ -39,18 +38,24 @@ directories/dch_directory={
 "galahad": "res://content/dialogic/characters/galahad.dch",
 "gawain": "res://content/dialogic/characters/gawain.dch",
 "lancelot": "res://content/dialogic/characters/lancelot.dch",
+"lucan": "res://content/dialogic/characters/lucan.dch",
 "merlin": "res://content/dialogic/characters/merlin.dch",
 "merrok": "res://content/dialogic/characters/merrok.dch",
 "nimue": "res://content/dialogic/characters/nimue.dch"
 }
 directories/dtl_directory={
 "BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
+"arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
+"arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
-"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl"
+"lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
+"lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
+"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl",
+"merlinIntro": "res://content/dialogic/timelines/merlinIntro.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",
@@ -95,17 +100,32 @@ audio/channel_defaults={
 }
 variables={
 "convo_progress": {
+"arthur": {
+"arthurGreeted": false,
+"arthurSolved": false
+},
+"bedivere": {
+"bedivereGreeted": false
+},
 "gawain": {
 "tutorialSeen": false
 },
+"lucan": {
+"lucanGreeted": false,
+"lucanSolved": false
+},
 "merlin": {
+"merlinGreeted": false,
 "merlinSolved": false
+}
+},
+"questProgress": {
+"sequenceRepair": {
+"sequenceStatus": "broken"
 }
 }
 }
 glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d"]
-text/input_action="dialogic_default_action"
-glossary/default_color=Color(1, 1, 1, 1)
 
 [display]
 
@@ -119,7 +139,7 @@ project/assembly_name="tile-rpg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/guide/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/guide/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/sticky_scribe/plugin.cfg")
 
 [file_customization]
 

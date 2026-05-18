@@ -1,2 +1,3 @@
-if {convo_progress.merlin.merlinSolved} == false:
-merlin: Ser Percivel, it's been a while. I had a feeling you would return.
+if {convo_progress.merlin.merlinGreeted} == false:
+	jump merlinIntro/
+merlin: Welcome back, Ser Percivel. Have you learned anything of note?
