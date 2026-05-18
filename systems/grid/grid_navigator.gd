@@ -14,7 +14,7 @@ extends Node3D
 
 @export var wallcheck_front : RayCast3D
 @export var wallcheck_back : RayCast3D
-@export var wall_in_ront : bool = false
+@export var wall_in_front : bool = false
 @export var wall_in_back : bool = false
 
 @export var foostep_sfx : AudioStreamPlayer3D
@@ -36,9 +36,9 @@ func rescan():
 		#print("GridNav Back: ", tile_behind)
 		
 	if wallcheck_front.is_colliding():
-		wall_in_ront = true
+		wall_in_front = true
 	else:
-		wall_in_ront = false
+		wall_in_front = false
 	
 	if wallcheck_back.is_colliding():
 		wall_in_back = true
@@ -51,7 +51,7 @@ func movement_tween(new_position : Vector3, parent : Node3D):
 		return
 	if !new_position:
 		return
-		
+	
 	var movement_tween = create_tween()
 	#print("GridNav: Moving to ", position)
 	movement_tween.tween_property(parent, "position", new_position, tween_speed)
