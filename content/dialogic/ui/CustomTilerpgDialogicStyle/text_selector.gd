@@ -31,12 +31,7 @@ func _process(delta: float) -> void:
 	if selecting:
 		handle_selector_caret_input_gamepad()
 		update_caret_sprite_position()
-		if confirm_select_action.is_triggered():
-			var test_to_try = shell_text_node.get_selected_text()
-			if get_dialogic_glossary_entry(test_to_try):
-				print("Congratulations! You Won!")
-			else:
-				print("No glossary found for that text")
+		scrub_dialogic_text()
 
 func handle_inputs():
 	if enter_selector_action.is_triggered():
@@ -72,11 +67,16 @@ func handle_selector_caret_input_gamepad():
 	
 func update_caret_sprite_position():
 	var current_caret_pos = shell_text_node.get_caret_draw_pos()
-	caret_sprite.position = current_caret_pos
+	var screen = get_global_transform_with_canvas().origin
+	caret_sprite.global_position = current_caret_pos - screen
 
 func scrub_dialogic_text():
-	#TODO: Get text from the caret selector
-	pass
+	if confirm_select_action.is_triggered():
+		var test_to_try = shell_text_node.get_selected_text()
+		if get_dialogic_glossary_entry(test_to_try):
+			print("Congratulations! You Won!")
+		else:
+			print("No glossary found for that text")
 
 func get_dialogic_glossary_entry(attempted_phrase : String) -> bool:
 	if Dialogic.Glossary.get_entry(attempted_phrase):
@@ -85,10 +85,10 @@ func get_dialogic_glossary_entry(attempted_phrase : String) -> bool:
 		return false
 	
 func exit_selector_mode():
-	selecting = false
 	SignalBus.change_input_mode_to_ui.emit()
 	print("TextSelector: Exited Selector Mode")
 	DialogicUtil.autoload().Inputs.custom_block_input(false)
+	selecting = false
 
 func _on_dialogic_node_dialog_text_finished_revealing_text() -> void:
 	current_text = dialogic_text_node.text
