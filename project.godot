@@ -38,17 +38,22 @@ directories/dch_directory={
 "galahad": "res://content/dialogic/characters/galahad.dch",
 "gawain": "res://content/dialogic/characters/gawain.dch",
 "lancelot": "res://content/dialogic/characters/lancelot.dch",
+"lucan": "res://content/dialogic/characters/lucan.dch",
 "merlin": "res://content/dialogic/characters/merlin.dch",
 "merrok": "res://content/dialogic/characters/merrok.dch",
 "nimue": "res://content/dialogic/characters/nimue.dch"
 }
 directories/dtl_directory={
 "BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
+"arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
-"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl"
+"lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
+"lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
+"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl",
+"merlinIntro": "res://content/dialogic/timelines/merlinIntro.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",
@@ -93,11 +98,27 @@ audio/channel_defaults={
 }
 variables={
 "convo_progress": {
+"arthur": {
+"arthurSolved": false
+},
+"bedivere": {
+"bedivereGreeted": false
+},
 "gawain": {
 "tutorialSeen": false
 },
+"lucan": {
+"lucanGreeted": false,
+"lucanSolved": false
+},
 "merlin": {
+"merlinGreeted": false,
 "merlinSolved": false
+}
+},
+"questProgress": {
+"sequenceRepair": {
+"sequenceStatus": "broken"
 }
 }
 }
