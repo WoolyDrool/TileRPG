@@ -7,6 +7,7 @@ script = ExtResource("1_gmd4w")
 entries = {
 "consumed with angst": {
 "case_sensitive": false,
+"enabled": true,
 "name": "consumed with angst"
 },
 "this changed world": {
