@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
 [ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="6_wsils"]
+[ext_resource type="Resource" uid="uid://ce2n21co4svr4" path="res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl" id="7_q8f5d"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
@@ -802,6 +803,7 @@ entity_name = "Entity 2"
 
 [node name="NPC Test" parent="." unique_id=1255377170 instance=ExtResource("6_l43fq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 2, 28)
+dialogic_timeline = ExtResource("7_q8f5d")
 
 [node name="32X4Z Grid" type="Node3D" parent="." unique_id=2130742709]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, -18)
