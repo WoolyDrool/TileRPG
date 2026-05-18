@@ -28,6 +28,11 @@ func enter_selector_mode():
 	selecting = true
 	print("TextSelector: Entered Selector Mode")
 	SignalBus.change_input_mode_to_ui_selector.emit()
+	
+	#NOTE: This is slightly arcane, but without getting into dialogics guts to make it work with GUIDE, 
+	# I think this will suffice to stop it reading inputs while selecting?
+	# I can ABSOLUTELY see it causing problems later on though so I guess pin this in memory
+	DialogicUtil.autoload().Inputs.block_input(999999)
 	#Dialogic.Glossary.get_entry()
 
 func handle_selector_cursor_input_gamepad():
@@ -47,6 +52,7 @@ func get_dialogic_glossary_entry(attempted_phrase : String, glossary_entry_name 
 func exit_selector_mode():
 	selecting = false
 	print("TextSelector: Exited Selector Mode")
+	DialogicUtil.autoload().Inputs.block_input(0)
 
 func _on_dialogic_node_dialog_text_finished_revealing_text() -> void:
 	current_text = dialogic_text_node.text
