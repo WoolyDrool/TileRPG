@@ -37,6 +37,7 @@ var auto_advance: DialogicAutoAdvance = null
 ## The [DialogicManualAdvance] object used.
 var manual_advance: DialogicManualAdvance = null
 
+var custom_block_flag : bool = false
 
 #region SUBSYSTEM METHODS
 ################################################################################
@@ -151,7 +152,10 @@ func handle_node_gui_input(event:InputEvent) -> void:
 
 ## Returns true if a previous call to [method block_input] is still active.
 func is_input_blocked() -> bool:
-	return input_block_timer.time_left > 0.0 and not auto_skip.enabled
+	if custom_block_flag:
+		return true
+	else:
+		return input_block_timer.time_left > 0.0 and not auto_skip.enabled
 
 
 ## Blocks input for the given time. Dialogic does this at certain moments automatically,
@@ -162,7 +166,11 @@ func block_input(time:=0.1) -> void:
 		input_block_timer.wait_time = max(time, input_block_timer.time_left)
 		input_block_timer.start()
 
-
+func custom_block_input(on : bool) -> void:
+	if on:
+		custom_block_flag = true
+	else:
+		custom_block_flag = false
 
 func _ready() -> void:
 	auto_skip = DialogicAutoSkip.new()
