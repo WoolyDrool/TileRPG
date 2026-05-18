@@ -48,6 +48,7 @@ directories/dtl_directory={
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
+"journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl"
 }
 layout/style_directory={
@@ -102,6 +103,8 @@ variables={
 }
 }
 glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d"]
+text/input_action="dialogic_default_action"
+glossary/default_color=Color(1, 1, 1, 1)
 
 [display]
 

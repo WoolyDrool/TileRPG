@@ -8,6 +8,12 @@
 [ext_resource type="Script" uid="uid://bak74s0kcr0ao" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_20v0l"]
 [ext_resource type="Script" uid="uid://5kgcim8dx82l" path="res://content/dialogic/ui/CustomTilerpgDialogicStyle/text_selector.gd" id="7_5bcu6"]
 [ext_resource type="Resource" uid="uid://d6axyn134xo5" path="res://player/input mappings/ui/actions/ui_enter_selection_mode.tres" id="8_l02rt"]
+[ext_resource type="Resource" uid="uid://dtwos528b31hx" path="res://player/input mappings/ui/selector mode/actions/ui_sm_exit_selector_mode.tres" id="9_hwwdg"]
+[ext_resource type="Resource" uid="uid://c0kp5w478hwnf" path="res://player/input mappings/ui/selector mode/actions/ui_sm_move_caret_left.tres" id="10_b7qfe"]
+[ext_resource type="Resource" uid="uid://bf5r3n2gnkmyo" path="res://player/input mappings/ui/selector mode/actions/ui_sm_move_caret_right.tres" id="11_o2g3n"]
+[ext_resource type="Resource" uid="uid://dwmcflo3e70oc" path="res://player/input mappings/ui/selector mode/actions/ui_sm_select.tres" id="12_56smc"]
+[ext_resource type="Texture2D" uid="uid://dt2gomgbgv10j" path="res://content/sprites/ui/ui_journal_selector_quill.png" id="13_b7qfe"]
+[ext_resource type="Resource" uid="uid://cp14jga863oij" path="res://player/input mappings/ui/selector mode/actions/ui_sm_confirm_selection.tres" id="13_o2g3n"]
 
 [sub_resource type="Theme" id="Theme_20v0l"]
 default_font = ExtResource("4_1swcf")
@@ -82,7 +88,7 @@ layout_mode = 2
 script = ExtResource("3_20v0l")
 metadata/_custom_type_script = "uid://bldt7xlfum7ov"
 
-[node name="Control" type="Control" parent="." unique_id=2097582536 node_paths=PackedStringArray("dialogic_text_node")]
+[node name="TextSelector" type="Control" parent="." unique_id=2097582536 node_paths=PackedStringArray("dialogic_text_node", "shell_text_node", "caret_sprite")]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -97,4 +103,58 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("7_5bcu6")
 dialogic_text_node = NodePath("../DialogicNode_DialogText")
+shell_text_node = NodePath("ShellDialogText")
+caret_sprite = NodePath("CaretSprite")
 enter_selector_action = ExtResource("8_l02rt")
+exit_selector_action = ExtResource("9_hwwdg")
+move_caret_left_action = ExtResource("10_b7qfe")
+move_caret_right_action = ExtResource("11_o2g3n")
+select_action = ExtResource("12_56smc")
+confirm_select_action = ExtResource("13_o2g3n")
+
+[node name="CaretSprite" type="TextureRect" parent="TextSelector" unique_id=365785440]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -55.414635
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(34, 49)
+texture = ExtResource("13_b7qfe")
+expand_mode = 1
+
+[node name="ShellDialogText" type="TextEdit" parent="TextSelector" unique_id=1022108009]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -685.0
+offset_top = 300.0
+offset_right = 416.0
+offset_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+focus_behavior_recursive = 1
+theme = SubResource("Theme_20v0l")
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+empty_selection_clipboard_enabled = false
+tab_input_mode = false
+virtual_keyboard_enabled = false
+caret_type = 1
+caret_blink = true
+caret_draw_when_editable_disabled = true
+caret_move_on_right_click = false
+caret_mid_grapheme = true

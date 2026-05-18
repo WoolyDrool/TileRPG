@@ -18,6 +18,7 @@
 [ext_resource type="Resource" uid="uid://dlysjhr7w6pr" path="res://player/input mappings/global/global_kbm.tres" id="15_xgiyr"]
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_4f8u2"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_crltq"]
+[ext_resource type="Resource" uid="uid://ryde3kxr538h" path="res://player/input mappings/ui/selector mode/ui_select_kbm.tres" id="19_bk3sl"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
@@ -84,6 +85,7 @@ switch_to_kbm = ExtResource("14_qeunm")
 global_kbm = ExtResource("15_xgiyr")
 move_mode_kbm = ExtResource("16_4f8u2")
 ui_mode_kbm = ExtResource("17_crltq")
+ui_mode_selector_keyboard = ExtResource("19_bk3sl")
 metadata/_custom_type_script = "uid://bshvjc00ycfjl"
 
 [editable path="DitherShader/SubViewport/PlayerCharacter"]
