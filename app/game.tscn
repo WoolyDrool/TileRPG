@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://cwhn2n0d6600x" path="res://player/input mappings/movement/movement_gamepad.tres" id="12_bk3sl"]
 [ext_resource type="Resource" uid="uid://bixb6iq53exhl" path="res://player/input mappings/ui/ui_gamepad.tres" id="13_oklfv"]
 [ext_resource type="Resource" uid="uid://buy5ivywlqtay" path="res://player/input mappings/global/switch_to_kbm.tres" id="14_qeunm"]
+[ext_resource type="Resource" uid="uid://b1brrg11nk8xg" path="res://player/input mappings/ui/selector mode/ui_select_gamepad.tres" id="14_wrr3n"]
 [ext_resource type="Resource" uid="uid://dlysjhr7w6pr" path="res://player/input mappings/global/global_kbm.tres" id="15_xgiyr"]
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_4f8u2"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_crltq"]
@@ -78,6 +79,7 @@ switch_to_gamepad = ExtResource("10_ea5kx")
 global_gamepad = ExtResource("11_wrr3n")
 move_mode_gamepad = ExtResource("12_bk3sl")
 ui_mode_gamepad = ExtResource("13_oklfv")
+ui_mode_selector_gamepad = ExtResource("14_wrr3n")
 switch_to_kbm = ExtResource("14_qeunm")
 global_kbm = ExtResource("15_xgiyr")
 move_mode_kbm = ExtResource("16_4f8u2")

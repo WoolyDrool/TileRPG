@@ -2,3 +2,4 @@ extends Node
 
 signal change_input_mode_to_gameplay
 signal change_input_mode_to_ui
+signal change_input_mode_to_ui_selector

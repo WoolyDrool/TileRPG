@@ -26,7 +26,8 @@ func _process(delta: float) -> void:
 	
 func enter_selector_mode():
 	selecting = true
-	
+	print("TextSelector: Entered Selector Mode")
+	SignalBus.change_input_mode_to_ui_selector.emit()
 	#Dialogic.Glossary.get_entry()
 
 func handle_selector_cursor_input_gamepad():
@@ -45,6 +46,7 @@ func get_dialogic_glossary_entry(attempted_phrase : String, glossary_entry_name 
 	
 func exit_selector_mode():
 	selecting = false
+	print("TextSelector: Exited Selector Mode")
 
 func _on_dialogic_node_dialog_text_finished_revealing_text() -> void:
 	current_text = dialogic_text_node.text

@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://drhfq6rmdeuri" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_xjro8"]
 [ext_resource type="FontFile" uid="uid://bevrsu3f4ya6u" path="res://ui/fonts/openDyslexicAltA/OpenDyslexicAlta-Regular.otf" id="4_1swcf"]
 [ext_resource type="Script" uid="uid://bak74s0kcr0ao" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_20v0l"]
+[ext_resource type="Script" uid="uid://5kgcim8dx82l" path="res://content/dialogic/ui/CustomTilerpgDialogicStyle/text_selector.gd" id="7_5bcu6"]
+[ext_resource type="Resource" uid="uid://d6axyn134xo5" path="res://player/input mappings/ui/actions/ui_enter_selection_mode.tres" id="8_l02rt"]
 
 [sub_resource type="Theme" id="Theme_20v0l"]
 default_font = ExtResource("4_1swcf")
@@ -79,3 +81,20 @@ metadata/_custom_type_script = "uid://bldt7xlfum7ov"
 layout_mode = 2
 script = ExtResource("3_20v0l")
 metadata/_custom_type_script = "uid://bldt7xlfum7ov"
+
+[node name="Control" type="Control" parent="." unique_id=2097582536 node_paths=PackedStringArray("dialogic_text_node")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_5bcu6")
+dialogic_text_node = NodePath("../DialogicNode_DialogText")
+enter_selector_action = ExtResource("8_l02rt")

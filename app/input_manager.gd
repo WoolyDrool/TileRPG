@@ -6,6 +6,7 @@ extends Node
 @export var global_gamepad : GUIDEMappingContext
 @export var move_mode_gamepad : GUIDEMappingContext
 @export var ui_mode_gamepad : GUIDEMappingContext
+@export var ui_mode_selector_gamepad : GUIDEMappingContext
 
 @export_category("KBM")
 @export var switch_to_kbm : GUIDEAction
@@ -13,7 +14,7 @@ extends Node
 @export var move_mode_kbm : GUIDEMappingContext
 @export var ui_mode_kbm : GUIDEMappingContext
 
-enum GAME_MODE {MOVE, UI}
+enum GAME_MODE {MOVE, UI, UI_SELECTOR}
 var game_mode : GAME_MODE = GAME_MODE.MOVE
 
 enum INPUT_MODE {KBM, GAMEPAD}
@@ -28,6 +29,7 @@ func connect_signals():
 	switch_to_kbm.triggered.connect(set_input_mode.bind(INPUT_MODE.KBM))
 	SignalBus.change_input_mode_to_gameplay.connect(set_gamemode.bind(GAME_MODE.MOVE))
 	SignalBus.change_input_mode_to_ui.connect(set_gamemode.bind(GAME_MODE.UI))
+	SignalBus.change_input_mode_to_ui_selector.connect(set_gamemode.bind(GAME_MODE.UI_SELECTOR))
 	
 func update_input():
 	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -53,6 +55,9 @@ func update_input():
 				GAME_MODE.UI:
 					GUIDE.enable_mapping_context(ui_mode_gamepad)
 					print("InputManager: Current Game Mode - UI")
+				GAME_MODE.UI_SELECTOR:
+					GUIDE.enable_mapping_context(ui_mode_selector_gamepad)
+					print("InputManager: Current Game Mode - UI Selector")
 
 func set_gamemode(_game_mode : GAME_MODE):
 	game_mode = _game_mode
