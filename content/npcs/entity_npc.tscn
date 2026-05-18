@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bimooljovnhn3"]
+
+[ext_resource type="Texture2D" uid="uid://duoph048cw6ww" path="res://content/sprites/editor_icons/spr_ed_default_npc.png" id="1_x78f6"]
+[ext_resource type="Script" uid="uid://cmlnfwluunft8" path="res://systems/entities/entity_npc.gd" id="2_4wlt4"]
+[ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="3_e4s38"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ggs4i"]
+height = 8.5
+radius = 2.4
+
+[node name="NPCEntity" type="Sprite3D" unique_id=651949496]
+billboard = 1
+texture = ExtResource("1_x78f6")
+script = ExtResource("2_4wlt4")
+
+[node name="ScannableEntity" parent="." unique_id=137746738 instance=ExtResource("3_e4s38")]
+entity_name = "Our Guy"
+entity_interaction_method = "start_conversation"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1275016835]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=211762029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.7683716e-07, 0)
+shape = SubResource("CylinderShape3D_ggs4i")

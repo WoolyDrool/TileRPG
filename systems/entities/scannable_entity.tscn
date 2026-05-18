@@ -20,5 +20,6 @@ metadata/_custom_type_script = "uid://yg85av1jgtxr"
 shape = SubResource("BoxShape3D_s035k")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=321509298]
+visible = false
 billboard = 1
 texture = SubResource("GradientTexture2D_s035k")
