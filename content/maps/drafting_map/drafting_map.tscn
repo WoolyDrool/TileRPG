@@ -16,48 +16,60 @@ metadata/_custom_type_script = "uid://bkih48cfsj1cv"
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=916951810]
 environment = ExtResource("2_583s2")
 
-[node name="map_ChateauxCamlann_workingfile" parent="WorldEnvironment" unique_id=135318220 instance=ExtResource("3_4gcwt")]
+[node name="map_ChateauxCamlann_workingfile" parent="WorldEnvironment" unique_id=1165661378 instance=ExtResource("3_4gcwt")]
 
-[node name="final_dungeon" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="0" unique_id=281765648]
+[node name="final_dungeon" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="0" unique_id=525519751]
 visible = false
 
-[node name="Art Wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="2" unique_id=1726320947]
+[node name="Art Wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="2" unique_id=1245018573]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Eatery_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="11" unique_id=88381350]
+[node name="Eatery_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="11" unique_id=569830891]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Eatery_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="12" unique_id=2089065487]
+[node name="Eatery_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="12" unique_id=501113887]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Entry_Floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="13" unique_id=604742415]
+[node name="Entry_Floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="13" unique_id=1491990083]
 material_override = ExtResource("5_5txb8")
 
-[node name="Lobby_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="21" unique_id=1887886525]
+[node name="gawain" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="14" unique_id=1084220148]
+visible = false
+
+[node name="Lobby_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="20" unique_id=1982771705]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="Reception_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="36" unique_id=2092222837]
+[node name="Merlin" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="23" unique_id=1501518020]
+visible = false
+
+[node name="merlin_crate" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="24" unique_id=1318526903]
+visible = false
+
+[node name="Reception_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="35" unique_id=1461736201]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Reception_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(135318220, 499437626) index="37" unique_id=1682134422]
+[node name="Reception_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1165661378, 1179007291) index="36" unique_id=1895133183]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="sorting_2ndFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="3" unique_id=357974264]
+[node name="sorting_2ndFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="3" unique_id=205091456]
 visible = false
 
-[node name="sorting_3rdFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="4" unique_id=1224247255]
+[node name="sorting_3rdFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="4" unique_id=1203931546]
 visible = false
 
-[node name="sorting_4thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="5" unique_id=1782312248]
+[node name="sorting_4thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="5" unique_id=1637386533]
 visible = false
 
-[node name="sorting_5thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="6" unique_id=305323238]
+[node name="sorting_5thFloor_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="6" unique_id=1198125780]
 visible = false
 
-[node name="Stairs_W_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(135318220, 1120539784) index="1" unique_id=111967575]
+[node name="Stairs_W_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(1165661378, 1521958481) index="1" unique_id=473713021]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="props_extra_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="13" unique_id=301028313]
+[node name="Stairs_W_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_W" parent_id_path=PackedInt32Array(1165661378, 1726722534) index="1" unique_id=2014091088]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="props_extra_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="13" unique_id=1399257087]
 visible = false
 
 [node name="TileGridGenerator" parent="WorldEnvironment" unique_id=2060964577 instance=ExtResource("3_cmg8b")]
@@ -120,9 +132,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
 [node name="@Area3D@60392" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=911968674 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
 
-[node name="@Area3D@60393" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=1190171968 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
-
 [node name="@Area3D@60394" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=863291287 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 4)
 
@@ -170,9 +179,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
 
 [node name="@Area3D@60409" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=1353209983 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
-
-[node name="@Area3D@60410" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=355284186 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
 
 [node name="@Area3D@60411" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=1586634943 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 0)
@@ -222,9 +228,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
 [node name="@Area3D@60426" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=685092577 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
 
-[node name="@Area3D@60427" parent="WorldEnvironment/tile_grid_ground/groundfloor_hall" unique_id=1373356616 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-
 [node name="grid_diningarea" type="Node3D" parent="WorldEnvironment/tile_grid_ground" unique_id=1185906798]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -36)
 
@@ -246,9 +249,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 28)
 [node name="@Area3D@69272" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1345137075 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 28)
 
-[node name="@Area3D@69273" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1361804281 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 28)
-
 [node name="@Area3D@69274" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1944549338 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 24)
 
@@ -266,9 +266,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 24)
 
 [node name="@Area3D@69279" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=111345126 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 24)
-
-[node name="@Area3D@69280" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1178376783 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
 
 [node name="@Area3D@69281" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1886722451 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 20)
@@ -288,9 +285,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 20)
 [node name="@Area3D@69286" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1775018303 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20)
 
-[node name="@Area3D@69287" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=105300847 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
-
 [node name="@Area3D@69288" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1468350640 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 16)
 
@@ -308,9 +302,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 16)
 
 [node name="@Area3D@69293" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=693731628 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 16)
-
-[node name="@Area3D@69294" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=38369902 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
 
 [node name="@Area3D@69295" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1100963887 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
@@ -330,9 +321,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 12)
 [node name="@Area3D@69300" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=2062496049 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 12)
 
-[node name="@Area3D@69301" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1721434451 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
-
 [node name="@Area3D@69302" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=135263627 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
 
@@ -350,9 +338,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
 
 [node name="@Area3D@69307" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=295446152 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
-
-[node name="@Area3D@69308" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=881622903 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
 
 [node name="@Area3D@69309" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=514831856 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
@@ -372,9 +357,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
 [node name="@Area3D@69314" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1695640653 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
 
-[node name="@Area3D@69315" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=371680882 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
-
 [node name="@Area3D@69316" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=2028645960 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
 
@@ -392,9 +374,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
 
 [node name="@Area3D@69321" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1124128627 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
-
-[node name="@Area3D@69322" parent="WorldEnvironment/tile_grid_ground/grid_diningarea" unique_id=1422687927 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 
 [node name="reception_grid" type="Node3D" parent="WorldEnvironment/tile_grid_ground" unique_id=1520690400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 8)
@@ -417,9 +396,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 24)
 [node name="@Area3D@89389" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=69075132 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 24)
 
-[node name="@Area3D@89390" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=324490159 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 24)
-
 [node name="@Area3D@89391" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1882342402 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 20)
 
@@ -437,9 +413,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 20)
 
 [node name="@Area3D@89396" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=305266464 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 20)
-
-[node name="@Area3D@89397" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=451533779 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 20)
 
 [node name="@Area3D@89398" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1352102839 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 16)
@@ -459,9 +432,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 16)
 [node name="@Area3D@89403" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=967814452 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 16)
 
-[node name="@Area3D@89404" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1639214297 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 16)
-
 [node name="@Area3D@89405" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=74200957 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
 
@@ -479,9 +449,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 12)
 
 [node name="@Area3D@89410" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1463588479 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 12)
-
-[node name="@Area3D@89411" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1580252961 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 12)
 
 [node name="@Area3D@89412" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1022728975 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 8)
@@ -501,9 +468,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 8)
 [node name="@Area3D@89417" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=480848966 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 8)
 
-[node name="@Area3D@89418" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=387223194 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
-
 [node name="@Area3D@89419" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1362937187 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 4)
 
@@ -522,9 +486,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
 [node name="@Area3D@89424" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1637335809 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
 
-[node name="@Area3D@89425" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=2101481992 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 4)
-
 [node name="@Area3D@89426" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=614420285 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 0)
 
@@ -542,9 +503,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
 
 [node name="@Area3D@89431" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=268630184 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
-
-[node name="@Area3D@89432" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=1988417904 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 
 [node name="4X4Z Grid" type="Node3D" parent="WorldEnvironment/tile_grid_ground/reception_grid" unique_id=2001539645]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 8)

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clnq1wbnpmyj3"
-path.s3tc="res://.godot/imported/Gawain Placeholder.jpg-4080b471ea8cd5ca8ab47fc9580500e0.s3tc.ctex"
+uid="uid://dbjsjphd0aola"
+path.s3tc="res://.godot/imported/spr_gawain_placeholder.png-04a9b5972d0cf25e3fccb0a36be8bdfa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://content/sprites/placeholders/Gawain Placeholder.jpg"
-dest_files=["res://.godot/imported/Gawain Placeholder.jpg-4080b471ea8cd5ca8ab47fc9580500e0.s3tc.ctex"]
+source_file="res://content/npcs/placeholders/spr_gawain_placeholder.png"
+dest_files=["res://.godot/imported/spr_gawain_placeholder.png-04a9b5972d0cf25e3fccb0a36be8bdfa.s3tc.ctex"]
 
 [params]
 

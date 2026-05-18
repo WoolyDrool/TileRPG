@@ -8,6 +8,7 @@
 
 [node name="TileRPGDialogue" type="CanvasLayer" unique_id=1279563650]
 script = ExtResource("1_ifsho")
+global_font_color = Color(1, 1, 1, 1)
 
 [node name="UI Guide" type="TextureRect" parent="." unique_id=477755962]
 offset_right = 40.0
