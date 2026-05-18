@@ -46,10 +46,12 @@ directories/dch_directory={
 directories/dtl_directory={
 "BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
+"arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
+"journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
 "lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
 "merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl",
@@ -99,6 +101,7 @@ audio/channel_defaults={
 variables={
 "convo_progress": {
 "arthur": {
+"arthurGreeted": false,
 "arthurSolved": false
 },
 "bedivere": {

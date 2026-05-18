@@ -1,2 +1,3 @@
 if {convo_progress.arthur.arthurSolved} == false:
-arthur: Ser Percivel, it's been so long.
+elif {convo_progress.arthur.arthurGreeted} == false:
+	jump arthurIntro/
