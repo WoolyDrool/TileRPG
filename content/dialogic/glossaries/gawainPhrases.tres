@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://i8wmmt227w8d"]
+
+[ext_resource type="Script" uid="uid://80elcodyqohb" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_gmd4w"]
+
+[resource]
+script = ExtResource("1_gmd4w")
+entries = {
+"consumed with angst": {
+"case_sensitive": false,
+"name": "consumed with angst"
+},
+"this changed world": {
+"case_sensitive": false,
+"name": "this changed world"
+}
+}

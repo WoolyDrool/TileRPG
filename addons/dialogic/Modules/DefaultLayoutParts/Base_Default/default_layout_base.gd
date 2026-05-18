@@ -8,9 +8,9 @@ extends DialogicLayoutBase
 
 @export_subgroup("Global")
 @export var global_bg_color: Color = Color(0, 0, 0, 0.9)
-@export var global_font_color: Color = Color("white")
+@export var global_font_color: Color = Color("red")
 @export_file('*.ttf', '*.tres') var global_font: String = ""
-@export var global_font_size: int = 18
+@export var global_font_size: int = 30
 
 
 func _apply_export_overrides() -> void:

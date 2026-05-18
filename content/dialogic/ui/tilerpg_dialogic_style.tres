@@ -7,6 +7,9 @@
 [sub_resource type="Resource" id="Resource_mqljy"]
 script = ExtResource("1_4upkg")
 scene = ExtResource("1_mqljy")
+overrides = {
+"global_font_color": "Color(1, 0, 0, 1)"
+}
 
 [resource]
 script = ExtResource("2_mqljy")
@@ -14,4 +17,4 @@ name = "tilerpg_dialogic_style"
 layer_info = {
 "": SubResource("Resource_mqljy")
 }
-metadata/_latest_layer = "10"
+metadata/_latest_layer = ""

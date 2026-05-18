@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://cun5aepcu7xrv"]
 
 [ext_resource type="Shader" uid="uid://deg4di51ttjo4" path="res://shaders/dither.gdshader" id="1_5mxp5"]
-[ext_resource type="Texture2D" uid="uid://xs1ohjmlwcx7" path="res://shaders/shader textures/palette_eeve.png" id="2_jxyer"]
+[ext_resource type="Texture2D" uid="uid://bwn17x3uqxsys" path="res://shaders/shader textures/palette_greenTest02.png" id="2_jxyer"]
 
 [sub_resource type="Gradient" id="Gradient_jxyer"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)

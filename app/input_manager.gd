@@ -27,7 +27,7 @@ func _ready() -> void:
 	update_input()
 	
 func update_input():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	match input_mode:
 		INPUT_MODE.KBM:
 			GUIDE.enable_mapping_context(global_kbm, true)

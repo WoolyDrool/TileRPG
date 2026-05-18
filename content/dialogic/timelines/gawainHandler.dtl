@@ -1,0 +1,42 @@
+if {convo_progress.gawain.tutorialSeen} == false:
+	jump gawainTutorial/
+gawain: Oh, Percy! Can I help you with anything?
+label discussionTree
+- (Let's chat.)
+	gawain: Aw, you wanna spend time with little ol' me? Anything you're curious about?
+	- (How are you?)
+		gawain: Me? I'm alright, I think. I lived a full life outside, pretty much, so I'm not consumed with angst like everyone else here.
+	- (What's with this place?)
+		gawain: I think you remember Camlann? There used to be a church here, but at some point it turned into a hotel to suit this changed world. Fine by me, I say. It was pretty stuffy as a church, and now I've got a computer here. It's got pinball on it! Wanna play?
+		- (Not right now.)
+			Right, sure. Yeah, you're busy, aren't you?
+		- (Sure.)
+			Viktor: Hey Nina how do you feel about a pinball minigame
+	- (About the others...)
+		gawain: Oo, it's gossip you're after? Ask and ye shall recieve, friend.
+		- (Merlin)
+			gawain: He's still a grouch, nothing new there. He's set himself up by the stairwell going down, making sure no one goes down there. Says it's something dangerous. Poppycock to that, but it's not like I know what's really down there.
+			gawain: No, wait, I guess I kinda know what's down there. The water from the atrium goes underground, so maybe those stairs go to where it drains.
+			gawain: That's all I got, though.
+		- (Arthur)
+			gawain: You have to promise me you won't snitch to his highness about whatever I say, alright? It's not like he can fire me or anything, but he's still the boss.
+			Your secrets are safe with me, Gawain.
+			gawain: Knew I could <trust you/count on you>, Percy.
+- (I need to review something.)
+	gawain: Hit your head, Percy? Joking, joking. What do you need a refresher on?
+	label reviewTree
+	- Notes
+		gawain: You should really be writing things down in that little notebooks of yours. Folks will understand you're here on a quest, so it won't seem odd for you to open it up and glance at it during a conversation. You should jot things down too, but not too much. Three words at a time is a good limit; don't wanna write down everything someone says. <They'd probably think it's rude./You'd probably hurt your hand doing that.>
+		gawain: 'Course, once you're done talking with someone, you can take out that book of yours and jot down whatever you want. Might be a bit difficult to get someone's exact wording after the fact, though, so don't expect to play catch up after the fact.
+	- Possessions and Feelings
+		gawain: It's a good idea to make to note of what belongs to who. That goes for feelings, too.
+	gawain: You got everything figured out, now?
+	- (Yes.)
+	- (No.)
+		jump reviewTree
+gawain: So, that everything, Percy, or do you got something else on your mind?
+- (That's it, thanks.)
+	gawain: See you around, then!
+- (Something else.)
+	gawain: Well then, let's hear it!
+	jump discussionTree
