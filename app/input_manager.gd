@@ -20,31 +20,40 @@ enum INPUT_MODE {KBM, GAMEPAD}
 var input_mode : INPUT_MODE = INPUT_MODE.GAMEPAD
 
 func _ready() -> void:
+	connect_signals()
+	update_input()
+	
+func connect_signals():
 	switch_to_gamepad.triggered.connect(set_input_mode.bind(INPUT_MODE.GAMEPAD))
 	switch_to_kbm.triggered.connect(set_input_mode.bind(INPUT_MODE.KBM))
 	SignalBus.change_input_mode_to_gameplay.connect(set_gamemode.bind(GAME_MODE.MOVE))
 	SignalBus.change_input_mode_to_ui.connect(set_gamemode.bind(GAME_MODE.UI))
-	update_input()
 	
 func update_input():
 	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	match input_mode:
 		INPUT_MODE.KBM:
 			GUIDE.enable_mapping_context(global_kbm, true)
+			print("InputManager: Current Input Mode - KBM")
 			match game_mode:
 				GAME_MODE.MOVE:
 					GUIDE.enable_mapping_context(move_mode_kbm)
+					print("InputManager: Current Game Mode - Movement")
 				GAME_MODE.UI:
 					Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 					GUIDE.enable_mapping_context(ui_mode_kbm)
+					print("InputManager: Current Game Mode - UI")
 		INPUT_MODE.GAMEPAD:
 			GUIDE.enable_mapping_context(global_gamepad, true)
+			print("InputManager: Current Input Mode - Gamepad")
 			match game_mode:
 				GAME_MODE.MOVE:
 					GUIDE.enable_mapping_context(move_mode_gamepad)
+					print("InputManager: Current Game Mode - Movement")
 				GAME_MODE.UI:
 					GUIDE.enable_mapping_context(ui_mode_gamepad)
-	
+					print("InputManager: Current Game Mode - UI")
+
 func set_gamemode(_game_mode : GAME_MODE):
 	game_mode = _game_mode
 	update_input()
