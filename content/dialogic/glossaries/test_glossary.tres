@@ -6,6 +6,8 @@
 script = ExtResource("1_b7cbv")
 entries = {
 "This is a test phrase.": {
+"case_sensitive": true,
+"enabled": false,
 "name": "This is a test phrase."
 }
 }

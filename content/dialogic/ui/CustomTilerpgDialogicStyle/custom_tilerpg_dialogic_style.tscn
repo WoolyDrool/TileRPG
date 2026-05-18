@@ -28,6 +28,7 @@ offset_right = 416.0
 offset_bottom = -32.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 24
 script = ExtResource("3_xjro8")
 metadata/_custom_type_script = "uid://drhfq6rmdeuri"
 
