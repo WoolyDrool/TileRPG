@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="3_8sf1g"]
 [ext_resource type="PackedScene" uid="uid://b5ishl1x04ti5" path="res://ui/global_ui.tscn" id="4_c8cqg"]
 [ext_resource type="Script" uid="uid://cs58lipjxi85e" path="res://ui/global_ui.gd" id="5_r1sfh"]
-[ext_resource type="AudioStream" uid="uid://dhpn0vn3makv2" path="res://sound/music/music_OST test.mp3" id="6_21s7y"]
+[ext_resource type="AudioStream" path="res://sound/music/mus_idea.wav" id="6_21s7y"]
 [ext_resource type="Texture2D" uid="uid://bdsljc2qhwsax" path="res://content/npcs/placeholders/spr_merlin_placeholder.png" id="7_r1sfh"]
 [ext_resource type="Texture2D" uid="uid://dbjsjphd0aola" path="res://content/npcs/placeholders/spr_gawain_placeholder.png" id="8_r1sfh"]
 [ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="9_c8cqg"]
@@ -62,7 +62,8 @@ script = ExtResource("5_r1sfh")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="GlobalAudio" unique_id=1885079773]
 stream = ExtResource("6_21s7y")
-volume_db = -15.0
+volume_db = -7.0
+autoplay = true
 
 [node name="Merlin" type="Sprite3D" parent="." unique_id=1851928710]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -35.4, 1.35, -6.6782794)
