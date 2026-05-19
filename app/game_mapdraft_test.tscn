@@ -128,6 +128,15 @@ transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 20, 
 [node name="Wall8" parent="Walls" unique_id=1597617786 instance=ExtResource("22_21s7y")]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 23.999998, 0, -9.536743e-07)
 
+[node name="Wall6" parent="Walls" unique_id=868092543 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 15.999998, 0, -20.000002)
+
+[node name="Wall9" parent="Walls" unique_id=1262038263 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -1.9073486e-06, 0, -20)
+
+[node name="Wall10" parent="Walls" unique_id=202294946 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 13.999998, 0, -22.000002)
+
 [node name="ReceptionInternalWalls" type="Node3D" parent="." unique_id=1098448495]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -16, 2, 14)
 visible = false
