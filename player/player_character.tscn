@@ -5,11 +5,12 @@
 [ext_resource type="Resource" uid="uid://d3qr3wfxtg03k" path="res://player/input mappings/movement/actions/movement_forward.tres" id="2_wi17q"]
 [ext_resource type="Resource" uid="uid://c87et6b7sljp8" path="res://player/input mappings/movement/actions/movement_backward.tres" id="3_qep63"]
 [ext_resource type="Resource" uid="uid://bamxcbppxl3x" path="res://player/input mappings/movement/actions/movement_turn_left.tres" id="4_3d672"]
-[ext_resource type="AudioStream" uid="uid://ccdfvawvyy52j" path="res://player/player sfx/click.wav" id="4_rjqbx"]
+[ext_resource type="AudioStream" uid="uid://ccdfvawvyy52j" path="res://sound/sfx/player/sfx_player_turn.wav" id="4_rjqbx"]
 [ext_resource type="PackedScene" uid="uid://brq5ev6pqg7f" path="res://systems/entities/enemies/entity_health_component.tscn" id="5_2brt4"]
 [ext_resource type="PackedScene" uid="uid://chan5muuudj58" path="res://systems/interaction/interaction_manager.tscn" id="5_avj6n"]
 [ext_resource type="Resource" uid="uid://xrnflpp6tupi" path="res://player/input mappings/movement/actions/movement_turn_right.tres" id="5_l18q3"]
-[ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://player/player sfx/hitHurt.wav" id="5_mydv8"]
+[ext_resource type="AudioStream" uid="uid://vrtmauk0pvlg" path="res://sound/sfx/player/sfx_player_footstep.wav" id="5_mydv8"]
+[ext_resource type="AudioStream" uid="uid://d4dhbg87d2oie" path="res://sound/sfx/player/sfx_player_wall_collide.wav" id="9_20tpk"]
 [ext_resource type="Resource" uid="uid://dq7mi3ofafxn8" path="res://player/input mappings/movement/actions/movement_interact.tres" id="10_qep63"]
 [ext_resource type="Resource" uid="uid://bs4jsrvptrbcw" path="res://player/input mappings/movement/actions/movement_cycle_interact_left.tres" id="11_l18q3"]
 [ext_resource type="Resource" uid="uid://chp7ydqml3btk" path="res://player/input mappings/movement/actions/movement_cycle_interact_right.tres" id="12_20tpk"]
@@ -24,7 +25,7 @@ height = 1.5
 top_radius = 0.1
 height = 1.5
 
-[node name="PlayerCharacter" type="Area3D" unique_id=1809113002]
+[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("wall_collide_sound")]
 collision_mask = 3
 script = ExtResource("1_1v1wt")
 move_forward_action = ExtResource("2_wi17q")
@@ -32,6 +33,7 @@ move_backward_action = ExtResource("3_qep63")
 turn_left_action = ExtResource("4_3d672")
 turn_right_action = ExtResource("5_l18q3")
 tween_speed = 0.15
+wall_collide_sound = NodePath("CamContainer/WallCollideSFX")
 
 [node name="VisibleMesh" type="CSGMesh3D" parent="." unique_id=2035766676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
@@ -69,6 +71,10 @@ volume_db = -20.0
 
 [node name="TurnSFX" type="AudioStreamPlayer3D" parent="CamContainer" unique_id=480848464]
 stream = ExtResource("4_rjqbx")
+volume_db = -10.0
+
+[node name="WallCollideSFX" type="AudioStreamPlayer3D" parent="CamContainer" unique_id=1010496836]
+stream = ExtResource("9_20tpk")
 volume_db = -10.0
 
 [node name="InteractionManager" parent="CamContainer" unique_id=1112212086 instance=ExtResource("5_avj6n")]

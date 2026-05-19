@@ -11,6 +11,8 @@ extends Area3D
 @export var tween_speed : float = 1
 @export var turn_speed : float = 1
 
+@export var wall_collide_sound : AudioStreamPlayer3D
+
 @onready var navigator : GridNavigator = $CamContainer/GridNavigator
 @onready var cam_container : Node3D = $CamContainer
 @onready var movement_cooldown_timer : Timer = $MovementCooldownTimer
@@ -50,12 +52,16 @@ func handle_movement_input() -> void:
 				if !navigator.wall_in_front:
 					navigator.movement_tween(navigator.tile_front.center, self)
 					start_movement_cooldown()
+				else:
+					wall_collide_sound.play()
 			if move_backward_action.is_triggered():
 				if !navigator.tile_behind:
 					navigator.rescan()
 				if !navigator.wall_in_back:
 					navigator.movement_tween(navigator.tile_behind.center, self)
 					start_movement_cooldown()
+				else:
+					wall_collide_sound.play()
 			
 		if !turning:
 			if turn_left_action.is_triggered():
