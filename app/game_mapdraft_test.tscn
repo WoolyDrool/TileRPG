@@ -21,6 +21,7 @@
 [ext_resource type="Resource" uid="uid://dlysjhr7w6pr" path="res://player/input mappings/global/global_kbm.tres" id="15_hh7ij"]
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_kc86d"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_8payr"]
+[ext_resource type="PackedScene" uid="uid://erbpgyfnc06i" path="res://content/geometry/walls/default_wall.tscn" id="22_21s7y"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
@@ -71,9 +72,6 @@ texture = ExtResource("7_r1sfh")
 [node name="NPCDefault" parent="Merlin" unique_id=1255377170 instance=ExtResource("9_c8cqg")]
 dialogic_timeline = ExtResource("10_r1sfh")
 
-[node name="Sprite3D" parent="Merlin/NPCDefault/ScannableEntity3" parent_id_path=PackedInt32Array(1255377170, 137746738) index="1" unique_id=321509298]
-visible = false
-
 [node name="Gawain" type="Sprite3D" parent="." unique_id=21567885]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -18.071602, 0.7, 16.018938)
 billboard = 1
@@ -89,7 +87,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -6)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="Sprite3D" parent="Gawain/NPCDefault/ScannableEntity3" index="1" unique_id=321509298]
-visible = false
 texture = ExtResource("12_r1sfh")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1699129836]
@@ -106,6 +103,17 @@ global_kbm = ExtResource("15_hh7ij")
 move_mode_kbm = ExtResource("16_kc86d")
 ui_mode_kbm = ExtResource("17_8payr")
 metadata/_custom_type_script = "uid://bshvjc00ycfjl"
+
+[node name="Wall" parent="." unique_id=1334455553 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8, 2, 0)
+
+[node name="GawainContainmentWall1" parent="." unique_id=1093275402 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -16, 2, 14)
+visible = false
+
+[node name="GawainContainmentWall2" parent="." unique_id=1311715933 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -20, 2, 14)
+visible = false
 
 [editable path="DitherShader/SubViewport/PlayerCharacter"]
 [editable path="Merlin/NPCDefault"]
