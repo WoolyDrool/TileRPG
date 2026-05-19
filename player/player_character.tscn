@@ -75,7 +75,7 @@ volume_db = -10.0
 
 [node name="WallCollideSFX" type="AudioStreamPlayer3D" parent="CamContainer" unique_id=1010496836]
 stream = ExtResource("9_20tpk")
-volume_db = -10.0
+volume_db = -18.0
 
 [node name="InteractionManager" parent="CamContainer" unique_id=1112212086 instance=ExtResource("5_avj6n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
