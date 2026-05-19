@@ -1,6 +1,7 @@
 class_name InteractionManager
 extends Node3D
 
+@export var can_interact : bool = true
 @export var interaction_action : GUIDEAction
 @export var cycle_left_interaction : GUIDEAction
 @export var cycle_right_interaction : GUIDEAction
@@ -27,10 +28,11 @@ func _process(delta: float) -> void:
 	#if Input.is_action_just_pressed("scan_for_interacts") and can_scan:
 		#scan_for_new_interactables()
 	
-	if interaction_action.is_triggered():
-		in_range_interactables[current_interaction_index].on_entity_interact()
-	
-	selector_cycle_next() 
+	if can_interact:
+		if interaction_action.is_triggered():
+			in_range_interactables[current_interaction_index].on_entity_interact()
+		
+		selector_cycle_next() 
 
 func _physics_process(delta: float) -> void:
 	selection_sprite.global_position = lerp(selection_sprite.global_position, wanted_position, lerp_speed * delta)
