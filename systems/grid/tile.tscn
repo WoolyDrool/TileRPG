@@ -12,6 +12,3 @@ script = ExtResource("1_fhi0k")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 shape = ExtResource("1_ke5ak")
 debug_color = Color(0.9931024, 0, 0.30542877, 1)
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]
