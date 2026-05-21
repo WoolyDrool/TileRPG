@@ -1,0 +1,2 @@
+if {convo_progress.lancelot.lancelotGreeted} == false:
+	jump LancelotIntro/

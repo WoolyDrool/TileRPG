@@ -3,7 +3,6 @@
 [resource]
 background_mode = 1
 background_color = Color(0.113112986, 0.113112986, 0.113112986, 1)
-fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0.19714966, 0.21763703, 0.24951535, 1)
 fog_density = 1.0

@@ -22,6 +22,11 @@
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_kc86d"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_8payr"]
 [ext_resource type="PackedScene" uid="uid://erbpgyfnc06i" path="res://content/geometry/walls/default_wall.tscn" id="22_21s7y"]
+[ext_resource type="PackedScene" uid="uid://bimooljovnhn3" path="res://content/npcs/entity_npc.tscn" id="23_yooro"]
+[ext_resource type="Texture2D" uid="uid://dm2bohk23q2a8" path="res://content/npcs/placeholders/spr_lancelot_placeholder.png" id="24_u60vq"]
+[ext_resource type="Resource" uid="uid://cnjidumy25gby" path="res://content/dialogic/timelines/LancelotHandler.dtl" id="25_u60vq"]
+[ext_resource type="Texture2D" uid="uid://ce27d5cyt2bke" path="res://content/npcs/placeholders/spr_arthur_placeholder.png" id="26_h1rds"]
+[ext_resource type="Resource" uid="uid://dsv5uh8ch4m2c" path="res://content/dialogic/timelines/arthurHandler.dtl" id="27_2likf"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
@@ -280,8 +285,22 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -30.
 [node name="Wall29" parent="Office Walls" unique_id=1936959838 instance=ExtResource("22_21s7y")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -30.00001, 0, -94)
 
+[node name="OfficeBackWalls" parent="Office Walls" unique_id=1196215307 instance=ExtResource("22_21s7y")]
+transform = Transform3D(-5.68248e-07, 0, 1, 0, 1, 0, -13, 0, -4.371139e-08, -14, 0, -70)
+
+[node name="Lancelot" parent="." unique_id=651949496 instance=ExtResource("23_yooro")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -90, 0, -11)
+texture = ExtResource("24_u60vq")
+dialogic_timeline = ExtResource("25_u60vq")
+
+[node name="NPCEntity" parent="." unique_id=1645358566 instance=ExtResource("23_yooro")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -98, 2, 28)
+texture = ExtResource("26_h1rds")
+dialogic_timeline = ExtResource("27_2likf")
+
 [editable path="DitherShader/SubViewport/PlayerCharacter"]
 [editable path="Merlin/NPCDefault"]
 [editable path="Merlin/NPCDefault/ScannableEntity3"]
 [editable path="Gawain/NPCDefault"]
 [editable path="Gawain/NPCDefault/ScannableEntity3"]
+[editable path="Office Walls/OfficeBackWalls"]
