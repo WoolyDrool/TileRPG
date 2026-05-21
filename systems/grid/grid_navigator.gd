@@ -27,14 +27,35 @@ func _ready():
 
 func rescan():
 	#print("GridNav: RESCANNING...")
-	if scanner_front.is_colliding() && tile_front != current_tile:
-		tile_front = scanner_front.get_collider() as Tile
+	check_for_tiles()
+	check_for_walls()
+	
+	#DEBUG ONLY
+	#print("Current Tile: ", current_tile)
+	#print("Previous Tile: ", previous_tile)
+	#print("Tile Front: ", tile_front)
+	#print("Tile Back: ", tile_behind)
+	#print("Wall Front: ", wall_in_front)
+	#print("Wall Back: ", wall_in_back)
+
+func check_for_tiles():
+	if scanner_front.is_colliding():
+		var col_result = scanner_front.get_collider()
+		if col_result.is_in_group("Tile") && col_result != current_tile:
+			tile_front = scanner_front.get_collider()
+
+		col_result = null
 		#print("GridNav Front: ", tile_front)	
 	
 	if scanner_back.is_colliding():
-		tile_behind = scanner_back.get_collider() as Tile	
-		#print("GridNav Back: ", tile_behind)
+		var col_result = scanner_back.get_collider()
+		if col_result.is_in_group("Tile") && col_result != current_tile:
+			tile_behind = scanner_back.get_collider()
 		
+		col_result = null
+		#print("GridNav Back: ", tile_behind)
+
+func check_for_walls():
 	if wallcheck_front.is_colliding():
 		wall_in_front = true
 	else:
@@ -92,7 +113,9 @@ func rotation_tween(new_rotation : float, parent : Node3D):
 	
 func _on_tile_detector_area_entered(area: Area3D) -> void:
 	if area.is_in_group("Tile"):
-		previous_tile = current_tile
+		if !previous_tile && current_tile:
+			previous_tile = current_tile
 		current_tile = area
-		if !current_tile:
-			rescan()
+
+func _on_tile_detector_area_exited(area: Area3D) -> void:
+	pass
