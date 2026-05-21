@@ -47,21 +47,35 @@ func handle_movement_input() -> void:
 	if can_move:
 		if !navigator.moving:
 			if move_forward_action.is_triggered():
-				if !navigator.tile_front:
-					navigator.rescan()
-				if !navigator.wall_in_front:
-					navigator.movement_tween(navigator.tile_front.center, self)
-					start_movement_cooldown()
-				else:
-					wall_collide_sound.play()
+				if navigator.tile_front:
+					if !navigator.wall_in_front:
+						navigator.movement_tween(navigator.tile_front.center, self)
+						start_movement_cooldown()
+						navigator.rescan()
+					else:
+						wall_collide_sound.play()
+				#if !navigator.tile_front:
+					#navigator.rescan()
+				#if !navigator.wall_in_front:
+					#navigator.movement_tween(navigator.tile_front.center, self)
+					#start_movement_cooldown()
+				#else:
+					#wall_collide_sound.play()
 			if move_backward_action.is_triggered():
-				if !navigator.tile_behind:
-					navigator.rescan()
-				if !navigator.wall_in_back:
-					navigator.movement_tween(navigator.tile_behind.center, self)
-					start_movement_cooldown()
-				else:
-					wall_collide_sound.play()
+				if navigator.tile_behind:
+					if !navigator.wall_in_back:
+						navigator.movement_tween(navigator.tile_behind.center, self)
+						start_movement_cooldown()
+						navigator.rescan()
+					else:
+						wall_collide_sound.play()
+				#if !navigator.tile_behind:
+					#navigator.rescan()
+				#if !navigator.wall_in_back:
+					#navigator.movement_tween(navigator.tile_behind.center, self)
+					#start_movement_cooldown()
+				#else:
+					#wall_collide_sound.play()
 			
 		if !turning:
 			if turn_left_action.is_triggered():

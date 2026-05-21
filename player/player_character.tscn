@@ -57,6 +57,9 @@ mesh = SubResource("CylinderMesh_ni121")
 
 [node name="GridNavigator" parent="CamContainer" unique_id=604307972 node_paths=PackedStringArray("foostep_sfx", "turn_sfx") instance=ExtResource("2_6ahhe")]
 tween_speed = 0.15
+moving = null
+wall_in_front = null
+wall_in_back = null
 foostep_sfx = NodePath("../FootstepSFX")
 turn_sfx = NodePath("../TurnSFX")
 
