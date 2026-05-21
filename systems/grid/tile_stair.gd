@@ -8,4 +8,4 @@ func _ready() -> void:
 	center = get_stair_center()
 		
 func get_stair_center() -> Vector3:
-	return Vector3(global_position.x, custom_y_value, global_position.z)
+	return Vector3(position.x, custom_y_value, position.z)
