@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b7bfb5sq720dj"]
+
+[ext_resource type="Script" uid="uid://t0u4xg3kk0v0" path="res://systems/grid/tile_stair.gd" id="1_wgl4k"]
+[ext_resource type="Shape3D" uid="uid://c3hk3vk1p0vna" path="res://systems/grid/tile_stair_collider.tres" id="2_wgl4k"]
+
+[node name="TileStair" type="Area3D" unique_id=289986669 groups=["Tile"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_wgl4k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1909541418 groups=["Tile"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+shape = ExtResource("2_wgl4k")
+debug_color = Color(0.1839638, 0.5189261, 0.99999994, 1)
