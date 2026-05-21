@@ -42,7 +42,7 @@ func scan_for_new_interactables() -> void:
 	in_range_interactables.clear()
 	collision_count = shapecast.get_collision_count()
 	current_interaction_index_max = collision_count
-	print("InteractionManager: Collision Count - ", collision_count)
+	#print("InteractionManager: Collision Count - ", collision_count)
 	
 	for i in range(collision_count):
 		var collider = shapecast.get_collider(i)
