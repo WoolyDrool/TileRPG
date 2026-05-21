@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://djdv15fatg2ge"]
+
+[ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="1_2rjhb"]
+[ext_resource type="PackedScene" uid="uid://b7bfb5sq720dj" path="res://systems/grid/tile_stair.tscn" id="2_2rjhb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_knr0h"]
+
+[sub_resource type="Sky" id="Sky_2rjhb"]
+sky_material = SubResource("ProceduralSkyMaterial_knr0h")
+
+[sub_resource type="Environment" id="Environment_ygkfc"]
+background_mode = 2
+sky = SubResource("Sky_2rjhb")
+
+[node name="StairsDebug" type="Node3D" unique_id=1762877862]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1901610037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -0.51512456, 0)
+size = Vector3(25, 1, 17)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1810620443]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5, 0, -9)
+size = Vector3(25, 1, 17)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2134457802]
+environment = SubResource("Environment_ygkfc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1904936471]
+transform = Transform3D(0.70710677, 0.61237246, -0.35355335, 0, 0.49999997, 0.86602545, 0.70710677, -0.61237246, 0.35355335, 0, 0, 0)
+
+[node name="TileStair" parent="." unique_id=289986669 instance=ExtResource("2_2rjhb")]
+custom_y_value = 0.001
+
+[node name="TileStair2" parent="." unique_id=1348530827 instance=ExtResource("2_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+custom_y_value = 4.0
+
+[node name="TileStair3" parent="." unique_id=1953426541 instance=ExtResource("2_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 0)
+custom_y_value = 8.0
+
+[node name="TileStair4" parent="." unique_id=433564984 instance=ExtResource("2_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 4, 0)
+custom_y_value = 12.0
+
+[node name="Tile" parent="." unique_id=1548869989 instance=ExtResource("1_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Tile2" parent="." unique_id=975554902 instance=ExtResource("1_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="Tile3" parent="." unique_id=1775177233 instance=ExtResource("1_2rjhb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)

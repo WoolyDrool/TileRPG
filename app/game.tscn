@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cfllbnfjjje4u"]
 
-[ext_resource type="PackedScene" uid="uid://do1ffgq4hy3nm" path="res://content/maps/debug/map_debug.tscn" id="1_o85h2"]
 [ext_resource type="PackedScene" uid="uid://b5ishl1x04ti5" path="res://ui/global_ui.tscn" id="2_bwvno"]
 [ext_resource type="Script" uid="uid://cs58lipjxi85e" path="res://ui/global_ui.gd" id="3_430kh"]
 [ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="4_430kh"]
@@ -19,12 +18,11 @@
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_4f8u2"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_crltq"]
 [ext_resource type="Resource" uid="uid://ryde3kxr538h" path="res://player/input mappings/ui/selector mode/ui_select_kbm.tres" id="19_bk3sl"]
+[ext_resource type="PackedScene" uid="uid://djdv15fatg2ge" path="res://content/maps/debug/map_stairs_debug.tscn" id="19_oklfv"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
 [node name="Transitions" type="CanvasLayer" parent="." unique_id=1402470627]
-
-[node name="Debug" parent="." unique_id=311414116 instance=ExtResource("1_o85h2")]
 
 [node name="DitherShader" type="SubViewportContainer" parent="." unique_id=123320664]
 material = ExtResource("4_h3mk6")
@@ -46,7 +44,7 @@ size = Vector2i(1103, 829)
 render_target_update_mode = 4
 
 [node name="PlayerCharacter" parent="DitherShader/SubViewport" unique_id=1681947254 instance=ExtResource("4_430kh")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -31.991531, -1.90735e-06, 33.9032)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 turn_speed = 0.15
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=366516759]
@@ -87,5 +85,7 @@ move_mode_kbm = ExtResource("16_4f8u2")
 ui_mode_kbm = ExtResource("17_crltq")
 ui_mode_selector_keyboard = ExtResource("19_bk3sl")
 metadata/_custom_type_script = "uid://bshvjc00ycfjl"
+
+[node name="StairsDebug" parent="." unique_id=1762877862 instance=ExtResource("19_oklfv")]
 
 [editable path="DitherShader/SubViewport/PlayerCharacter"]
