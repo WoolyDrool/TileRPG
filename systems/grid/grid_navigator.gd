@@ -67,6 +67,10 @@ func check_for_walls():
 		wall_in_back = false
 
 func movement_tween(new_position : Vector3, parent : Node3D):
+	#NOTE: I have to rewrite this to be a custom Vector3 Lerp solution because
+	# it appears that Tweens do not like moving to 0,0,0
+	# its an edge case but also so specific that i feel compelled to fix it
+	
 	if !parent:
 		push_error("GridNav: " + name + "- No parent specified!")
 		return
