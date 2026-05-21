@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="3_8sf1g"]
 [ext_resource type="PackedScene" uid="uid://b5ishl1x04ti5" path="res://ui/global_ui.tscn" id="4_c8cqg"]
 [ext_resource type="Script" uid="uid://cs58lipjxi85e" path="res://ui/global_ui.gd" id="5_r1sfh"]
-[ext_resource type="AudioStream" path="res://sound/music/mus_idea.wav" id="6_21s7y"]
+[ext_resource type="AudioStream" uid="uid://cs32mvmk0tcx3" path="res://sound/music/mus_idea.mp3" id="6_21s7y"]
 [ext_resource type="Texture2D" uid="uid://bdsljc2qhwsax" path="res://content/npcs/placeholders/spr_merlin_placeholder.png" id="7_r1sfh"]
 [ext_resource type="Texture2D" uid="uid://dbjsjphd0aola" path="res://content/npcs/placeholders/spr_gawain_placeholder.png" id="8_r1sfh"]
 [ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="9_c8cqg"]
@@ -28,6 +28,7 @@
 [node name="Transitions" type="CanvasLayer" parent="." unique_id=1402470627]
 
 [node name="Drafting_Map" parent="." unique_id=566139984 instance=ExtResource("1_mjcjk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05390644, 0, -0.11613846)
 
 [node name="DitherShader" type="SubViewportContainer" parent="." unique_id=123320664]
 material = ExtResource("2_8jbh8")
