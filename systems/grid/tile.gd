@@ -8,4 +8,4 @@ func _ready() -> void:
 	center = get_center_point()
 		
 func get_center_point() -> Vector3:
-	return position
+	return global_position

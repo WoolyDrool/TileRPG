@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="6_wsils"]
 [ext_resource type="Resource" uid="uid://ce2n21co4svr4" path="res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl" id="7_q8f5d"]
+[ext_resource type="PackedScene" uid="uid://b7bfb5sq720dj" path="res://systems/grid/tile_stair.tscn" id="8_wsils"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
 
@@ -831,6 +832,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
 
 [node name="@Area3D@95029" parent="32X4Z Grid" unique_id=907145936 instance=ExtResource("6_wsils")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+
+[node name="TileStair" parent="." unique_id=1647680909 instance=ExtResource("8_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+
+[node name="TileStair2" parent="." unique_id=126596549 instance=ExtResource("8_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="TileStair3" parent="." unique_id=1883168977 instance=ExtResource("8_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -2)
+
+[node name="TileStair4" parent="." unique_id=1047026695 instance=ExtResource("8_wsils")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 2)
 
 [editable path="GridManager/Hallway/Room"]
 [editable path="GridManager/Hallway/Room15"]

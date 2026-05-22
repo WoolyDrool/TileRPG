@@ -52,7 +52,7 @@ func enter_selector_mode():
 func handle_selector_caret_input_gamepad():
 	#TODO: Get the caret moving with the defined GUIDE actions
 	#TODO: Snap the caret to being per word instead of per character
-	#TODO: Snap to maximum of 3 words
+	#TODO: Snap to maximum of 3 words. Check if line has no more than 2 spaces
 	var origin_line = shell_text_node.get_caret_line()
 	var origin_column = shell_text_node.get_caret_column()
 	var new_caret_line = origin_line

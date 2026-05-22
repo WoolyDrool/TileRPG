@@ -29,7 +29,6 @@ environment = SubResource("Environment_ygkfc")
 transform = Transform3D(0.70710677, 0.61237246, -0.35355335, 0, 0.49999997, 0.86602545, 0.70710677, -0.61237246, 0.35355335, 0, 0, 0)
 
 [node name="TileStair" parent="." unique_id=289986669 instance=ExtResource("2_2rjhb")]
-custom_y_value = 0.001
 
 [node name="TileStair2" parent="." unique_id=1348530827 instance=ExtResource("2_2rjhb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
@@ -45,6 +44,7 @@ custom_y_value = 12.0
 
 [node name="Tile" parent="." unique_id=1548869989 instance=ExtResource("1_2rjhb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+center = Vector3(0, 0.001, 0)
 
 [node name="Tile2" parent="." unique_id=975554902 instance=ExtResource("1_2rjhb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
