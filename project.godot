@@ -34,6 +34,7 @@ GUIDE="*uid://daex7o8hw0efa"
 directories/dch_directory={
 "Viktor": "res://content/dialogic/characters/Viktor.dch",
 "arthur": "res://content/dialogic/characters/arthur.dch",
+"bedivere": "res://content/dialogic/characters/bedivere.dch",
 "brunor": "res://content/dialogic/characters/brunor.dch",
 "galahad": "res://content/dialogic/characters/galahad.dch",
 "gawain": "res://content/dialogic/characters/gawain.dch",
@@ -49,6 +50,8 @@ directories/dtl_directory={
 "LancelotIntro": "res://content/dialogic/timelines/LancelotIntro.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
+"bedivereHandler": "res://content/dialogic/timelines/bedivereHandler.dtl",
+"bedivereIntro": "res://content/dialogic/timelines/bedivereIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
