@@ -54,7 +54,7 @@ directories/dtl_directory={
 "bedivereIntro": "res://content/dialogic/timelines/bedivereIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawainHandler.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawainTutorial.dtl",
-"glossaryTesting": "res://content/dialogic/timelines/glossaryTesting.dtl",
+"glossaryTesting": "res://content/dialogic/timelines/testing/glossaryTesting.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
