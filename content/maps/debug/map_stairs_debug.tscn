@@ -35,11 +35,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 custom_y_value = 4.0
 
 [node name="TileStair3" parent="." unique_id=1953426541 instance=ExtResource("2_2rjhb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 4)
 custom_y_value = 8.0
 
 [node name="TileStair4" parent="." unique_id=433564984 instance=ExtResource("2_2rjhb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 8)
 custom_y_value = 12.0
 
 [node name="Tile" parent="." unique_id=1548869989 instance=ExtResource("1_2rjhb")]

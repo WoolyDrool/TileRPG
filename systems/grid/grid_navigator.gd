@@ -114,7 +114,6 @@ func rotation_tween(new_rotation : float, parent : Node3D):
 	moving = false
 	rotation_tween = null 
 	
-	
 func _on_tile_detector_area_entered(area: Area3D) -> void:
 	if area.is_in_group("Tile"):
 		if !previous_tile && current_tile:

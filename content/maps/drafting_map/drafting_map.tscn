@@ -49,88 +49,88 @@ environment = ExtResource("2_583s2")
 
 [node name="map_ChateauxCamlann_workingfile" parent="WorldEnvironment" unique_id=973097678 instance=ExtResource("3_4gcwt")]
 
-[node name="Art Wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="2" unique_id=31754135]
+[node name="Art Wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="2" unique_id=1145045289]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="arthur_office" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="4" unique_id=540682588]
+[node name="arthur_office" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="4" unique_id=1204415070]
 surface_material_override/0 = ExtResource("5_nn1rh")
 
-[node name="Atrium-Arboretum" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="5" unique_id=2090610443]
+[node name="Atrium-Arboretum" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="5" unique_id=824019220]
 surface_material_override/0 = SubResource("StandardMaterial3D_g2411")
 
-[node name="Atrium_walkway" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="6" unique_id=6991387]
+[node name="Atrium_walkway" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="6" unique_id=933485322]
 surface_material_override/0 = SubResource("StandardMaterial3D_tk17i")
 
-[node name="back_hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="7" unique_id=221652750]
+[node name="back_hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="7" unique_id=632124968]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="Eatery_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="11" unique_id=1335821757]
+[node name="Eatery_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="11" unique_id=1984815874]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Eatery_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="12" unique_id=278110481]
+[node name="Eatery_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="12" unique_id=337798015]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Entry_Floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="13" unique_id=1349819157]
+[node name="Entry_Floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="13" unique_id=1637088354]
 material_override = ExtResource("5_5txb8")
 
-[node name="hall_kitchen" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="15" unique_id=717517446]
+[node name="hall_kitchen" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="15" unique_id=1774821205]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="kitchen_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="16" unique_id=976144959]
+[node name="kitchen_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="16" unique_id=1542150454]
 surface_material_override/0 = ExtResource("6_6d1cb")
 
-[node name="Lobby_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="18" unique_id=935942334]
+[node name="Lobby_floor" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="18" unique_id=701852601]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="merlin_crate" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="21" unique_id=738843283]
+[node name="merlin_crate" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="21" unique_id=539214659]
 visible = false
 
-[node name="Merlin_Hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="22" unique_id=1163204023]
+[node name="Merlin_Hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="22" unique_id=880932267]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="office_1" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="23" unique_id=1157823283]
+[node name="office_1" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="23" unique_id=1252157213]
 surface_material_override/0 = ExtResource("7_nn1rh")
 
-[node name="office_2" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="24" unique_id=2028094876]
+[node name="office_2" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="24" unique_id=585841917]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="office_3" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="25" unique_id=1726118830]
+[node name="office_3" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="25" unique_id=1077649944]
 surface_material_override/0 = ExtResource("7_nn1rh")
 
-[node name="office_hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="26" unique_id=687688990]
+[node name="office_hall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="26" unique_id=2039903207]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="Plane_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="27" unique_id=1748077288]
+[node name="Plane_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="27" unique_id=797881049]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Reception_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="33" unique_id=923430094]
+[node name="Reception_wall" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="33" unique_id=529099675]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Reception_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="34" unique_id=1475559313]
+[node name="Reception_wall_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="34" unique_id=524189918]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="staff_hallway" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 1272990954) index="36" unique_id=12525815]
+[node name="staff_hallway" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(973097678, 2078535883) index="36" unique_id=1315621083]
 surface_material_override/0 = ExtResource("5_5txb8")
 
-[node name="Plane_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 894572612) index="3" unique_id=841327691]
+[node name="Plane_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 326856996) index="3" unique_id=1689895107]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_005" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 894572612) index="5" unique_id=1536624467]
+[node name="Plane_005" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 326856996) index="5" unique_id=568529837]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_006" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 894572612) index="6" unique_id=1763651432]
+[node name="Plane_006" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 326856996) index="6" unique_id=791250366]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_007" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 894572612) index="7" unique_id=1204740084]
+[node name="Plane_007" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(973097678, 326856996) index="7" unique_id=828695119]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Stairs_W_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(973097678, 168418549) index="2" unique_id=489141917]
+[node name="Stairs_W_002" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(973097678, 958140857) index="2" unique_id=517403199]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Stairs_W_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_W" parent_id_path=PackedInt32Array(973097678, 1479526478) index="2" unique_id=1434173752]
+[node name="Stairs_W_001" parent="WorldEnvironment/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_W" parent_id_path=PackedInt32Array(973097678, 1965841522) index="2" unique_id=1376738283]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="props_extra_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="13" unique_id=406925499]
+[node name="props_extra_parent" parent="WorldEnvironment/map_ChateauxCamlann_workingfile" index="13" unique_id=1562151302]
 visible = false
 
 [node name="TileGridGenerator" parent="WorldEnvironment" unique_id=2060964577 instance=ExtResource("3_cmg8b")]
