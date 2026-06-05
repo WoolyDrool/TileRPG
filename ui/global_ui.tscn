@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b5ishl1x04ti5"]
 
 [ext_resource type="Texture2D" uid="uid://bgm7vye3j5bgi" path="res://ui/UI First Pass.png" id="1_a31wk"]
+[ext_resource type="PackedScene" uid="uid://beutguarv327h" path="res://ui/ui_journal.tscn" id="2_d8w1j"]
 
 [node name="GlobalUI" type="Control" unique_id=1104362250]
 layout_mode = 3
@@ -32,3 +33,6 @@ offset_top = -40.0
 offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="Journal" parent="." unique_id=914732942 instance=ExtResource("2_d8w1j")]
+layout_mode = 1

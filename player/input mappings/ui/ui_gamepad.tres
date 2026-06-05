@@ -115,10 +115,22 @@ script = ExtResource("3_mldnf")
 input = SubResource("Resource_5wbm7")
 triggers = Array[ExtResource("6_goupm")]([SubResource("Resource_ijuyw")])
 
+[sub_resource type="Resource" id="Resource_mldnf"]
+script = ExtResource("4_3o5ho")
+button = 4
+
+[sub_resource type="Resource" id="Resource_0o2ns"]
+script = ExtResource("7_7jh7x")
+
+[sub_resource type="Resource" id="Resource_3o5ho"]
+script = ExtResource("3_mldnf")
+input = SubResource("Resource_mldnf")
+triggers = Array[ExtResource("6_goupm")]([SubResource("Resource_0o2ns")])
+
 [sub_resource type="Resource" id="Resource_0wd05"]
 script = ExtResource("1_q28nd")
 action = ExtResource("12_api01")
-input_mappings = Array[ExtResource("3_mldnf")]([SubResource("Resource_kluw7")])
+input_mappings = Array[ExtResource("3_mldnf")]([SubResource("Resource_kluw7"), SubResource("Resource_3o5ho")])
 
 [sub_resource type="Resource" id="Resource_peep0"]
 script = ExtResource("4_3o5ho")

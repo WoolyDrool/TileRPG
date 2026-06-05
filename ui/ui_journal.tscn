@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://beutguarv327h"]
+
+[ext_resource type="Script" uid="uid://doxaqxdgwq21p" path="res://ui/ui_journal.gd" id="1_lhcta"]
+[ext_resource type="AudioStream" uid="uid://b5io0wkir076v" path="res://sound/sfx/ui/sfx_ui_journal_open.wav" id="2_e7v2m"]
+[ext_resource type="Resource" uid="uid://dpjeg2dynwetn" path="res://player/input mappings/movement/actions/movement_inventory.tres" id="2_ssw2a"]
+[ext_resource type="Resource" uid="uid://oggaxicrx82v" path="res://player/input mappings/ui/actions/ui_back.tres" id="3_e6yix"]
+[ext_resource type="AudioStream" uid="uid://c2xbf6dha6lc6" path="res://sound/sfx/ui/sfx_ui_journal_close.wav" id="3_ssw2a"]
+[ext_resource type="Texture2D" uid="uid://dgvc6au3cofcn" path="res://content/sprites/ui/ui_journal_background_temp.png" id="4_e6yix"]
+
+[sub_resource type="Animation" id="Animation_xeol2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_8tgdr"]
+resource_name = "journal_close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.07118583),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_w5rkm"]
+resource_name = "journal_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666669),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8tgdr"]
+_data = {
+&"RESET": SubResource("Animation_xeol2"),
+&"journal_close": SubResource("Animation_8tgdr"),
+&"journal_open": SubResource("Animation_w5rkm")
+}
+
+[node name="Journal" type="Control" unique_id=914732942]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_lhcta")
+open_journal_action = ExtResource("2_ssw2a")
+close_journal_action = ExtResource("3_e6yix")
+
+[node name="Sounds" type="Node" parent="." unique_id=1333521127]
+
+[node name="OpenSound" type="AudioStreamPlayer" parent="Sounds" unique_id=2061391861]
+stream = ExtResource("2_e7v2m")
+
+[node name="CloseSound" type="AudioStreamPlayer" parent="Sounds" unique_id=1051787048]
+stream = ExtResource("3_ssw2a")
+
+[node name="Background" type="Control" parent="." unique_id=594913312]
+anchors_preset = 0
+offset_left = 824.0
+offset_top = 416.0
+offset_right = 864.0
+offset_bottom = 456.0
+
+[node name="BG" type="TextureRect" parent="Background" unique_id=879503038]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -824.0
+offset_top = -416.0
+offset_right = 1056.0
+offset_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_e6yix")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=934573695]
+libraries/ = SubResource("AnimationLibrary_8tgdr")
