@@ -12,3 +12,5 @@ script = ExtResource("1_wgl4k")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 shape = ExtResource("2_wgl4k")
 debug_color = Color(0.1839638, 0.5189261, 0.99999994, 1)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

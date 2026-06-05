@@ -13,3 +13,6 @@ func get_stair_center() -> Vector3:
 		return Vector3(global_position.x, custom_y_value, global_position.z)
 	else:
 		return Vector3(global_position.x, custom_y_value - 0.001, global_position.z)
+
+func _on_area_entered(area: Area3D) -> void:
+	super(area)

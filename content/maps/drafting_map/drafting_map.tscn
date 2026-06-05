@@ -2878,6 +2878,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 8)
 [node name="_Area3D_33518" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=1532859912 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
 
+[node name="_Area3D_33524" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=2036416159 instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
+
+[node name="_Area3D_33523" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=1310622247 instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 4)
+
 [node name="_Area3D_33519" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=1484652675 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 4)
 
@@ -2889,9 +2895,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, 0)
 
 [node name="_Area3D_33522" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=1909484063 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 0)
-
-[node name="_Area3D_33523" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=1991978180 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -2, 4)
 
 [node name="_Area3D_46661" parent="Map Grid/tile_grid_floor2/west_hall_grid" unique_id=493451055 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -2, 12)
@@ -2921,7 +2924,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -2, 12)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -2, 12)
 
 [node name="tile_grid_floor3" type="Node3D" parent="Map Grid" unique_id=667037725]
-visible = false
 
 [node name="E-grid" type="Node3D" parent="Map Grid/tile_grid_floor3" unique_id=377771365]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -44)
@@ -5154,6 +5156,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, 0)
 [node name="Stairs" type="Node3D" parent="Map Grid" unique_id=1248415232]
 
 [node name="stairs_to_2nd_grid" type="Node3D" parent="Map Grid/Stairs" unique_id=1151726084]
+visible = false
 
 [node name="stairs_main_grid" type="Node3D" parent="Map Grid/Stairs/stairs_to_2nd_grid" unique_id=181185920]
 
@@ -5233,6 +5236,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 4, -8)
 custom_y_value = 7.0
 
 [node name="stairs_to_wine_cellar" type="Node3D" parent="Map Grid/Stairs" unique_id=1582774752]
+visible = false
 
 [node name="TileStair" parent="Map Grid/Stairs/stairs_to_wine_cellar" unique_id=255670478 instance=ExtResource("11_3gqqm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, -4, -48)
@@ -5255,6 +5259,7 @@ custom_y_value = -8.0
 is_bottom_stair = true
 
 [node name="stairs_to3rd_grid" type="Node3D" parent="Map Grid/Stairs" unique_id=607570689]
+visible = false
 
 [node name="single_stairs_E" type="Node3D" parent="Map Grid/Stairs/stairs_to3rd_grid" unique_id=295858960]
 
@@ -5280,11 +5285,6 @@ custom_y_value = 8.0
 [node name="TileStair2" parent="Map Grid/Stairs/stairs_to3rd_grid/single_stairs_W" unique_id=826275501 instance=ExtResource("11_3gqqm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 8, 1)
 custom_y_value = 11.0
-
-[node name="TileStair3" parent="Map Grid/Stairs/stairs_to3rd_grid/single_stairs_W" unique_id=1469122890 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 12, 5)
-visible = false
-custom_y_value = 12.0
 
 [node name="stairs_N" type="Node3D" parent="Map Grid/Stairs/stairs_to3rd_grid" unique_id=431782872]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 8, 44)

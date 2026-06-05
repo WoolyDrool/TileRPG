@@ -41,6 +41,9 @@ func _process(delta: float) -> void:
 	if facing_dir > 360:
 		facing_dir -= 360
 	handle_movement_input()
+	
+	if !navigator.current_tile:
+		navigator.rescan()
 
 #region Movement
 func handle_movement_input() -> void:

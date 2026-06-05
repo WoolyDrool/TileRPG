@@ -25,7 +25,7 @@ height = 1.5
 top_radius = 0.1
 height = 1.5
 
-[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("wall_collide_sound")]
+[node name="PlayerCharacter" type="Area3D" unique_id=1809113002 node_paths=PackedStringArray("wall_collide_sound") groups=["Player"]]
 collision_mask = 3
 script = ExtResource("1_1v1wt")
 move_forward_action = ExtResource("2_wi17q")
@@ -56,10 +56,8 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.8
 mesh = SubResource("CylinderMesh_ni121")
 
 [node name="GridNavigator" parent="CamContainer" unique_id=604307972 node_paths=PackedStringArray("foostep_sfx", "turn_sfx") instance=ExtResource("2_6ahhe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 tween_speed = 0.15
-moving = null
-wall_in_front = null
-wall_in_back = null
 foostep_sfx = NodePath("../FootstepSFX")
 turn_sfx = NodePath("../TurnSFX")
 

@@ -23,7 +23,7 @@ extends Node3D
 var current_rot_in_deg : float 
 
 func _ready():
-	rescan()
+	pass
 
 func rescan():
 	#print("GridNav: RESCANNING...")
@@ -113,12 +113,6 @@ func rotation_tween(new_rotation : float, parent : Node3D):
 	rescan()
 	moving = false
 	rotation_tween = null 
-	
-func _on_tile_detector_area_entered(area: Area3D) -> void:
-	if area.is_in_group("Tile"):
-		if !previous_tile && current_tile:
-			previous_tile = current_tile
-		current_tile = area
 
-func _on_tile_detector_area_exited(area: Area3D) -> void:
-	pass
+func enter_new_tile(tile : Tile):
+	current_tile = tile
