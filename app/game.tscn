@@ -5,8 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://cr3dnxvimj2x1" path="res://player/player_character.tscn" id="4_430kh"]
 [ext_resource type="Material" uid="uid://cun5aepcu7xrv" path="res://shaders/dither_shader_material.tres" id="4_h3mk6"]
 [ext_resource type="AudioStream" uid="uid://dhpn0vn3makv2" path="res://sound/music/music_OST test.mp3" id="6_l0u5n"]
-[ext_resource type="Texture2D" uid="uid://bvkv1utkoqfts" path="res://content/sprites/placeholders/Placeholder_Spirit_NOT_MY_OC.png" id="7_w4dt1"]
-[ext_resource type="Texture2D" uid="uid://djq7piso0pbn5" path="res://content/sprites/placeholders/Placeholder_Zathu.png" id="8_emn11"]
 [ext_resource type="Script" uid="uid://bshvjc00ycfjl" path="res://app/input_manager.gd" id="9_emn11"]
 [ext_resource type="Resource" uid="uid://dm21mlqiyc8pj" path="res://player/input mappings/global/switch_to_gamepad.tres" id="10_ea5kx"]
 [ext_resource type="Resource" uid="uid://fs7cixgaxcv4" path="res://player/input mappings/global/global_gamepad.tres" id="11_wrr3n"]
@@ -17,8 +15,8 @@
 [ext_resource type="Resource" uid="uid://dlysjhr7w6pr" path="res://player/input mappings/global/global_kbm.tres" id="15_xgiyr"]
 [ext_resource type="Resource" uid="uid://b1h8ioakg54ds" path="res://player/input mappings/movement/movement_kbm.tres" id="16_4f8u2"]
 [ext_resource type="Resource" uid="uid://dkx4ge0aq7pn6" path="res://player/input mappings/ui/ui_kbm.tres" id="17_crltq"]
+[ext_resource type="PackedScene" uid="uid://dymoaf4fhfvr7" path="res://content/maps/drafting_map/drafting_map.tscn" id="17_ea5kx"]
 [ext_resource type="Resource" uid="uid://ryde3kxr538h" path="res://player/input mappings/ui/selector mode/ui_select_kbm.tres" id="19_bk3sl"]
-[ext_resource type="PackedScene" uid="uid://djdv15fatg2ge" path="res://content/maps/debug/map_stairs_debug.tscn" id="19_oklfv"]
 
 [node name="Game" type="Node" unique_id=1808958490]
 
@@ -44,7 +42,7 @@ size = Vector2i(1103, 829)
 render_target_update_mode = 4
 
 [node name="PlayerCharacter" parent="DitherShader/SubViewport" unique_id=1681947254 instance=ExtResource("4_430kh")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 13, 0, 0)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2, 0, 0)
 turn_speed = 0.15
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=366516759]
@@ -58,19 +56,6 @@ script = ExtResource("3_430kh")
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="GlobalAudio" unique_id=1885079773]
 stream = ExtResource("6_l0u5n")
 volume_db = -15.0
-
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1851928710]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -36, 2, 22)
-billboard = 1
-texture = ExtResource("7_w4dt1")
-
-[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=21567885]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -32, 2, 22)
-billboard = 1
-texture = ExtResource("8_emn11")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1699129836]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, 24)
 
 [node name="InputManager" type="Node" parent="." unique_id=216562538]
 script = ExtResource("9_emn11")
@@ -86,7 +71,6 @@ ui_mode_kbm = ExtResource("17_crltq")
 ui_mode_selector_keyboard = ExtResource("19_bk3sl")
 metadata/_custom_type_script = "uid://bshvjc00ycfjl"
 
-[node name="StairsDebug" parent="." unique_id=1762877862 instance=ExtResource("19_oklfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+[node name="Map" parent="." unique_id=566139984 instance=ExtResource("17_ea5kx")]
 
 [editable path="DitherShader/SubViewport/PlayerCharacter"]
