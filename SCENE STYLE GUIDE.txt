@@ -1,0 +1,21 @@
+Main Map Node
+-- World Environment # This is a post processing node
+---- DirectionalLight3D (The Global Sun)
+-- Map Grid # Only tiles
+---- tile_grid_(place)
+---- Stairs # We keep the stairs separate because they are different types of tiles technically
+---- ---- stairs_to_(place)
+-- Geometry # This is where all meshes that are part of the map go
+---- blend file
+---- Walls are here right now but we probably wont use wall prefabs forever so yk
+-- Lighting
+---- (place name)
+---- ---- All lights for that place go here
+-- Entities
+---- NPCS
+---- ---- NPC scenes go here
+---- Interactables
+---- ---- Things like flavor text interactables, chests, swords etc go here
+
+Other things will probably be added as we need them but just generally try to separate different nodes with different purposes
+into their own parent/child hierarchies. It just makes working with everything and locking/unlocking them easier
