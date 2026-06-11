@@ -3,5 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c6yu61acj5g6l" path="res://textures/tex_CarpetSecondPass.png" id="1_4c8rw"]
 
 [resource]
+cull_mode = 2
+albedo_color = Color(0, 0.4089288, 0.8408668, 1)
 albedo_texture = ExtResource("1_4c8rw")
 metallic_specular = 0.0
