@@ -5,37 +5,20 @@
 [ext_resource type="PackedScene" uid="uid://bhx7cgn7eeneu" path="res://content/maps/drafting_map/map_ChateauxCamlann_workingfile.blend" id="3_4gcwt"]
 [ext_resource type="PackedScene" uid="uid://bqaiw6ilboars" path="res://systems/grid/tile_grid_generator.tscn" id="3_cmg8b"]
 [ext_resource type="Material" uid="uid://0jx30dukpo2q" path="res://textures/texture_placeholder_nobackfacecull.tres" id="4_oij1o"]
-[ext_resource type="Material" uid="uid://w1nofopeeh3i" path="res://content/rooms/room tiles/test/mat_tile_floor.tres" id="5_5txb8"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="5_cmgu4"]
-[ext_resource type="Material" uid="uid://q4kj2ke3tq7x" path="res://content/rooms/room tiles/test/mat_tile_wall_triplanar.tres" id="5_nn1rh"]
 [ext_resource type="PackedScene" uid="uid://erbpgyfnc06i" path="res://content/geometry/walls/default_wall.tscn" id="5_yap6t"]
-[ext_resource type="Material" uid="uid://ciwu7lb1jmjq5" path="res://content/rooms/room tiles/test/mat_tile_wall.tres" id="6_6d1cb"]
-[ext_resource type="Material" uid="uid://b5tblb8hmbq04" path="res://content/rooms/room tiles/test/mat_tile_ceiling.tres" id="7_nn1rh"]
 [ext_resource type="PackedScene" uid="uid://b7bfb5sq720dj" path="res://systems/grid/tile_stair.tscn" id="11_3gqqm"]
 [ext_resource type="Texture2D" uid="uid://bdsljc2qhwsax" path="res://content/npcs/placeholders/spr_merlin_placeholder.png" id="13_1dqgv"]
-[ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="14_eypai"]
 [ext_resource type="Resource" uid="uid://mqo18021e80o" path="res://content/dialogic/timelines/merlinHandler.dtl" id="15_xdjhd"]
 [ext_resource type="Texture2D" uid="uid://dbjsjphd0aola" path="res://content/npcs/placeholders/spr_gawain_placeholder.png" id="16_ebh0p"]
 [ext_resource type="Resource" uid="uid://csvnbl4ky5bu0" path="res://content/dialogic/timelines/gawain/gawainHandler.dtl" id="17_7kpeg"]
-[ext_resource type="Texture2D" uid="uid://clnq1wbnpmyj3" path="res://content/sprites/placeholders/Gawain Placeholder.jpg" id="18_jxh01"]
+[ext_resource type="Texture2D" uid="uid://b6yrcsqvymotd" path="res://content/npcs/placeholders/spr_bediwyr_placeholder.png" id="18_ygohi"]
+[ext_resource type="Resource" uid="uid://i8ryhspfmmhv" path="res://content/dialogic/timelines/bedivereHandler.dtl" id="19_2m5lg"]
 [ext_resource type="PackedScene" uid="uid://bimooljovnhn3" path="res://content/npcs/entity_npc.tscn" id="19_6g1bx"]
 [ext_resource type="Texture2D" uid="uid://dm2bohk23q2a8" path="res://content/npcs/placeholders/spr_lancelot_placeholder.png" id="20_t11ke"]
 [ext_resource type="Resource" uid="uid://cnjidumy25gby" path="res://content/dialogic/timelines/LancelotHandler.dtl" id="21_mc0dn"]
 [ext_resource type="Texture2D" uid="uid://ce27d5cyt2bke" path="res://content/npcs/placeholders/spr_arthur_placeholder.png" id="22_0xf36"]
 [ext_resource type="Resource" uid="uid://dsv5uh8ch4m2c" path="res://content/dialogic/timelines/arthurHandler.dtl" id="23_cpudf"]
-
-[sub_resource type="Gradient" id="Gradient_hhxbt"]
-
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_qtiad"]
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_gvuoq"]
-noise = SubResource("FastNoiseLite_qtiad")
-color_ramp = SubResource("Gradient_hhxbt")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk17i"]
-cull_mode = 2
-albedo_color = Color(0.8406158, 0.8748382, 0.9027996, 1)
-albedo_texture = SubResource("NoiseTexture2D_gvuoq")
 
 [node name="DraftingMap" type="Node3D" unique_id=566139984 node_paths=PackedStringArray("environment")]
 script = ExtResource("1_1u3kj")
@@ -2925,6 +2908,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -2, -4)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -2, 0)
 
 [node name="tile_grid_floor3" type="Node3D" parent="Map Grid" unique_id=667037725]
+visible = false
 
 [node name="E-grid" type="Node3D" parent="Map Grid/tile_grid_floor3" unique_id=377771365]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -44)
@@ -3256,9 +3240,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 10, 4)
 [node name="@Area3D@166324" parent="Map Grid/tile_grid_floor3/E-grid" unique_id=369962065 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 10, 4)
 
-[node name="@Area3D@166325" parent="Map Grid/tile_grid_floor3/E-grid" unique_id=1503967069 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 10, 4)
-
 [node name="@Area3D@166327" parent="Map Grid/tile_grid_floor3/E-grid" unique_id=37649583 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 10, 4)
 
@@ -3561,7 +3542,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 10, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
 
 [node name="tile_grid_floor4" type="Node3D" parent="Map Grid" unique_id=374507078]
-visible = false
 
 [node name="back_hall" type="Node3D" parent="Map Grid/tile_grid_floor4" unique_id=305787698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -16)
@@ -3911,12 +3891,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 14, 0)
 [node name="@Area3D@259590" parent="Map Grid/tile_grid_floor4/E_4_grid" unique_id=1917522731 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 14, 0)
 
-[node name="@Area3D@259591" parent="Map Grid/tile_grid_floor4/E_4_grid" unique_id=287725771 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 14, 0)
-
-[node name="@Area3D@259592" parent="Map Grid/tile_grid_floor4/E_4_grid" unique_id=1385604538 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, 0)
-
 [node name="W_4_grid" type="Node3D" parent="Map Grid/tile_grid_floor4" unique_id=1834485610]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, 20)
 
@@ -3955,12 +3929,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 14, 24)
 
 [node name="_Area3D_259506" parent="Map Grid/tile_grid_floor4/W_4_grid" unique_id=1144271337 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 14, 24)
-
-[node name="_Area3D_259507" parent="Map Grid/tile_grid_floor4/W_4_grid" unique_id=1471205289 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 14, 24)
-
-[node name="_Area3D_259508" parent="Map Grid/tile_grid_floor4/W_4_grid" unique_id=1555347011 instance=ExtResource("5_cmgu4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, 24)
 
 [node name="_Area3D_259509" parent="Map Grid/tile_grid_floor4/W_4_grid" unique_id=42041316 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 14, 20)
@@ -4216,6 +4184,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14, 0)
 
 [node name="tile_grid_floor5" type="Node3D" parent="Map Grid" unique_id=1097004284]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+visible = false
 
 [node name="back_hall" type="Node3D" parent="Map Grid/tile_grid_floor5" unique_id=269253308]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -16)
@@ -5317,22 +5286,22 @@ custom_y_value = 14.0
 is_bottom_stair = true
 
 [node name="TileStair3" parent="Map Grid/Stairs/stairs_to4th_grid/SW_stairs" unique_id=614169234 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 16, 40)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 12, 40)
 custom_y_value = 16.0
 
 [node name="TileStair4" parent="Map Grid/Stairs/stairs_to4th_grid/SW_stairs" unique_id=957293884 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 16, 36)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 12, 36)
 custom_y_value = 16.0
 
 [node name="SE_stairs" type="Node3D" parent="Map Grid/Stairs/stairs_to4th_grid" unique_id=492978379]
 
 [node name="TileStair" parent="Map Grid/Stairs/stairs_to4th_grid/SE_stairs" unique_id=1394955799 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 12, -39)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 12, -40)
 custom_y_value = 14.0
 is_bottom_stair = true
 
 [node name="TileStair3" parent="Map Grid/Stairs/stairs_to4th_grid/SE_stairs" unique_id=1290672785 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 16, -39)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 12, -40)
 custom_y_value = 16.0
 
 [node name="stairs_to5th_grid" type="Node3D" parent="Map Grid/Stairs" unique_id=1130278733]
@@ -5349,7 +5318,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 16, 44)
 custom_y_value = 18.0
 
 [node name="TileStair3" parent="Map Grid/Stairs/stairs_to5th_grid/SW_stairs" unique_id=1771252503 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 20, 44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 16, 44)
 custom_y_value = 20.0
 
 [node name="SE_stairs" type="Node3D" parent="Map Grid/Stairs/stairs_to5th_grid" unique_id=2145763214]
@@ -5365,101 +5334,52 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 16, 44)
 custom_y_value = 18.0
 
 [node name="TileStair3" parent="Map Grid/Stairs/stairs_to5th_grid/SE_stairs" unique_id=1967573872 instance=ExtResource("11_3gqqm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 20, 44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 16, 44)
 custom_y_value = 20.0
 
 [node name="Geometry" type="Node3D" parent="." unique_id=1956509257]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
-[node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=1841152756 instance=ExtResource("3_4gcwt")]
+[node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=1062130757 instance=ExtResource("3_4gcwt")]
 
-[node name="Art Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="2" unique_id=1440727931]
+[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1062130757, 55916684) index="3" unique_id=1047984968]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="arthur_office" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="4" unique_id=188553189]
-surface_material_override/0 = ExtResource("5_nn1rh")
-
-[node name="Atrium_walkway" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="5" unique_id=270296402]
-surface_material_override/0 = SubResource("StandardMaterial3D_tk17i")
-
-[node name="back_hall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="6" unique_id=611996508]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="Eatery_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="10" unique_id=336250385]
+[node name="Plane_005" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1062130757, 55916684) index="5" unique_id=748391239]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Eatery_wall_001" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="11" unique_id=1210734071]
+[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1062130757, 55916684) index="6" unique_id=1099312733]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Entry_Floor" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="12" unique_id=1535529181]
-material_override = ExtResource("5_5txb8")
-
-[node name="hall_kitchen" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="14" unique_id=1428917088]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="kitchen_floor" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="15" unique_id=365336876]
-surface_material_override/0 = ExtResource("6_6d1cb")
-
-[node name="Lobby_floor" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="17" unique_id=1038736269]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="merlin_crate" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="20" unique_id=235339302]
-visible = false
-
-[node name="Merlin_Hall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="21" unique_id=855345810]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="office_1" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="22" unique_id=1697682054]
-surface_material_override/0 = ExtResource("7_nn1rh")
-
-[node name="office_2" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="23" unique_id=2076836722]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="office_3" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="24" unique_id=1750010423]
-surface_material_override/0 = ExtResource("7_nn1rh")
-
-[node name="office_hall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="25" unique_id=414496903]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="Plane_001" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="26" unique_id=907125199]
+[node name="Plane_007" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1062130757, 55916684) index="7" unique_id=240535716]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="StaticBody3D" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent/Reception_hall_wall" parent_id_path=PackedInt32Array(1841152756, 2050897374) index="0" unique_id=1090742987]
-collision_layer = 4
-collision_mask = 4
-
-[node name="Reception_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="32" unique_id=1730691252]
+[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="0" unique_id=187976327]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Reception_wall_001" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="33" unique_id=1533637647]
+[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="1" unique_id=121768773]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="staff_hallway" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_groundfloor_parent" parent_id_path=PackedInt32Array(1841152756, 255225282) index="35" unique_id=961596184]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1841152756, 1511465584) index="3" unique_id=1827645802]
+[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="2" unique_id=1525306489]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_005" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1841152756, 1511465584) index="5" unique_id=483646224]
+[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="3" unique_id=1621283144]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1841152756, 1511465584) index="6" unique_id=2068408958]
+[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="4" unique_id=691507584]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_007" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1841152756, 1511465584) index="7" unique_id=599589403]
+[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1062130757, 2100409703) index="5" unique_id=431045257]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="rm402_004" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1841152756, 1078091301) index="0" unique_id=1451527993]
-surface_material_override/0 = ExtResource("5_5txb8")
-
-[node name="Stairs_W_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(1841152756, 1479161106) index="2" unique_id=65198234]
+[node name="Stairs_W_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(1062130757, 658058237) index="2" unique_id=493418390]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Stairs_W_001" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_W" parent_id_path=PackedInt32Array(1841152756, 24865018) index="2" unique_id=106977984]
+[node name="Stairs_W_001" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_W" parent_id_path=PackedInt32Array(1062130757, 40657537) index="2" unique_id=1086822142]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="19" unique_id=203493417]
+[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="15" unique_id=1137140545]
 visible = false
 
 [node name="Walls" type="Node3D" parent="Geometry" unique_id=1214491750]
@@ -5630,30 +5550,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 3, 13)
 
 [node name="NPCS" type="Node3D" parent="Entities" unique_id=1745521851]
 
-[node name="Merlin" type="Sprite3D" parent="Entities/NPCS" unique_id=410497345]
-transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -35.4, 1.35, -6.6782794)
-billboard = 1
+[node name="Merlin" parent="Entities/NPCS" unique_id=422358453 instance=ExtResource("19_6g1bx")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -35.081825, 1.2752903, -5.8938284)
 texture = ExtResource("13_1dqgv")
-
-[node name="NPCDefault" parent="Entities/NPCS/Merlin" unique_id=1255377170 instance=ExtResource("14_eypai")]
 dialogic_timeline = ExtResource("15_xdjhd")
-
-[node name="Gawain" type="Sprite3D" parent="Entities/NPCS" unique_id=611757868]
-transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -18.471601, 0.7, 16.018938)
-billboard = 1
-texture = ExtResource("16_ebh0p")
-
-[node name="NPCDefault" parent="Entities/NPCS/Gawain" unique_id=722115353 instance=ExtResource("14_eypai")]
-dialogic_timeline = ExtResource("17_7kpeg")
-
-[node name="ScannableEntity3" parent="Entities/NPCS/Gawain/NPCDefault" index="0" unique_id=137746738]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -6)
-
-[node name="CollisionShape3D" parent="Entities/NPCS/Gawain/NPCDefault/ScannableEntity3" index="0" unique_id=1602212228]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, 0)
-
-[node name="Sprite3D" parent="Entities/NPCS/Gawain/NPCDefault/ScannableEntity3" index="1" unique_id=321509298]
-texture = ExtResource("18_jxh01")
 
 [node name="Lancelot" parent="Entities/NPCS" unique_id=651949496 instance=ExtResource("19_6g1bx")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -90, 0, -11)
@@ -5665,10 +5565,16 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -98, 2, 28)
 texture = ExtResource("22_0xf36")
 dialogic_timeline = ExtResource("23_cpudf")
 
+[node name="Gawain" parent="Entities/NPCS" unique_id=573461442 instance=ExtResource("19_6g1bx")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -17.242308, 1.2701178, 15.969133)
+texture = ExtResource("16_ebh0p")
+dialogic_timeline = ExtResource("17_7kpeg")
+
+[node name="NPCEntity" parent="." unique_id=2061623786 instance=ExtResource("19_6g1bx")]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -55, 20.940971, 33)
+texture = ExtResource("18_ygohi")
+dialogic_timeline = ExtResource("19_2m5lg")
+
 [editable path="Geometry/map_ChateauxCamlann_workingfile"]
 [editable path="Geometry/Walls/Office Walls/OfficeBackWalls"]
 [editable path="TileGridGenerator"]
-[editable path="Entities/NPCS/Merlin/NPCDefault"]
-[editable path="Entities/NPCS/Merlin/NPCDefault/ScannableEntity3"]
-[editable path="Entities/NPCS/Gawain/NPCDefault"]
-[editable path="Entities/NPCS/Gawain/NPCDefault/ScannableEntity3"]
