@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://donrgfkgw8vcm"]
+
+[ext_resource type="Script" uid="uid://80elcodyqohb" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_v63if"]
+
+[resource]
+script = ExtResource("1_v63if")
+entries = {
+"death of Arthur": {
+"name": "death of Arthur"
+},
+"others at Camlann": {
+"name": "others at Camlann"
+},
+"the Questing Beast": {
+"name": "the Questing Beast"
+}
+}

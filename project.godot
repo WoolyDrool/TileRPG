@@ -35,9 +35,11 @@ directories/dch_directory={
 "Viktor": "res://content/dialogic/characters/Viktor.dch",
 "arthur": "res://content/dialogic/characters/arthur.dch",
 "bedivere": "res://content/dialogic/characters/bedivere.dch",
+"bors": "res://content/dialogic/characters/bors.dch",
 "brunor": "res://content/dialogic/characters/brunor.dch",
 "galahad": "res://content/dialogic/characters/galahad.dch",
 "gawain": "res://content/dialogic/characters/gawain.dch",
+"guinevere": "res://content/dialogic/characters/guinevere.dch",
 "lancelot": "res://content/dialogic/characters/lancelot.dch",
 "lucan": "res://content/dialogic/characters/lucan.dch",
 "merlin": "res://content/dialogic/characters/merlin.dch",
@@ -52,10 +54,14 @@ directories/dtl_directory={
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
 "bedivereHandler": "res://content/dialogic/timelines/bedivereHandler.dtl",
 "bedivereIntro": "res://content/dialogic/timelines/bedivereIntro.dtl",
+"borsFirstCall": "res://content/dialogic/timelines/borsFirstCall.dtl",
+"borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
+"galahadIntro": "res://content/dialogic/timelines/galahadIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawain/gawainHandler.dtl",
 "gawainHints": "res://content/dialogic/timelines/gawain/gawainHints.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawain/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/testing/glossaryTesting.dtl",
+"gwenIntro": "res://content/dialogic/timelines/gwenIntro.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
@@ -135,7 +141,7 @@ variables={
 }
 }
 }
-glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d"]
+glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d", "uid://donrgfkgw8vcm"]
 
 [display]
 

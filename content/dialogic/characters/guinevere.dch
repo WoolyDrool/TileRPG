@@ -11,12 +11,8 @@
 "suffix": ""
 },
 &"default_portrait": "",
-&"description": "\"My goodness\" is often uttered by your character.
-
-Your character's speech is sprinkled with technical terms.
-
-Your character often uses slang when agitated.",
-&"display_name": "Bedivere",
+&"description": "",
+&"display_name": "Guinevere",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
