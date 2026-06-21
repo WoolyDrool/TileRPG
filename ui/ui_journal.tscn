@@ -6,6 +6,9 @@
 [ext_resource type="Resource" uid="uid://oggaxicrx82v" path="res://player/input mappings/ui/actions/ui_back.tres" id="3_e6yix"]
 [ext_resource type="AudioStream" uid="uid://c2xbf6dha6lc6" path="res://sound/sfx/ui/sfx_ui_journal_close.wav" id="3_ssw2a"]
 [ext_resource type="Texture2D" uid="uid://dgvc6au3cofcn" path="res://content/sprites/ui/ui_journal_background_temp.png" id="4_e6yix"]
+[ext_resource type="PackedScene" uid="uid://dvfsik06gfwy3" path="res://ui/ui_journal_characterpanel.tscn" id="7_e6yix"]
+[ext_resource type="Resource" uid="uid://c8k2482m4joq4" path="res://content/dialogic/characters/merlin.dch" id="8_hosou"]
+[ext_resource type="Resource" uid="uid://i8wmmt227w8d" path="res://content/dialogic/glossaries/gawainPhrases.tres" id="9_6jbbn"]
 
 [sub_resource type="Animation" id="Animation_xeol2"]
 length = 0.001
@@ -122,6 +125,15 @@ offset_bottom = 624.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_e6yix")
+
+[node name="LeftCharacterInfo" parent="Background" unique_id=1367842249 instance=ExtResource("7_e6yix")]
+layout_mode = 0
+offset_left = -520.0
+offset_top = -360.0
+offset_right = -16.0
+offset_bottom = 415.0
+assoc_character = ExtResource("8_hosou")
+assoc_glossary = ExtResource("9_6jbbn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=934573695]
 libraries/ = SubResource("AnimationLibrary_8tgdr")

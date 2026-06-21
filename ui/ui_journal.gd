@@ -22,7 +22,7 @@ func gameplay_input():
 		print("awawa")
 		if !journal_open:
 			open_journal()
-	elif close_journal_action.is_triggered():
+	if close_journal_action.is_triggered():
 		if journal_open:
 			close_journal()
 
@@ -34,7 +34,7 @@ func open_journal():
 	SignalBus.change_input_mode_to_ui.emit()
 	
 func close_journal():
-	journal_open = false
 	close_sound_player.play()
 	animation_player.play("journal_close")
 	SignalBus.change_input_mode_to_gameplay.emit()
+	journal_open = false	

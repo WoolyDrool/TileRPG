@@ -1,0 +1,168 @@
+[gd_scene format=3 uid="uid://dvfsik06gfwy3"]
+
+[ext_resource type="Script" uid="uid://l3mnfefu5fso" path="res://ui/ui_journal_characterpanel.gd" id="1_7533q"]
+[ext_resource type="Texture2D" uid="uid://ckrbtby7bowe7" path="res://content/sprites/ui/spr_ui_temp_character_portrait.jpg" id="2_q2upt"]
+
+[node name="CharacterInfo" type="Control" unique_id=1367842249]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -519.0
+offset_top = -359.0
+offset_right = -15.0
+offset_bottom = 416.0
+script = ExtResource("1_7533q")
+
+[node name="BlurbPanel" type="Control" parent="." unique_id=566227291]
+anchors_preset = 0
+offset_right = 511.0
+offset_bottom = 255.0
+
+[node name="CharPortrait" type="TextureRect" parent="BlurbPanel" unique_id=44004188]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 206.0
+offset_bottom = 205.0
+texture = ExtResource("2_q2upt")
+expand_mode = 1
+
+[node name="NameLabel" type="RichTextLabel" parent="BlurbPanel" unique_id=584087801]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 215.0
+offset_top = 14.0
+offset_right = 507.0
+offset_bottom = 54.0
+theme_override_colors/default_color = Color(0.32845798, 0.23430935, 0.13889581, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Character Name"
+scroll_active = false
+
+[node name="PronounLabel" type="RichTextLabel" parent="BlurbPanel" unique_id=1042125225]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 215.0
+offset_top = 39.0
+offset_right = 507.0
+offset_bottom = 79.0
+theme_override_colors/default_color = Color(0.32845798, 0.23430935, 0.13889581, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[i](It/Its)[/i]"
+scroll_active = false
+
+[node name="BioLabel" type="RichTextLabel" parent="BlurbPanel" unique_id=1918705207]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 215.0
+offset_top = 71.0
+offset_right = 507.0
+offset_bottom = 205.0
+theme_override_colors/default_color = Color(0.3963744, 0.3691551, 0.2962131, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[i]This is the characters bio. It can be updated throughout the game with new information about their personality or relationships. [/i]"
+fit_content = true
+scroll_active = false
+
+[node name="QuestPanel" type="Control" parent="." unique_id=1327729462]
+anchors_preset = 0
+offset_left = 15.0
+offset_top = 239.0
+offset_right = 495.0
+offset_bottom = 391.0
+
+[node name="QuestLabel" type="RichTextLabel" parent="QuestPanel" unique_id=437257793]
+layout_mode = 0
+offset_top = -24.0
+offset_right = 292.0
+offset_bottom = 16.0
+theme_override_colors/default_color = Color(0.32845798, 0.23430935, 0.13889581, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[i]- Quests -[/i]"
+scroll_active = false
+
+[node name="Checkboxes" type="VBoxContainer" parent="QuestPanel" unique_id=1565757873]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuestCheckBox1" type="CheckBox" parent="QuestPanel/Checkboxes" unique_id=1501535770]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+disabled = true
+text = "Quest Item 1"
+
+[node name="QuestCheckBox2" type="CheckBox" parent="QuestPanel/Checkboxes" unique_id=2134065575]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+disabled = true
+text = "Quest Item 2"
+
+[node name="QuestCheckBox3" type="CheckBox" parent="QuestPanel/Checkboxes" unique_id=750612467]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+disabled = true
+text = "Quest Item 3"
+
+[node name="QuestCheckBox4" type="CheckBox" parent="QuestPanel/Checkboxes" unique_id=1753606553]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.1728327, 0.17283267, 0.17283267, 1)
+disabled = true
+text = "Quest Item 4"
+
+[node name="PhrasesPanel" type="Control" parent="." unique_id=1858031536]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PhrasesLabel" type="RichTextLabel" parent="PhrasesPanel" unique_id=452202950]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 3.0
+offset_right = 307.0
+offset_bottom = 43.0
+theme_override_colors/default_color = Color(0.32845798, 0.23430935, 0.13889581, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "Discovered Phrases"
+scroll_active = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PhrasesPanel" unique_id=1482501295]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PhraseButton1" type="Button" parent="PhrasesPanel/VBoxContainer" unique_id=919841144]
+visible = false
+layout_mode = 2
+text = "Phrase 1"
+alignment = 0
+
+[node name="PhraseButton2" type="Button" parent="PhrasesPanel/VBoxContainer" unique_id=113518099]
+visible = false
+layout_mode = 2
+text = "Phrase 2"
+alignment = 0
+
+[node name="PhraseButton3" type="Button" parent="PhrasesPanel/VBoxContainer" unique_id=909640989]
+visible = false
+layout_mode = 2
+text = "Phrase 3"
+alignment = 0

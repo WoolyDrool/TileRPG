@@ -139,7 +139,7 @@ func _add_entry_key_alias(entry_key: String, alias: String) -> bool:
 	return false
 
 
-## Adds [param entry] to the glossary if it does not exist.
+	## Adds [param entry] to the glossary if it does not exist.
 ## If it does exist, returns false.
 func try_add_entry(entry: Dictionary) -> bool:
 	var entry_key: String = entry[NAME_PROPERTY]

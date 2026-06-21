@@ -12,6 +12,9 @@ radius = 2.4
 billboard = 1
 texture = ExtResource("1_x78f6")
 script = ExtResource("2_4wlt4")
+phrases = Dictionary[int, String]({
+0: "consumed with angst"
+})
 
 [node name="ScannableEntity" parent="." unique_id=137746738 instance=ExtResource("3_e4s38")]
 entity_name = "Our Guy"

@@ -10,12 +10,22 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
-&"description": "",
+&"default_portrait": "New portrait",
+&"description": "he be merlin all over the place hahaaaaaaaaa",
 &"display_name": "Merlin",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["He/Him"],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"New portrait": {
+"export_overrides": {
+"image": "\"res://content/sprites/ui/spr_ui_temp_character_portrait.jpg\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

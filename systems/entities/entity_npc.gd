@@ -2,6 +2,7 @@ class_name NPCEntity
 extends Node
 
 @export var dialogic_timeline : DialogicTimeline
+@export var phrases : Dictionary[int, String]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
