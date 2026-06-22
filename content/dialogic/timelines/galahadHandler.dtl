@@ -1,0 +1,2 @@
+if {convo_progress.galahad.galahadGreeted} == false:
+	jump galahadIntro/

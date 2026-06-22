@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://dmdjm3rwoikb2"]
+
+[ext_resource type="Script" uid="uid://80elcodyqohb" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_5852j"]
+
+[resource]
+script = ExtResource("1_5852j")
+entries = {
+"the damn'd thing": {
+"name": "the damn'd thing"
+}
+}

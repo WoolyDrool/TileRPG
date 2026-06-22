@@ -1,0 +1,9 @@
+galahad: Percy, I thought your shame banished you from the Round Table forever. What gave you the courage to show your face around here again?
+Thanks for the faith, Galahad. I'd received an omen that made me think I should come back, shame or not.
+galahad: If you have received such a sign, then I suppose you are here for some large reason. What is your quest?
+- (Make bad joke)
+	To find the Holy Grail, and my favorite color's red, before you ask.
+	galahad: ...
+	galahad: What in the world are you talking about?
+	Nothing, nevermind. Should've figured you wouldn't get it.
+-  | [if {convo_progress.bedivere.bedivereGreeted} == true]

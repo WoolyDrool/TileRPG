@@ -1,3 +1,0 @@
-if {convo_progress.bedivere.bedivereGreeted} == false:
-	jump bedivereIntro/
-if {questProgress.sequenceRepair.sequenceStatus} == "broken":

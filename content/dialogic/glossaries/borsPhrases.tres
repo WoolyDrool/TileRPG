@@ -6,6 +6,7 @@
 script = ExtResource("1_v63if")
 entries = {
 "death of Arthur": {
+"case_sensitive": false,
 "name": "death of Arthur"
 },
 "others at Camlann": {

@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dbjsjphd0aola" path="res://content/npcs/placeholders/spr_gawain_placeholder.png" id="16_ebh0p"]
 [ext_resource type="Resource" uid="uid://csvnbl4ky5bu0" path="res://content/dialogic/timelines/gawain/gawainHandler.dtl" id="17_7kpeg"]
 [ext_resource type="Texture2D" uid="uid://b6yrcsqvymotd" path="res://content/npcs/placeholders/spr_bediwyr_placeholder.png" id="18_ygohi"]
-[ext_resource type="Resource" uid="uid://i8ryhspfmmhv" path="res://content/dialogic/timelines/bedivereHandler.dtl" id="19_2m5lg"]
+[ext_resource type="Resource" uid="uid://i8ryhspfmmhv" path="res://content/dialogic/timelines/bedivere/bedivereHandler.dtl" id="19_2m5lg"]
 [ext_resource type="PackedScene" uid="uid://bimooljovnhn3" path="res://content/npcs/entity_npc.tscn" id="19_6g1bx"]
 [ext_resource type="Texture2D" uid="uid://dm2bohk23q2a8" path="res://content/npcs/placeholders/spr_lancelot_placeholder.png" id="20_t11ke"]
 [ext_resource type="Resource" uid="uid://cnjidumy25gby" path="res://content/dialogic/timelines/LancelotHandler.dtl" id="21_mc0dn"]
@@ -5343,40 +5343,37 @@ metadata/_edit_lock_ = true
 
 [node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=1336605966 instance=ExtResource("3_4gcwt")]
 
-[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 981922049) index="3" unique_id=146503317]
+[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 164345544) index="3" unique_id=1831565471]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_005" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 981922049) index="5" unique_id=408186694]
+[node name="Plane_005" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 164345544) index="5" unique_id=1300555213]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 981922049) index="6" unique_id=521919598]
+[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 164345544) index="6" unique_id=1473142796]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Plane_007" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 981922049) index="7" unique_id=1758158289]
+[node name="Plane_007" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_2ndFloor_parent" parent_id_path=PackedInt32Array(1336605966, 164345544) index="7" unique_id=182812574]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="0" unique_id=1381101765]
+[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="0" unique_id=1222836902]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="1" unique_id=1368003527]
+[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="1" unique_id=1934359509]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="2" unique_id=169600482]
+[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="2" unique_id=809874016]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="3" unique_id=1296993942]
+[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="3" unique_id=1079979848]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="4" unique_id=1649470094]
+[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="4" unique_id=1822008821]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 808995237) index="5" unique_id=367234619]
+[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 574710451) index="5" unique_id=67756392]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Stairs_W_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_main_parent/Stairs_main_E" parent_id_path=PackedInt32Array(1336605966, 1349004438) index="2" unique_id=1541631305]
-surface_material_override/0 = ExtResource("4_oij1o")
-
-[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="15" unique_id=1200188778]
+[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="27" unique_id=423575542]
 visible = false
 
 [node name="Walls" type="Node3D" parent="Geometry" unique_id=1214491750]

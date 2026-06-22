@@ -52,10 +52,12 @@ directories/dtl_directory={
 "LancelotIntro": "res://content/dialogic/timelines/LancelotIntro.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
-"bedivereHandler": "res://content/dialogic/timelines/bedivereHandler.dtl",
-"bedivereIntro": "res://content/dialogic/timelines/bedivereIntro.dtl",
+"bedivereBeast": "res://content/dialogic/timelines/bedivere/bedivereBeast.dtl",
+"bedivereHandler": "res://content/dialogic/timelines/bedivere/bedivereHandler.dtl",
+"bedivereIntro": "res://content/dialogic/timelines/bedivere/bedivereIntro.dtl",
 "borsFirstCall": "res://content/dialogic/timelines/borsFirstCall.dtl",
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
+"galahadHandler": "res://content/dialogic/timelines/galahadHandler.dtl",
 "galahadIntro": "res://content/dialogic/timelines/galahadIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawain/gawainHandler.dtl",
 "gawainHints": "res://content/dialogic/timelines/gawain/gawainHints.dtl",
@@ -119,6 +121,10 @@ variables={
 "bedivere": {
 "bedivereGreeted": false
 },
+"galahad": {
+"galahadGreeted": false,
+"madeJoke": false
+},
 "gawain": {
 "tutorialSeen": false
 },
@@ -136,12 +142,15 @@ variables={
 }
 },
 "questProgress": {
+"questingBeast": {
+"investigationStatus": "no_info"
+},
 "sequenceRepair": {
 "sequenceStatus": "broken"
 }
 }
 }
-glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d", "uid://donrgfkgw8vcm"]
+glossary/glossary_files=["uid://ql82xcoxcnyg", "uid://i8wmmt227w8d", "uid://donrgfkgw8vcm", "uid://dmdjm3rwoikb2", "uid://3eu3hesd2dfi"]
 
 [display]
 

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" format=3 uid="uid://3eu3hesd2dfi"]
+
+[ext_resource type="Script" uid="uid://80elcodyqohb" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_bgndg"]
+
+[resource]
+script = ExtResource("1_bgndg")
+entries = {
+"Just to keep it in one place": {
+"case_sensitive": false,
+"enabled": false,
+"name": "Just to keep it in one place"
+},
+"questingBeast": {
+"enabled": false,
+"name": "questingBeast",
+"text": "no_info
+galahadknows
+howtrack
+(...)
+caught"
+},
+"sequenceProgress": {
+"enabled": false,
+"name": "sequenceProgress",
+"text": "broken
+beastFound
+pieceFound
+repaired"
+}
+}
