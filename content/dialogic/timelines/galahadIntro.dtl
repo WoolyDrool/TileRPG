@@ -2,8 +2,17 @@ galahad: Percy, I thought your shame banished you from the Round Table forever. 
 Thanks for the faith, Galahad. I'd received an omen that made me think I should come back, shame or not.
 galahad: If you have received such a sign, then I suppose you are here for some large reason. What is your quest?
 - (Make bad joke)
+	set {convo_progress.galahad.madeJoke} = true
 	To find the Holy Grail, and my favorite color's red, before you ask.
 	galahad: ...
 	galahad: What in the world are you talking about?
 	Nothing, nevermind. Should've figured you wouldn't get it.
--  | [if {convo_progress.bedivere.bedivereGreeted} == true]
+- (Make something up)
+	Nothing! I just thought it'd be nice to visit my cousin.
+	galahad: Cousins by blood we may be, but I cannot fathom myself a soulful relation of a deserter.
+	- (Explain yourself and argue)
+		(Vik doesn't feel like writing this rn)
+	- (Don't acknowledge that.)
+		It's still nice to see you.
+- (Just tell the truth) | [if {convo_progress.bedivere.bedivereGreeted} == true]
+	Not sure, actually. I kept seeing a kingfisher and I figured it was time for me to come back.
