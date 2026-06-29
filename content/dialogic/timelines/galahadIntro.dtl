@@ -13,6 +13,14 @@ galahad: If you have received such a sign, then I suppose you are here for some 
 	- (Explain yourself and argue)
 		(Vik doesn't feel like writing this rn)
 	- (Don't acknowledge that.)
-		It's still nice to see you.
+		It's still nice to see you. How have things been here?
 - (Just tell the truth) | [if {convo_progress.bedivere.bedivereGreeted} == true]
-	Not sure, actually. I kept seeing a kingfisher and I figured it was time for me to come back.
+	Not sure, actually. I kept seeing a kingfisher and I figured it was time for me to come back. Has something happened in my absence?
+	jump 
+label gettingUpdate
+galahad: Stagnant. Everyone has the same problems they did before they arrived, except for the new coat of paint. It's dreadful. (Something about how Galahad shouldn't be here, given his Purpose was fulfilled)
+There must be something else keeping you here. You know the curse as well as I. (don't like this line)
+galahad: That may be, but it still doesn't explain why you're still kicking around. I already finished your quest.
+I guess there's something more for me. The kingfisher-
+galahad: Yes, the kingfisher. Why don't you go look for it somewhere else? Some of us still have royal duties to fulfill, you know.
+set {convo_progress.galahad.galahadGreeted} = true

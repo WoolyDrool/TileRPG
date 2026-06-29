@@ -1,3 +1,4 @@
 guinevere: Ah, Percivel, the failed knight. Bold of you to return to Camlann after your desertion.
 It is a pleasure to see you as well, Your Majesty. Could I ask how you've been faring since your internment here at Camlann?
-guinevere: <Empty Text Event>
+guinevere: I suppose I am as well as I could possibly be in these circumstances. My position, however, is not one that allows me to spend time speaking with those no longer of my kingdom. Off you go, now.
+set {convo_progress.guinevere.gwenGreeted} = true

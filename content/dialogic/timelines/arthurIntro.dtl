@@ -1,8 +1,10 @@
 arthur: Ser Percivel, I was under the impression you'd left our merry company for good. What could have possibly brought you back to us?
 An omen of a kingfisher appeared to me. I don't suppose you've noticed anything around here that might explain why my presence is required.
 arthur: I haven't, though to be honest, it's been some time since I was able to walk the grounds of Camlann in their wholeness. Even when my pain relents, I tire too quickly to make much exploration.
-arthur: What is it you require, Ser Percivel? I'm afraid I can't grant you much assistance.
+arthur: What is it you require, Ser Percivel? I'm afraid I can't grant you much assistance, but I shall provide what I am able.
 - (The grail)
+	arthur: The Holy Grail, which you sought and Galahad acquired? Yes, I am aware of where it has gone, not that it does me any good.
+	(need a reason for Percy to ask for the grail in the first place)
 - (Your pain)
 	arthur: A wound of the thigh, done to me by the sword Marmiadoise. The wounds that sword makes never heal and thus are forever painful.
 	arthur: There are some days when the ache is so dull, I feel I can be content with this other life. Then I am reminded starkly of my new limitations, that my existence is forever changed, and my mourning for what once was begins anew. Isn't it so strange, how the pain of it always feels fresh?

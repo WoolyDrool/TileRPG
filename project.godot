@@ -63,6 +63,7 @@ directories/dtl_directory={
 "gawainHints": "res://content/dialogic/timelines/gawain/gawainHints.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawain/gawainTutorial.dtl",
 "glossaryTesting": "res://content/dialogic/timelines/testing/glossaryTesting.dtl",
+"gwenHandler": "res://content/dialogic/timelines/gwenHandler.dtl",
 "gwenIntro": "res://content/dialogic/timelines/gwenIntro.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
@@ -128,6 +129,10 @@ variables={
 },
 "gawain": {
 "tutorialSeen": false
+},
+"guinevere": {
+"gwenGreeted": false,
+"gwenOpinion": 0
 },
 "lancelot": {
 "lancelotGreeted": false,

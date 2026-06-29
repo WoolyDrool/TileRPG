@@ -1,0 +1,6 @@
+if {convo_progress.guinevere.gwenGreeted} == false:
+	jump gwenIntro/
+elif {convo_progress.guinevere.gwenOpinion} > 0.0:
+	guinevere: (DIALOGUE NOT YET WRITTEN)
+else:
+	guinevere: Have you naught better to do than pester me, Percivel?

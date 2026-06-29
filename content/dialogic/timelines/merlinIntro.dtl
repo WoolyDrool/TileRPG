@@ -5,3 +5,13 @@ Yeah, I thought so too, but here I am. I don't suppose you've noticed any omens 
 merlin: No thing comes to mind, but I feel I have been dulled by my long hours here. Perhaps a fresh perspective will improve my hindsight, if you feel able to provide. Have you noticed any things which I may be able to elaborate on?
 - (The door you're guarding.)
 	merlin: It leads to an ancient hall through which one might access Camlann's lake and thereafter Annwn. The gate may only be opened if it may drink from the Holy Grail.
+- (Updated technology)
+	merlin: I will not pretend to understand the reasoning behind Camlann's progression or lack thereof. Tell me, is the technology here similar to that you have seen outside?
+	It all seems a bit out of date, still. Computers like Gawain's aren't in use unless you like that sort of thing.
+	merlin: How interesting. Well, don't tell him he's behind; ever since he learned of computer games, he's been nigh insufferable about it. Pinball is enjoyable enough, but everything becomes tiresome in excess.
+- (Ask about the curse?)
+	merlin: You know it as well as I, that we shall remain of faire mind and body until our quests have been completed by another.
+	Shouldn't I be exempt from that? Galahad completed my quest already.
+	merlin: Perhaps there is another quest assigned to you that still remains. These things work without regard for mortal sense.
+- (There's a beast...) | [if {questProgress.questingBeast.investigationStatus} == "galahadknows"] [else="hide"]
+	merlin: A beast? Yes, Bedivere has often complained of vermin. I have seen my share of rats here, of course, but I cannot imagine it is these miniscule creatures that bother him so. Galahad purports to have seen it. Have you spoken to him yet?
