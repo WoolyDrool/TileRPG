@@ -123,6 +123,7 @@ variables={
 },
 "galahad": {
 "galahadGreeted": false,
+"galahadOpinion": 0,
 "madeJoke": false
 },
 "gawain": {

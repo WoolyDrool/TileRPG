@@ -10,6 +10,12 @@ entries = {
 "enabled": false,
 "name": "Just to keep it in one place"
 },
+"Opinion Measures": {
+"enabled": false,
+"name": "Opinion Measures",
+"text": "goes from 1-21 as a reference to how many books are in the Death of Arthur - this is entirely arbitrary
+"
+},
 "questingBeast": {
 "enabled": false,
 "name": "questingBeast",
