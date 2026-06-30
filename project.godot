@@ -69,6 +69,8 @@ directories/dtl_directory={
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
 "lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
+"marrokHandler": "res://content/dialogic/timelines/marrokHandler.dtl",
+"marrokIntro": "res://content/dialogic/timelines/marrokIntro.dtl",
 "merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl",
 "merlinIntro": "res://content/dialogic/timelines/merlinIntro.dtl"
 }
@@ -142,6 +144,8 @@ variables={
 "lucanGreeted": false,
 "lucanSolved": false
 },
+"marrok": {},
+"marrokMet": false,
 "merlin": {
 "merlinGreeted": false,
 "merlinSolved": false
