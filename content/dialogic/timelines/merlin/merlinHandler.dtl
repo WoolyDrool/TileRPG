@@ -1,0 +1,6 @@
+if {convo_progress.merlin.merlinGreeted} == false:
+	jump merlinIntro/
+merlin: Welcome back, Ser Percivel. Have you learned anything of note?
+- (I had some questions...)
+	merlin: Ask, then, and I shall answer.
+	jump merlinHints/

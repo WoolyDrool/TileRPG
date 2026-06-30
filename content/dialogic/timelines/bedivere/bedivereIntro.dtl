@@ -21,3 +21,4 @@ bedivere: Goodness - I could, but I'm supposed to be working for the paying gues
 	jump questioning
 - (I"ll see if anyone else can help me)
 	bedivere: Maybe someone's got a spare sword for you. Sure Gawaine would know something.
+	set {questProgress.questingBeast.investigationStatus} = "no_info"

@@ -1,3 +1,0 @@
-if {convo_progress.merlin.merlinGreeted} == false:
-	jump merlinIntro/
-merlin: Welcome back, Ser Percivel. Have you learned anything of note?

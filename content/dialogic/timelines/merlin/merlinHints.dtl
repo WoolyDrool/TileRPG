@@ -1,8 +1,3 @@
-merlin: Ser Percivel, it's certainly been a while, hasn't it? I had a feeling you would return. There's so much left for us to do, we have no choice but to linger here until it is complete. What exactly prompted your return?
-I was followed by a kingfisher. Its persistence made me think it was an omen of some kind.
-merlin: That could very well be the case. It isn't difficult to connect such an animal to the Fisher King of our past. Yours, most specifically, though I was under the impression that Galahad had closed that chapter.
-Yeah, I thought so too, but here I am. I don't suppose you've noticed any omens of your own?
-merlin: No thing comes to mind, but I feel I have been dulled by my long hours here. Perhaps a fresh perspective will improve my hindsight, if you feel able to provide. Have you noticed any things which I may be able to elaborate on?
 - (The door you're guarding.)
 	merlin: It leads to an ancient hall through which one might access Camlann's lake and thereafter Annwn. The gate may only be opened if it may drink from the Holy Grail.
 - (Updated technology)
@@ -19,5 +14,18 @@ merlin: No thing comes to mind, but I feel I have been dulled by my long hours h
 	merlin: Yes, what of them?
 	I can't seem to get to the second or third floors.
 	merlin: Ah, yes. That's been an issue for quite some time. Bedivere's been preoccupied with a vermin issue, though I suppose he considers the second floor's issue to be Galahad's responsibility.
-- (There's a beast...) | [if {questProgress.questingBeast.investigationStatus} == "galahadknows"] [else="hide"]
+- (Bedivere's beast...) | [if {convo_progress.bedivere.bedivereGreeted} == true] [else="hide"]
 	merlin: A beast? Yes, Bedivere has often complained of vermin. I have seen my share of rats here, of course, but I cannot imagine it is these miniscule creatures that bother him so. Galahad purports to have seen it. Have you spoken to him yet?
+	Not yet. He's not the easiest to talk to.
+	merlin: You fear your own blood?
+	Well, not really...
+	merlin: And yet you still hesitate.
+	(dialogue branch unfinished)
+	set {convo_progress.merlin.galahadGossip} = true
+- I believe that's it.
+	if {convo_progress.merlin.merlinGreeted} == false:
+		merlin: Of course. I shall remain here to guard the door, so have no fear to return to ask about anything else.
+		jump merlinIntro/introEnd
+	else:
+		merlin: Gods be with you, Ser Percivel.
+		[end_timeline]

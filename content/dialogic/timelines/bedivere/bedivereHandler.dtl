@@ -1,18 +1,4 @@
 if {convo_progress.bedivere.bedivereGreeted} == false:
 	jump bedivereIntro/
 bedivere: Goodness, don't you have anything better to do than bother me?
-- (Still too busy to fix Sequence?) | [if {questProgress.questingBeast.investigationStatus} == "no_info"] [else="hide"]
-	bedivere: 'Course I am! You think I've had time to do much work since you left?
-	- (Offer help)
-		jump bedivereIntro/questioning
-	label whatelse
-	bedivere: That it?
-	- (Yes.)
-		bedivere: Give me some peace, then.
-		[end_timeline]
-	- (No.)
-		bedivere: Out with it, then.
-		jump bedivereIntro/questioning
-if {questProgress.questingBeast.investigationStatus} == "no_info":
-	jump bedivereBeast/no information
-if {questProgress.sequenceRepair.sequenceStatus} == "broken":
+-  | [if {questProgress.questingBeast.investigationStatus} == "notstarted"] [else="hide"]

@@ -71,8 +71,9 @@ directories/dtl_directory={
 "lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
 "marrokHandler": "res://content/dialogic/timelines/marrokHandler.dtl",
 "marrokIntro": "res://content/dialogic/timelines/marrokIntro.dtl",
-"merlinHandler": "res://content/dialogic/timelines/merlinHandler.dtl",
-"merlinIntro": "res://content/dialogic/timelines/merlinIntro.dtl"
+"merlinHandler": "res://content/dialogic/timelines/merlin/merlinHandler.dtl",
+"merlinHints": "res://content/dialogic/timelines/merlin/merlinHints.dtl",
+"merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",
@@ -147,13 +148,14 @@ variables={
 "marrok": {},
 "marrokMet": false,
 "merlin": {
+"galahadGossip": false,
 "merlinGreeted": false,
 "merlinSolved": false
 }
 },
 "questProgress": {
 "questingBeast": {
-"investigationStatus": "no_info"
+"investigationStatus": "notstarted"
 },
 "sequenceRepair": {
 "sequenceStatus": "broken"
