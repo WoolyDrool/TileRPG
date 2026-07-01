@@ -22,6 +22,8 @@
 	merlin: And yet you still hesitate.
 	(dialogue branch unfinished)
 	set {convo_progress.merlin.galahadGossip} = true
+- (That dog running around...)
+	merlin: Ah, yes, him. Merrok, I believe he is called. A good man, once, now cursed to be a beast.
 - I believe that's it.
 	if {convo_progress.merlin.merlinGreeted} == false:
 		merlin: Of course. I shall remain here to guard the door, so have no fear to return to ask about anything else.
