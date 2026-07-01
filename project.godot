@@ -47,7 +47,7 @@ directories/dch_directory={
 "nimue": "res://content/dialogic/characters/nimue.dch"
 }
 directories/dtl_directory={
-"BrunorSolo": "res://content/dialogic/timelines/BrunorSolo.dtl",
+"BrunorSolo": "res://content/dialogic/timelines/brunorIntro.dtl",
 "LancelotHandler": "res://content/dialogic/timelines/LancelotHandler.dtl",
 "LancelotIntro": "res://content/dialogic/timelines/LancelotIntro.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",

@@ -4,6 +4,7 @@
 [ext_resource type="Environment" uid="uid://x5ipc2r3aljy" path="res://content/maps/default_map_environment.tres" id="2_583s2"]
 [ext_resource type="PackedScene" uid="uid://bhx7cgn7eeneu" path="res://content/maps/drafting_map/map_ChateauxCamlann_workingfile.blend" id="3_4gcwt"]
 [ext_resource type="PackedScene" uid="uid://bqaiw6ilboars" path="res://systems/grid/tile_grid_generator.tscn" id="3_cmg8b"]
+[ext_resource type="Script" uid="uid://bnn4v6ptpmk65" path="res://systems/grid/tile.gd" id="4_2m5lg"]
 [ext_resource type="Material" uid="uid://0jx30dukpo2q" path="res://textures/texture_placeholder_nobackfacecull.tres" id="4_oij1o"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="5_cmgu4"]
 [ext_resource type="PackedScene" uid="uid://erbpgyfnc06i" path="res://content/geometry/walls/default_wall.tscn" id="5_yap6t"]
@@ -33,6 +34,534 @@ transform = Transform3D(-0.9330127, 0.25881907, 0.25000006, 0.2588191, -4.371139
 light_energy = 0.137
 
 [node name="Map Grid" type="Node3D" parent="." unique_id=679906448]
+
+[node name="tile_grid_dungeon" type="Node3D" parent="Map Grid" unique_id=65092732]
+
+[node name="32X4Z Grid" type="Node3D" parent="Map Grid/tile_grid_dungeon" unique_id=1326187428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, -4)
+
+[node name="Tile X32Z4" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=289986669 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38955" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1557159780 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38956" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=2036063290 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38957" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1568906694 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38958" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=183852370 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38959" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=598252767 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38960" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=362463964 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38961" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1269110139 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38962" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=493016350 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38963" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1112711361 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38964" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1050366340 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38965" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1302992522 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38966" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=877743430 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38967" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1744008956 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38968" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=2115995814 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@38969" type="Area3D" parent="Map Grid/tile_grid_dungeon/32X4Z Grid" unique_id=1554341802 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="44X28Z Grid" type="Node3D" parent="Map Grid/tile_grid_dungeon" unique_id=1008786006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -16)
+
+[node name="Tile X44Z28" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=195702937 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41610" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1800220875 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41611" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=842123612 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41612" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=314378349 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41613" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=511575168 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41614" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1196342595 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41615" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=300403755 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41616" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1784500331 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41617" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1766989591 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41618" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=731588012 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41619" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1694541079 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 28)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41620" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=166584768 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41621" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2092296515 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41622" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=331941134 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41623" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1407424608 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41624" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1678065416 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41625" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1258669661 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41626" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1128673298 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41627" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=331273171 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41628" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=475660377 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41629" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=578989068 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41630" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=718890353 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 24)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41631" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=933813150 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41632" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1464118787 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41633" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1681473181 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41634" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1671243661 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41635" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1779933561 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41636" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=188569706 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41637" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1158375291 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41638" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=359599245 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41639" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2135790259 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41640" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1703132780 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41641" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=933532223 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 20)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41642" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2020002641 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41643" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=183132652 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41644" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1981124739 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41645" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1164093707 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41646" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1160728415 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41647" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=813776529 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41648" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=698194804 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41649" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1982886900 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41650" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1410542514 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41651" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=453435866 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41652" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=785856713 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 16)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41653" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=569157601 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41654" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=138432106 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41655" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=981602626 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41656" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2084946564 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41657" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=740879771 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41658" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1807094487 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41659" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1969496972 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41660" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1522767813 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41661" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=612538470 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41662" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1384348538 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41663" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1789096819 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 12)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41664" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1297684899 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41665" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1569240163 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41666" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1515029399 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41667" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=686206556 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41668" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1584451405 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41669" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=358131120 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41670" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1277126675 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41671" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2146531180 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41672" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=395233465 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41673" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1911230282 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41674" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1166924217 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 8)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41675" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1161520706 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41676" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=86781389 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41677" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2052167338 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41678" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=2066278389 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41679" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=811334404 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41680" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1140461280 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41681" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1272590401 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41682" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=612856739 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41683" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=481892113 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41684" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1341227909 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41685" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1509573211 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 4)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41686" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1452780089 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41687" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1827311955 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41688" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1660717450 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41689" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1255164641 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41690" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=444679193 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41691" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1050180714 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41692" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=833737633 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41693" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=771131397 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41694" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=255310695 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41695" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=1235120547 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
+
+[node name="@Area3D@41696" type="Area3D" parent="Map Grid/tile_grid_dungeon/44X28Z Grid" unique_id=725807594 groups=["Tile"] instance=ExtResource("5_cmgu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0)
+collision_layer = 2
+script = ExtResource("4_2m5lg")
 
 [node name="tile_grid_cellar" type="Node3D" parent="Map Grid" unique_id=1297663528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, -56)
@@ -1927,7 +2456,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, -2, 8)
 [node name="_Area3D_60383" parent="Map Grid/tile_grid_floor2/main_hall_grid" unique_id=738895518 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -2, 8)
 
-[node name="_Area3D_60384" parent="Map Grid/tile_grid_floor2/main_hall_grid" unique_id=289986669 instance=ExtResource("5_cmgu4")]
+[node name="_Area3D_60384" parent="Map Grid/tile_grid_floor2/main_hall_grid" unique_id=564555324 instance=ExtResource("5_cmgu4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, -2, 8)
 
 [node name="_Area3D_60394" parent="Map Grid/tile_grid_floor2/main_hall_grid" unique_id=857794294 instance=ExtResource("5_cmgu4")]
@@ -3542,6 +4071,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 10, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
 
 [node name="tile_grid_floor4" type="Node3D" parent="Map Grid" unique_id=374507078]
+visible = false
 
 [node name="back_hall" type="Node3D" parent="Map Grid/tile_grid_floor4" unique_id=305787698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -16)
@@ -5337,34 +5867,158 @@ custom_y_value = 18.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 16, 44)
 custom_y_value = 20.0
 
+[node name="stairs_todungeon_grid" type="Node3D" parent="Map Grid/Stairs" unique_id=1260023408]
+
+[node name="TileStair" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=539159198 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, -8, -8)
+
+[node name="TileStair2" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=1954122019 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, -8, -8)
+custom_y_value = -3.0
+
+[node name="TileStair3" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=142560646 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, -8, -8)
+custom_y_value = -4.0
+
+[node name="TileStair4" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=1873588630 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, -8, -12)
+custom_y_value = -7.0
+
+[node name="TileStair5" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=418247707 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, -12, -16)
+custom_y_value = -8.0
+
+[node name="TileStair6" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=843833062 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, -16, -16)
+custom_y_value = -11.0
+
+[node name="TileStair7" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=818706092 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, -16, -16)
+custom_y_value = -12.0
+
+[node name="TileStair8" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=1325879546 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, -16, -12)
+custom_y_value = -15.0
+
+[node name="TileStair9" parent="Map Grid/Stairs/stairs_todungeon_grid" unique_id=250394151 instance=ExtResource("11_3gqqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, -16, -8)
+custom_y_value = -16.0
+
 [node name="Geometry" type="Node3D" parent="." unique_id=1956509257]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
-[node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=1336605966 instance=ExtResource("3_4gcwt")]
+[node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=100329833 instance=ExtResource("3_4gcwt")]
 
-[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="0" unique_id=338728692]
+[node name="Basement_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_0floor_parent" parent_id_path=PackedInt32Array(100329833, 170677705) index="0" unique_id=1466027544]
+visible = false
+
+[node name="sorting_1stfloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="13" unique_id=1031130194]
+visible = false
+
+[node name="Art Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="3" unique_id=214826345]
+visible = false
+
+[node name="Eatery_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="10" unique_id=1210703660]
+visible = false
+
+[node name="office_walls" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="22" unique_id=881126332]
+visible = false
+
+[node name="Reception_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="26" unique_id=350637992]
+visible = false
+
+[node name="Reception_wall_door" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="27" unique_id=677518567]
+visible = false
+
+[node name="WC_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="31" unique_id=1372676313]
+visible = false
+
+[node name="stairs_model" parent="Geometry/map_ChateauxCamlann_workingfile" index="16" unique_id=1177771993]
+visible = false
+
+[node name="sorting_1stfloor_parent_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="29" unique_id=2061203831]
+visible = false
+
+[node name="Wall_cutout" parent="Geometry/map_ChateauxCamlann_workingfile" index="35" unique_id=1290058125]
+visible = false
+
+[node name="Wall_cutout_base" parent="Geometry/map_ChateauxCamlann_workingfile" index="37" unique_id=332481236]
+visible = false
+
+[node name="Wall_cutout_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="38" unique_id=1573285578]
+visible = false
+
+[node name="basics_floor1" parent="Geometry/map_ChateauxCamlann_workingfile" index="39" unique_id=640740217]
+visible = false
+
+[node name="sorting_2ndFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="40" unique_id=1778375604]
+visible = false
+
+[node name="4thfloor_courtWall_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="41" unique_id=233747232]
+visible = false
+
+[node name="sorting_3rdFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="50" unique_id=872429679]
+visible = false
+
+[node name="main_wall3" parent="Geometry/map_ChateauxCamlann_workingfile" index="51" unique_id=1392704985]
+visible = false
+
+[node name="sorting_4thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="66" unique_id=13930136]
+visible = false
+
+[node name="4thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="0" unique_id=1679379206]
+visible = false
+
+[node name="4thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="1" unique_id=1576346267]
+visible = false
+
+[node name="4thfloor_roomWallsE" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="2" unique_id=670278518]
+visible = false
+
+[node name="4thfloor_roomWallsW" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="3" unique_id=1864250422]
+visible = false
+
+[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile" index="84" unique_id=1216201949]
+visible = false
+
+[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile" index="85" unique_id=1640861169]
+visible = false
+
+[node name="sorting_5thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="86" unique_id=428875551]
+visible = false
+
+[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="0" unique_id=2028608994]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="1" unique_id=744276273]
+[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="1" unique_id=654681241]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="2" unique_id=1572911871]
+[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="2" unique_id=514312236]
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="3" unique_id=71704099]
+[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="3" unique_id=1288575934]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="4" unique_id=708770945]
+[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="4" unique_id=163682661]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" parent_id_path=PackedInt32Array(1336605966, 469450742) index="5" unique_id=1962495465]
+[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="5" unique_id=1944546321]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="121" unique_id=1292848034]
+[node name="Stairs_down_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_dungeon_parent" parent_id_path=PackedInt32Array(100329833, 2084859863) index="0" unique_id=1331700776]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="120" unique_id=214273739]
 visible = false
 
 [node name="Walls" type="Node3D" parent="Geometry" unique_id=1214491750]
+visible = false
 
 [node name="ReceptionMainWalls" type="Node3D" parent="Geometry/Walls" unique_id=1465464298]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.9999995, 2, 8)
@@ -5519,7 +6173,6 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -30.
 transform = Transform3D(-5.68248e-07, 0, 1, 0, 1, 0, -13, 0, -4.371139e-08, -14, 0, -70)
 
 [node name="TileGridGenerator" parent="." unique_id=2060964577 instance=ExtResource("3_cmg8b")]
-visible = false
 
 [node name="Lighting" type="Node3D" parent="." unique_id=446990118]
 
@@ -5556,6 +6209,215 @@ dialogic_timeline = ExtResource("17_7kpeg")
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -55, 20.940971, 33)
 texture = ExtResource("18_ygohi")
 dialogic_timeline = ExtResource("19_2m5lg")
+
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/Tile X32Z4" to="Map Grid/tile_grid_dungeon/32X4Z Grid/Tile X32Z4" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/Tile X32Z4" to="Map Grid/tile_grid_dungeon/32X4Z Grid/Tile X32Z4" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38955" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38955" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38955" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38955" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38956" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38956" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38956" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38956" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38957" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38957" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38957" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38957" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38958" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38958" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38958" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38958" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38959" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38959" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38959" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38959" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38960" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38960" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38960" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38960" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38961" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38961" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38961" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38961" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38962" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38962" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38962" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38962" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38963" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38963" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38963" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38963" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38964" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38964" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38964" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38964" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38965" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38965" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38965" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38965" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38966" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38966" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38966" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38966" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38967" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38967" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38967" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38967" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38968" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38968" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38968" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38968" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38969" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38969" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38969" to="Map Grid/tile_grid_dungeon/32X4Z Grid/@Area3D@38969" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/Tile X44Z28" to="Map Grid/tile_grid_dungeon/44X28Z Grid/Tile X44Z28" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/Tile X44Z28" to="Map Grid/tile_grid_dungeon/44X28Z Grid/Tile X44Z28" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41610" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41610" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41610" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41610" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41611" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41611" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41611" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41611" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41612" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41612" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41612" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41612" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41613" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41613" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41613" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41613" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41614" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41614" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41614" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41614" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41615" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41615" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41615" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41615" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41616" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41616" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41616" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41616" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41617" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41617" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41617" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41617" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41618" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41618" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41618" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41618" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41619" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41619" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41619" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41619" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41620" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41620" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41620" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41620" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41621" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41621" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41621" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41621" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41622" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41622" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41622" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41622" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41623" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41623" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41623" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41623" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41624" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41624" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41624" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41624" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41625" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41625" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41625" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41625" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41626" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41626" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41626" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41626" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41627" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41627" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41627" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41627" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41628" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41628" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41628" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41628" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41629" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41629" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41629" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41629" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41630" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41630" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41630" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41630" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41631" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41631" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41631" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41631" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41632" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41632" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41632" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41632" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41633" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41633" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41633" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41633" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41634" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41634" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41634" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41634" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41635" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41635" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41635" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41635" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41636" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41636" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41636" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41636" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41637" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41637" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41637" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41637" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41638" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41638" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41638" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41638" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41639" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41639" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41639" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41639" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41640" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41640" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41640" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41640" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41641" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41641" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41641" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41641" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41642" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41642" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41642" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41642" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41643" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41643" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41643" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41643" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41644" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41644" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41644" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41644" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41645" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41645" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41645" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41645" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41646" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41646" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41646" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41646" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41647" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41647" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41647" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41647" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41648" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41648" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41648" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41648" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41649" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41649" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41649" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41649" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41650" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41650" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41650" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41650" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41651" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41651" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41651" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41651" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41652" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41652" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41652" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41652" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41653" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41653" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41653" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41653" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41654" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41654" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41654" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41654" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41655" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41655" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41655" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41655" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41656" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41656" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41656" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41656" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41657" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41657" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41657" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41657" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41658" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41658" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41658" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41658" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41659" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41659" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41659" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41659" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41660" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41660" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41660" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41660" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41661" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41661" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41661" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41661" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41662" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41662" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41662" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41662" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41663" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41663" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41663" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41663" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41664" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41664" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41664" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41664" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41665" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41665" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41665" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41665" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41666" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41666" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41666" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41666" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41667" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41667" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41667" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41667" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41668" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41668" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41668" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41668" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41669" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41669" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41669" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41669" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41670" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41670" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41670" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41670" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41671" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41671" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41671" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41671" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41672" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41672" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41672" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41672" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41673" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41673" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41673" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41673" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41674" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41674" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41674" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41674" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41675" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41675" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41675" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41675" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41676" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41676" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41676" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41676" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41677" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41677" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41677" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41677" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41678" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41678" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41678" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41678" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41679" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41679" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41679" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41679" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41680" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41680" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41680" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41680" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41681" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41681" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41681" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41681" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41682" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41682" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41682" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41682" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41683" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41683" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41683" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41683" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41684" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41684" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41684" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41684" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41685" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41685" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41685" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41685" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41686" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41686" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41686" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41686" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41687" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41687" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41687" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41687" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41688" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41688" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41688" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41688" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41689" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41689" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41689" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41689" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41690" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41690" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41690" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41690" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41691" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41691" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41691" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41691" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41692" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41692" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41692" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41692" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41693" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41693" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41693" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41693" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41694" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41694" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41694" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41694" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41695" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41695" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41695" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41695" method="_on_area_exited"]
+[connection signal="area_entered" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41696" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41696" method="_on_area_entered"]
+[connection signal="area_exited" from="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41696" to="Map Grid/tile_grid_dungeon/44X28Z Grid/@Area3D@41696" method="_on_area_exited"]
 
 [editable path="Geometry/map_ChateauxCamlann_workingfile"]
 [editable path="Geometry/Walls/Office Walls/OfficeBackWalls"]

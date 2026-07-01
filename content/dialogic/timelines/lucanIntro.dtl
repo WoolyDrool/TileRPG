@@ -6,3 +6,9 @@ lucan: Actually, do you think we could maybe talk later? I'm a bit busy right no
 	lucan: Oh, uh, it's nothing bad, really. Just some trouble with the bellhops, and that huge dog running around, and-
 	lucan: Sorry, you shouldn't worry about it. It's just a staff issue, that's all. My job, not yours.
 	Just how it always is, huh? Maybe I can lend another hand.
+	lucan: No, no, it wouldn't be right. You're not... Well, you've been...
+	- (Accept)
+		Right, yeah. I guess that's true. I'll leave you to it.
+	- (Insist)
+		Viktor: This might be a good place for a social puzzle.
+		I'm still your friend, aren't I?
