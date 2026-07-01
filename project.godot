@@ -145,8 +145,10 @@ variables={
 "lucanGreeted": false,
 "lucanSolved": false
 },
-"marrok": {},
-"marrokMet": false,
+"marrok": {
+"marrokCaught": false,
+"marrokMet": false
+},
 "merlin": {
 "galahadGossip": false,
 "merlinGreeted": false,

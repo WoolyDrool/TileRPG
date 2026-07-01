@@ -27,3 +27,12 @@ galahad: That may be, but it still doesn't explain why you're still kicking arou
 I guess there's something more for me. The kingfisher-
 galahad: Yes, the kingfisher. Why don't you go look for it somewhere else? Some of us still have royal duties to fulfill, you know.
 set {convo_progress.galahad.galahadGreeted} = true
+if {questProgress.questingBeast.investigationStatus} != "galahadknows":
+	[end_timeline]
+else:
+	- (Ask about the beast)
+		I'm looking for a different beast, actually. I've heard that Bediwyr's having some trouble with one and you've seen it. Can you tell me about it?
+		galahad: Oh, that thing. Yes, a strange one it is. It's quite large, actually. I can't imagine Bediwyr's incompetence that he is unable to catch it himself.
+		I'm sure he's plenty competent. Maybe it's just a hard beast to catch.
+	- (Leave him to it.)
+		[end_timeline]

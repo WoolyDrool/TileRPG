@@ -1,2 +1,2 @@
-if {convo_progress.marrokMet} == false:
+if {convo_progress.marrok.marrokMet} == false:
 	jump marrokIntro/
