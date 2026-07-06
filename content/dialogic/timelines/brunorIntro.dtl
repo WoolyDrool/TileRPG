@@ -1,14 +1,17 @@
 brunor: Percy! What a surprise! I thought you'd left us all behind. How's life on the outside?
 - It's alright
-	brunor: Just alright?
+	brunor: Just alright? Surely it must be much better than being stuck in here! Tell me, tell me, what have you been doing?
+	Well, nothing too interesting. I've been taking photos of things, really.
+	brunor: Photos? You mean, you've been making pictures! That's incredibly interesting! All I've done here is watch these cameras in case someone does something they shouldn't, but no one ever does. The last person I ever got to punish was Old Sir Lancelot.
+	Viktor: Add something here to ask about Lancelot - would the player have definitely met him by this point?
 - Better than being stuck inside
 	brunor: You’ve got that right.
-brunor: I hear you’ve got so many new things out there. Like the internet! His Highness only lets us have phones, and even then just barely.
-- His Highness
-	brunor: Yes, King Arthur remains in power, though I suppose he’s the hotel manager now and all of us, his workers. Just as well you failed to join the Round Table, Percy. I would’ve liked to roam around the greater world and see it all change, but no, us proper knights are stuck in here.
-	- Stuck?
-		brunor: Yes, stuck. Mind you, I'd be here anyway. I've reason to believe [b]my father's murderer[/b] is still here, and I've sworn on his coat that I won't even let his spirit rest!
-- Phones
-	brunor: Phones, yes, we've phones, and elevators. Electricity is a marvelous thing, isn't it, Percy?
-	- Elevators
-		brunor: Yes, two guest elevators and a staff elevator. I can't let you use the staff elevator, though, sorry Percy. You're not staff, after all.
+	brunor: I hear you’ve got so many new things out there. Like the internet! His Highness only lets us have phones, and even then just barely.
+	- His Highness
+		brunor: Yes, King Arthur remains in power, though I suppose he’s the hotel manager now and all of us, his workers. Just as well you failed to join the Round Table, Percy. I would’ve liked to roam around the greater world and see it all change, but no, us proper knights are stuck in here.
+		- Stuck?
+			brunor: Yes, stuck. Mind you, I'd be here anyway. I've reason to believe [b]my father's murderer[/b] is still here, and I've sworn on his coat that I won't even let his spirit rest!
+		- Phones
+			brunor: Phones, yes, we've phones, and elevators. Electricity is a marvelous thing, isn't it, Percy?
+			- Elevators
+				brunor: Yes, two guest elevators and a staff elevator. I can't let you use the staff elevator, though, sorry Percy. You're not staff, after all.

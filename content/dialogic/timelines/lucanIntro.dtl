@@ -1,3 +1,4 @@
+set {convo_progress.lucan.lucanGreeted} = true
 lucan: Percy! You're here? Has something happened outside? Nothing bad, right?
 lucan: Actually, do you think we could maybe talk later? I'm a bit busy right now.
 - (I'll check back in later.)

@@ -40,8 +40,9 @@ else:
 			galahad: I suppose you could.
 			Where can I find him?
 			galahad: Gods if I know. He works security now. I'm sure someone else could find him for you.
+			set {convo_progress.Brunor.brunorLocated} = true
 		- (Tell me more about the beast?)
 			You said it was large, but how big was it? And did you notice anything else about it?
-			galahad: I estimate it was about the size of a collie dog, large but not so large as that wolf running about.
+			galahad: I estimate it was about the size of a collie dog, large but not so large as that wolf running about. It was too quick for me to catch more of a glimpse.
 	- (Leave him to it.)
 		[end_timeline]

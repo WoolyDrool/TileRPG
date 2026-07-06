@@ -1,4 +1,0 @@
-if {convo_progress.bedivere.bedivereGreeted} == false:
-	jump bedivereIntro/
-bedivere: Goodness, don't you have anything better to do than bother me?
--  | [if {questProgress.questingBeast.investigationStatus} == "notstarted"] [else="hide"]

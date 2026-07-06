@@ -1,0 +1,6 @@
+Select debug category
+- Set Quest Progress
+	Working on this.
+- Set Current Item
+	- Hold "Snare"
+		set {debugInventory.currItem} = "snare"

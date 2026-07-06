@@ -1,0 +1,24 @@
+bediwyr: [i]Damn guests... what's wrong with dial-up?[/i]
+bediwyr: Huh? Percival? You're not supposed to be here... at all. What's going on?
+A kingfisher brought me back. I guess it was time.
+bediwyr: Guess so.
+What have you been doing here?
+bediwyr: Upkeep, mostly. This place was a church first before it was a hotel. I’m not sure why it changed that way. It seems in poor taste to me.
+bediwyr: Anyway, apparently internet's gotten better, so I'm redoing the wiring. Some beast in the walls keeps chewing it up anyway, so I may as well update it while I fix it.
+I'm sorry to distract you, then, but Gawain said you could help me repair my sword?
+bediwyr: Goodness - I could, but I'm supposed to be working for the paying guests, and that means my schedule is full.
+- (Offer help)
+	I don't know much about building upkeep, but what if I helped you deal with the animal? Would that free up your time?
+	bediwyr: Aye, suppose it would, but good luck. The damn'd thing won't show itself worth anything no matter what I do.
+	label questioning
+	- (Has anyone else tried?)
+		bediwyr: Feels like everyone's tried their hand at it by now. Galahad even said he'd seen the damn'd thing, not like he caught it.
+		set {questProgress.questingBeast.investigationStatus} = "galahadKnows"
+	- (What have you tried so far?)
+		bediwyr: Mouse traps, snares, all sorts of things. The damn'd thing breaks 'em all and I get to clean up the mess.
+	if {convo_progress.bediwyr.bediwyrGreeted} == true:
+		jump bediwyrHandler/
+	jump questioning
+- (I"ll see if anyone else can help me)
+	bediwyr: Maybe someone's got a spare sword for you. Sure Gawaine would know something.
+	set {questProgress.questingBeast.investigationStatus} = "no_info"

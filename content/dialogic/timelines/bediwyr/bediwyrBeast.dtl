@@ -1,0 +1,15 @@
+bediwyr: Goodness, don't you have anything better to do than bother me?
+label no information
+- (Still too busy to fix Sequence?) | [if {questProgress.questingBeast.investigationStatus} == "no_info"] [else="hide"]
+	bediwyr: 'Course I am! You think I've had time to do much work since you left?
+	- (Offer help)
+		jump bediwyrIntro/questioning
+	label whatelse
+	bediwyr: That it?
+	- (Yes.)
+		bediwyr: Give me some peace, then.
+		[end_timeline]
+	- (No.)
+		bediwyr: Out with it, then.
+		jump bediwyrIntro/questioning
+if {questProgress.questingBeast.investigationStatus} == "no_info":

@@ -35,6 +35,7 @@ directories/dch_directory={
 "Viktor": "res://content/dialogic/characters/Viktor.dch",
 "arthur": "res://content/dialogic/characters/arthur.dch",
 "bedivere": "res://content/dialogic/characters/bedivere.dch",
+"bediwyr": "res://content/dialogic/characters/bediwyr.dch",
 "bors": "res://content/dialogic/characters/bors.dch",
 "brunor": "res://content/dialogic/characters/brunor.dch",
 "galahad": "res://content/dialogic/characters/galahad.dch",
@@ -47,16 +48,17 @@ directories/dch_directory={
 "nimue": "res://content/dialogic/characters/nimue.dch"
 }
 directories/dtl_directory={
-"BrunorSolo": "res://content/dialogic/timelines/brunorIntro.dtl",
 "LancelotHandler": "res://content/dialogic/timelines/LancelotHandler.dtl",
 "LancelotIntro": "res://content/dialogic/timelines/LancelotIntro.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
-"bedivereBeast": "res://content/dialogic/timelines/bedivere/bedivereBeast.dtl",
-"bedivereHandler": "res://content/dialogic/timelines/bedivere/bedivereHandler.dtl",
-"bedivereIntro": "res://content/dialogic/timelines/bedivere/bedivereIntro.dtl",
+"bediwyrBeast": "res://content/dialogic/timelines/bediwyr/bediwyrBeast.dtl",
+"bediwyrHandler": "res://content/dialogic/timelines/bediwyr/bediwyrHandler.dtl",
+"bediwyrIntro": "res://content/dialogic/timelines/bediwyr/bediwyrIntro.dtl",
 "borsFirstCall": "res://content/dialogic/timelines/borsFirstCall.dtl",
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
+"brunorIntro": "res://content/dialogic/timelines/brunorIntro.dtl",
+"debugHandler": "res://content/dialogic/timelines/testing/debugHandler.dtl",
 "galahadHandler": "res://content/dialogic/timelines/galahadHandler.dtl",
 "galahadIntro": "res://content/dialogic/timelines/galahadIntro.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawain/gawainHandler.dtl",
@@ -69,11 +71,11 @@ directories/dtl_directory={
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
 "lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
-"marrokHandler": "res://content/dialogic/timelines/marrokHandler.dtl",
-"marrokIntro": "res://content/dialogic/timelines/marrokIntro.dtl",
 "merlinHandler": "res://content/dialogic/timelines/merlin/merlinHandler.dtl",
 "merlinHints": "res://content/dialogic/timelines/merlin/merlinHints.dtl",
-"merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl"
+"merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl",
+"merrokHandler": "res://content/dialogic/timelines/merrok/merrokHandler.dtl",
+"merrokIntro": "res://content/dialogic/timelines/merrok/merrokIntro.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",
@@ -118,12 +120,15 @@ audio/channel_defaults={
 }
 variables={
 "convo_progress": {
+"Brunor": {
+"brunorLocated": false
+},
 "arthur": {
 "arthurGreeted": false,
 "arthurSolved": false
 },
-"bedivere": {
-"bedivereGreeted": false
+"bediwyr": {
+"bediwyrGreeted": false
 },
 "galahad": {
 "galahadGreeted": false,
@@ -145,15 +150,18 @@ variables={
 "lucanGreeted": false,
 "lucanSolved": false
 },
-"marrok": {
-"marrokCaught": false,
-"marrokMet": false
-},
 "merlin": {
 "galahadGossip": false,
 "merlinGreeted": false,
 "merlinSolved": false
+},
+"merrok": {
+"merrokCaught": false,
+"merrokMet": false
 }
+},
+"debugInventory": {
+"currItem": ""
 },
 "questProgress": {
 "questingBeast": {

@@ -1,0 +1,4 @@
+if {convo_progress.bediwyr.bediwyrGreeted} == false:
+	jump bediwyrIntro/
+bediwyr: Goodness, don't you have anything better to do than bother me?
+-  | [if {questProgress.questingBeast.investigationStatus} == "notstarted"] [else="hide"]
