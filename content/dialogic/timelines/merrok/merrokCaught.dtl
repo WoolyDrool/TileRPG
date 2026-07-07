@@ -1,0 +1,15 @@
+set {convo_progress.merrok.merrokCaught} = true
+(The snare catches the wolf before it can get to you. It futily snaps its jaws, but cannot reach.)
+Viktor: Add a dialogue puzzle here?
+Are you Ser Merrok, (who served the Round Table until tricked to be a wolf?)
+merrok: (The wolf calms itself.)
+merrok: Aye, I am Ser Merrok. I know you. You must be the begotten of King Pellinore. I apologize for my hostility. I am here to ensure the guests do no harm to this place.
+I'm King Pellinore's son, Percivel. You knew my father?
+merrok: He is the one who sent me to my lord Thiess when I lost my human pelt. For that I owe him my gratitude, but I am to understand he is years past now.
+Yeah, it's been centuries since he was buried.
+merrok: Then you shall inherit my gratitude. If there is aught I can do to aid you, then simply speak of it to me.
+- (There"s a creature I need help finding.) | [if {questProgress.questingBeast.investigationStatus} == "howtrack"] [else="hide"]
+	merrok: What manner of beast do you speak of?
+	(Talk about the questing beast.)
+- (I'll let you know.)
+	merrok: Then I shall return to making order amongst the riff-raff here.

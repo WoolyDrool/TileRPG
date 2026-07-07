@@ -74,6 +74,7 @@ directories/dtl_directory={
 "merlinHandler": "res://content/dialogic/timelines/merlin/merlinHandler.dtl",
 "merlinHints": "res://content/dialogic/timelines/merlin/merlinHints.dtl",
 "merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl",
+"merrokCaught": "res://content/dialogic/timelines/merrok/merrokCaught.dtl",
 "merrokHandler": "res://content/dialogic/timelines/merrok/merrokHandler.dtl",
 "merrokIntro": "res://content/dialogic/timelines/merrok/merrokIntro.dtl"
 }
