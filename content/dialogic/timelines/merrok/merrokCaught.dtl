@@ -13,7 +13,7 @@ merrok: Then you shall inherit my gratitude. If there is aught I can do to aid y
 	set {questProgress.questingBeast.investigationStatus} = "merrokhelp"
 - (I'll let you know.)
 	merrok: Then if you would release me, I shall return to making order amongst the riff-raff here.
-(Should I release him?)
+(Should I release him now?)
 - Don't release yet
 	Sorry, you'll need to stay there for a bit.
 	set {convo_progress.merrok.merrokCaught} = true
