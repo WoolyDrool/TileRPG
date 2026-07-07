@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://dwmcflo3e70oc" path="res://player/input mappings/ui/selector mode/actions/ui_sm_select.tres" id="12_56smc"]
 [ext_resource type="Texture2D" uid="uid://dt2gomgbgv10j" path="res://content/sprites/ui/ui_journal_selector_quill.png" id="13_b7qfe"]
 [ext_resource type="Resource" uid="uid://cp14jga863oij" path="res://player/input mappings/ui/selector mode/actions/ui_sm_confirm_selection.tres" id="13_o2g3n"]
+[ext_resource type="Script" uid="uid://ckswrv7wx1eaj" path="res://content/dialogic/ui/CustomTilerpgDialogicStyle/debugVarViewer.gd" id="15_56smc"]
 
 [sub_resource type="Theme" id="Theme_20v0l"]
 default_font = ExtResource("4_1swcf")
@@ -161,3 +162,17 @@ caret_blink = true
 caret_draw_when_editable_disabled = true
 caret_move_on_right_click = false
 caret_mid_grapheme = true
+
+[node name="debugVariables" type="Control" parent="." unique_id=1900808315]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="debug" type="RichTextLabel" parent="debugVariables" unique_id=303886039]
+layout_mode = 0
+offset_left = 1385.0
+offset_top = 44.0
+offset_right = 1645.0
+offset_bottom = 431.0
+script = ExtResource("15_56smc")

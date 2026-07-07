@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bgm7vye3j5bgi" path="res://ui/UI First Pass.png" id="1_a31wk"]
 [ext_resource type="PackedScene" uid="uid://beutguarv327h" path="res://ui/ui_journal.tscn" id="2_d8w1j"]
+[ext_resource type="Script" uid="uid://ckswrv7wx1eaj" path="res://content/dialogic/ui/CustomTilerpgDialogicStyle/debugVarViewer.gd" id="3_44nw7"]
 
 [node name="GlobalUI" type="Control" unique_id=1104362250]
 layout_mode = 3
@@ -36,3 +37,17 @@ grow_vertical = 0
 
 [node name="Journal" parent="." unique_id=914732942 instance=ExtResource("2_d8w1j")]
 layout_mode = 1
+
+[node name="debugVariables" type="Control" parent="." unique_id=1198648086]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="debug" type="RichTextLabel" parent="debugVariables" unique_id=1610833990]
+layout_mode = 0
+offset_left = 1385.0
+offset_top = 44.0
+offset_right = 1645.0
+offset_bottom = 431.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+script = ExtResource("3_44nw7")

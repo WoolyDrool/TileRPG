@@ -19,7 +19,7 @@ galahad: If you have received such a sign, then I suppose you are here for some 
 		It's still nice to see you. How have things been here?
 - (Just tell the truth) | [if {convo_progress.bedivere.bedivereGreeted} == true]
 	Not sure, actually. I kept seeing a kingfisher and I figured it was time for me to come back. Has something happened in my absence?
-	jump 
+	jump gettingUpdate
 label gettingUpdate
 galahad: Stagnant. Everyone has the same problems they did before they arrived, except for the new coat of paint. It's dreadful. (Something about how Galahad shouldn't be here, given his Purpose was fulfilled)
 There must be something else keeping you here. You know the curse as well as I. (don't like this line)
@@ -35,7 +35,7 @@ else:
 		I'm looking for a different beast, actually. I've heard that Bediwyr's having some trouble with one and you've seen it. Can you tell me about it?
 		galahad: Oh, that thing. Yes, a strange one it is. It's quite large, actually. I can't imagine Bediwyr's incompetence that he is unable to catch it himself.
 		I'm sure he's plenty competent. Maybe it's just a hard beast to catch.
-		galahad: If that's the case, then surely others would have at least seen it. Not even Brunor has caught sight of it.
+		galahad: If that's the case, then surely others would have at least seen it. Not even Brunor has caught sight of it and he has cameras all over the hotel.
 		- (Should I talk to Brunor?)
 			galahad: I suppose you could.
 			Where can I find him?
@@ -44,5 +44,7 @@ else:
 		- (Tell me more about the beast?)
 			You said it was large, but how big was it? And did you notice anything else about it?
 			galahad: I estimate it was about the size of a collie dog, large but not so large as that wolf running about. It was too quick for me to catch more of a glimpse.
+			Viktor: (Unfinished dialogue branch)
+			set {questProgress.questingBeast.investigationStatus} = "beastknown"
 	- (Leave him to it.)
 		[end_timeline]

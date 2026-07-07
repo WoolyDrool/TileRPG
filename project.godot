@@ -158,7 +158,8 @@ variables={
 },
 "merrok": {
 "merrokCaught": false,
-"merrokMet": false
+"merrokMet": false,
+"merrokTemper": "wild"
 }
 },
 "debugInventory": {

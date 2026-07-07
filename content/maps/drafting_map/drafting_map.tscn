@@ -5701,105 +5701,105 @@ metadata/_edit_lock_ = true
 
 [node name="map_ChateauxCamlann_workingfile" parent="Geometry" unique_id=100329833 instance=ExtResource("3_4gcwt")]
 
-[node name="sorting_1stfloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="13" unique_id=996823623]
+[node name="sorting_1stfloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="13" unique_id=680611503]
 visible = false
 
-[node name="Art Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="4" unique_id=102542436]
+[node name="Art Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="4" unique_id=1865049389]
 visible = false
 
-[node name="office_walls" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="21" unique_id=448093174]
+[node name="office_walls" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="21" unique_id=429209454]
 visible = false
 
-[node name="Reception_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="24" unique_id=161728772]
+[node name="Reception_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="24" unique_id=573913209]
 visible = false
 
-[node name="Reception_wall_door" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="25" unique_id=433636890]
+[node name="Reception_wall_door" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="25" unique_id=1614301283]
 visible = false
 
-[node name="WC_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="27" unique_id=334452898]
+[node name="WC_wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_1stfloor_parent" index="27" unique_id=751499480]
 visible = false
 
-[node name="stairs_model" parent="Geometry/map_ChateauxCamlann_workingfile" index="16" unique_id=824212113]
+[node name="stairs_model" parent="Geometry/map_ChateauxCamlann_workingfile" index="16" unique_id=533793073]
 visible = false
 
-[node name="sorting_1stfloor_parent_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="22" unique_id=616176901]
+[node name="sorting_1stfloor_parent_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="22" unique_id=1974876075]
 visible = false
 
-[node name="Wall_cutout" parent="Geometry/map_ChateauxCamlann_workingfile" index="32" unique_id=1091530786]
+[node name="Wall_cutout" parent="Geometry/map_ChateauxCamlann_workingfile" index="32" unique_id=1727032391]
 visible = false
 
-[node name="Wall_cutout_base" parent="Geometry/map_ChateauxCamlann_workingfile" index="64" unique_id=1434219923]
+[node name="Wall_cutout_base" parent="Geometry/map_ChateauxCamlann_workingfile" index="64" unique_id=972481761]
 visible = false
 
-[node name="Wall_cutout_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="65" unique_id=227038512]
+[node name="Wall_cutout_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="65" unique_id=201726238]
 visible = false
 
-[node name="basics_floor1" parent="Geometry/map_ChateauxCamlann_workingfile" index="66" unique_id=918029562]
+[node name="basics_floor1" parent="Geometry/map_ChateauxCamlann_workingfile" index="66" unique_id=627687157]
 visible = false
 
-[node name="sorting_2ndFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="67" unique_id=1003249860]
+[node name="sorting_2ndFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="67" unique_id=627061906]
 visible = false
 
-[node name="4thfloor_courtWall_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="68" unique_id=458536859]
+[node name="4thfloor_courtWall_001" parent="Geometry/map_ChateauxCamlann_workingfile" index="68" unique_id=1302778625]
 visible = false
 
-[node name="sorting_3rdFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="81" unique_id=1049223131]
+[node name="sorting_3rdFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="81" unique_id=1148519526]
 visible = false
 
-[node name="main_wall3" parent="Geometry/map_ChateauxCamlann_workingfile" index="82" unique_id=1784380388]
+[node name="main_wall3" parent="Geometry/map_ChateauxCamlann_workingfile" index="82" unique_id=1443540735]
 visible = false
 
-[node name="sorting_4thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="127" unique_id=255624912]
+[node name="sorting_4thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="127" unique_id=118910936]
 visible = false
 
-[node name="4thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="0" unique_id=1553301759]
+[node name="4thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="0" unique_id=712593168]
 visible = false
 
-[node name="4thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="1" unique_id=1946099057]
+[node name="4thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="1" unique_id=1610924543]
 visible = false
 
-[node name="4thfloor_roomWallsE" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="2" unique_id=1415606341]
+[node name="4thfloor_roomWallsE" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="2" unique_id=321956749]
 visible = false
 
-[node name="4thfloor_roomWallsW" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="3" unique_id=1768044496]
+[node name="4thfloor_roomWallsW" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_4thFloor_parent" index="3" unique_id=610035794]
 visible = false
 
-[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile" index="145" unique_id=132553904]
+[node name="Plane_002" parent="Geometry/map_ChateauxCamlann_workingfile" index="145" unique_id=1852203639]
 visible = false
 
-[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile" index="146" unique_id=1161553641]
+[node name="Plane_006" parent="Geometry/map_ChateauxCamlann_workingfile" index="146" unique_id=1263130059]
 visible = false
 
-[node name="sorting_5thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="189" unique_id=1486844631]
+[node name="sorting_5thFloor_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="189" unique_id=74350988]
 visible = false
 
-[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="0" unique_id=27541279]
-visible = false
-surface_material_override/0 = ExtResource("4_oij1o")
-
-[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="1" unique_id=844737158]
+[node name="5thfloor_courtWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="0" unique_id=827547185]
 visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="2" unique_id=570383379]
-surface_material_override/0 = ExtResource("4_oij1o")
-
-[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="3" unique_id=672092452]
+[node name="5thfloor_externalWall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="1" unique_id=1040731900]
 visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="4" unique_id=1464679657]
+[node name="5thfloor_ground" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="2" unique_id=621965351]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="5thfloor_suite1Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="3" unique_id=975958913]
 visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="5" unique_id=14905031]
+[node name="5thfloor_suite2Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="4" unique_id=833015458]
 visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="Stairs_down_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_dungeon_parent" parent_id_path=PackedInt32Array(100329833, 1620587029) index="0" unique_id=605909594]
+[node name="5thfloor_suite3Wall" parent="Geometry/map_ChateauxCamlann_workingfile/sorting_5thFloor_parent" index="5" unique_id=984417238]
+visible = false
 surface_material_override/0 = ExtResource("4_oij1o")
 
-[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="238" unique_id=181222249]
+[node name="Stairs_down_002" parent="Geometry/map_ChateauxCamlann_workingfile/stairs_dungeon_parent" parent_id_path=PackedInt32Array(100329833, 1014344893) index="0" unique_id=1521304662]
+surface_material_override/0 = ExtResource("4_oij1o")
+
+[node name="props_extra_parent" parent="Geometry/map_ChateauxCamlann_workingfile" index="238" unique_id=649552479]
 visible = false
 
 [node name="Walls" type="Node3D" parent="Geometry" unique_id=1214491750]

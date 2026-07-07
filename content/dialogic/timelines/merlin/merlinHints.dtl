@@ -14,13 +14,20 @@
 	merlin: Yes, what of them?
 	I can't seem to get to the second or third floors.
 	merlin: Ah, yes. That's been an issue for quite some time. Bedivere's been preoccupied with a vermin issue, though I suppose he considers the second floor's issue to be Galahad's responsibility.
-- (Bedivere's beast...) | [if {convo_progress.bedivere.bedivereGreeted} == true] [else="hide"]
+- (Bediwyr's beast...) | [if {convo_progress.bedivere.bedivereGreeted} == true] [else="hide"]
 	merlin: A beast? Yes, Bedivere has often complained of vermin. I have seen my share of rats here, of course, but I cannot imagine it is these miniscule creatures that bother him so. Galahad purports to have seen it. Have you spoken to him yet?
-	Not yet. He's not the easiest to talk to.
-	merlin: You fear your own blood?
-	Well, not really...
-	merlin: And yet you still hesitate.
-	(dialogue branch unfinished)
+	if {convo_progress.galahad.galahadGreeted} == false:
+		Not yet. He's not the easiest to talk to.
+		merlin: You fear your own blood?
+		Well, not really...
+		merlin: And yet you still hesitate.
+		(dialogue branch unfinished)
+	elif {questProgress.questingBeast.investigationStatus} == "beastknown":
+		I have. He wasn't much help, but he did describe the beast to me.
+		merlin: Did he now? What manner of beast is it, then?
+		(Describe the beast to Merlin)
+		merlin: And this beast, it does not seem familiar to you?
+		Only just.
 	set {convo_progress.merlin.galahadGossip} = true
 - (That dog running around...)
 	merlin: Ah, yes, him. Merrok, I believe he is called. A good man, once, now cursed to be a beast.
