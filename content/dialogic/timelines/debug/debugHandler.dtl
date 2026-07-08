@@ -1,0 +1,47 @@
+Select debug category
+- Set Quest Progress
+	Working on this.
+- Set Current Item
+	- Hold "Snare"
+		set {debugInventory.currItem} = "snare"
+- Flip Conversation values
+	- Group: All
+		- Set all "greeted" FALSE
+			set {convo_progress.arthur.arthurGreeted} = false
+			set {convo_progress.bediwyr.bediwyrGreeted} = false
+			set {convo_progress.galahad.galahadGreeted} = false
+			set {convo_progress.guinevere.gwenGreeted} = false
+			set {convo_progress.lancelot.lancelotGreeted} = false
+			set {convo_progress.lucan.lucanGreeted} = false
+			set {convo_progress.merlin.merlinGreeted} = false
+			set {convo_progress.merrok.merrokGreeted} = false
+			No characters greeted.
+		- Set all "greeted" TRUE
+			set {convo_progress.arthur.arthurGreeted} = true
+			set {convo_progress.bediwyr.bediwyrGreeted} = true
+			set {convo_progress.galahad.galahadGreeted} = true
+			set {convo_progress.guinevere.gwenGreeted} = true
+			set {convo_progress.lancelot.lancelotGreeted} = true
+			set {convo_progress.lucan.lucanGreeted} = true
+			set {convo_progress.merlin.merlinGreeted} = true
+			set {convo_progress.merrok.merrokGreeted} = true
+			All characters greeted.
+		- Reset all conversation progress
+			set {convo_progress.gawain.tutorialSeen} = false
+			set {convo_progress.galahad.madeJoke} = false
+			set {convo_progress.Brunor.brunorLocated} = false
+			set {convo_progress.merlin.galahadGossip} = false
+			set {convo_progress.merrok.merrokCaught} = false
+			Reset "greeted" flags as well?
+			- Yes
+				set {convo_progress.arthur.arthurGreeted} = false
+				set {convo_progress.bediwyr.bediwyrGreeted} = false
+				set {convo_progress.galahad.galahadGreeted} = false
+				set {convo_progress.guinevere.gwenGreeted} = false
+				set {convo_progress.lancelot.lancelotGreeted} = false
+				set {convo_progress.lucan.lucanGreeted} = false
+				set {convo_progress.merlin.merlinGreeted} = false
+				set {convo_progress.merrok.merrokGreeted} = false
+			- No
+	- Group: Phase 1 Characters
+		WIP

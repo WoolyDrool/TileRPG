@@ -1,3 +1,6 @@
-if {convo_progress.merrok.merrokMet} == false:
+if {convo_progress.merrok.merrokGreeted} == false:
 	jump marrokIntro/
 elif {convo_progress.merrok.merrokCaught} == true:
+	jump merrokCaught/
+else:
+	merrok: Kind Percivel, I greet you. Have you need of me?

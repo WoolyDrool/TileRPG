@@ -4,9 +4,9 @@
 [ext_resource type="Script" uid="uid://ctnn3qorv6frm" path="res://systems/grid/grid_manager.gd" id="2_ogp0g"]
 [ext_resource type="PackedScene" uid="uid://d1jrscrvyl4lq" path="res://content/rooms/room.tscn" id="3_gcj5q"]
 [ext_resource type="PackedScene" uid="uid://bed2dqw5osw64" path="res://systems/entities/scannable_entity.tscn" id="4_208r0"]
-[ext_resource type="PackedScene" uid="uid://m1m4r7m7pec8" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
+[ext_resource type="PackedScene" path="res://content/npcs/npc_default.tscn" id="6_l43fq"]
 [ext_resource type="PackedScene" uid="uid://dh6ntme65fvou" path="res://systems/grid/tile.tscn" id="6_wsils"]
-[ext_resource type="Resource" uid="uid://ce2n21co4svr4" path="res://content/dialogic/timelines/testing/journal_selector_testing_timeline.dtl" id="7_q8f5d"]
+[ext_resource type="Resource" uid="uid://ce2n21co4svr4" path="res://content/dialogic/timelines/debug/journal_selector_testing_timeline.dtl" id="7_q8f5d"]
 [ext_resource type="PackedScene" uid="uid://b7bfb5sq720dj" path="res://systems/grid/tile_stair.tscn" id="8_wsils"]
 
 [node name="Debug" type="Node3D" unique_id=1061115125]
