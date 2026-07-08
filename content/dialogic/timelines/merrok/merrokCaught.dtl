@@ -6,10 +6,15 @@ merrok: Aye, I am Ser Merrok. I know you. You must be the begotten of King Pelli
 I'm King Pellinore's son, Percivel. You knew my father?
 merrok: He is the one who sent me to my lord Thiess when I lost my human pelt. For that I owe him my gratitude, but I am to understand he is years past now.
 Yeah, it's been centuries since he was buried.
-merrok: Then you shall inherit my gratitude. If there is aught I can do to aid you, then simply speak of it to me.
+merrok: Then you shall inherit my gratitude. If there is aught I can do to aid you, then simply speak of it to me, though I must be clear\: my Lord Thiess had sent me here to aid in the control of spirits.
 - (There"s a creature I need help finding.) | [if {questProgress.questingBeast.investigationStatus} == "howtrack"] [else="hide"]
 	merrok: What manner of beast do you speak of?
 	(Talk about the questing beast.)
+	merrok: I see. Is my help truly needed here? Are not vermin the responsibility of (employees) already here?
+	One would think, but Bediwyr has not been able to even catch sight of it. I thought perhaps a hound such as yourself would be able to track it where men can't.
+	...No offense.
+	merrok: None intended, and none taken, O Percivel. However, if I am to seek out this beast for you, it will require me to forsake my current duties.
+	Viktor: (Here we go, here's an opportunity for a dialogue puzzle - but what would the phrase be? Who do we have accessible at this point?)
 	set {questProgress.questingBeast.investigationStatus} = "merrokhelp"
 - (I'll let you know.)
 	merrok: Then if you would release me, I shall return to making order amongst the riff-raff here.
