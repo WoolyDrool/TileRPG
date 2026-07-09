@@ -1,6 +1,7 @@
 (The snare catches the wolf before it can get to you. It futily snaps its jaws, but cannot reach.)
 Viktor: Add a dialogue puzzle here?
 Are you Ser Merrok, (who served the Round Table until tricked to be a wolf?)
+Viktor: This would be a good spot for another dialogue puzzle - need to learn about Percy's connection to King Pellinore.
 merrok: (The wolf calms itself.)
 merrok: Aye, I am Ser Merrok. I know you. You must be the begotten of King Pellinore. I apologize for my hostility. I am here to ensure the guests do no harm to this place.
 I'm King Pellinore's son, Percivel. You knew my father?
@@ -15,6 +16,12 @@ merrok: Then you shall inherit my gratitude. If there is aught I can do to aid y
 	...No offense.
 	merrok: None intended, and none taken, O Percivel. However, if I am to seek out this beast for you, it will require me to forsake my current duties.
 	Viktor: (Here we go, here's an opportunity for a dialogue puzzle - but what would the phrase be? Who do we have accessible at this point?)
+	label puzzleFailLoop
+	Viktor: Autosolve the puzzle for now?
+	- No
+		jump puzzleFailLoop
+	- Yes
+		merrok: If you are able to calm the riff-raff, then I suppose I will eagerly help you.
 	set {questProgress.questingBeast.investigationStatus} = "merrokhelp"
 - (I'll let you know.)
 	merrok: Then if you would release me, I shall return to making order amongst the riff-raff here.

@@ -27,7 +27,8 @@
 		merlin: Did he now? What manner of beast is it, then?
 		(Describe the beast to Merlin)
 		merlin: And this beast, it does not seem familiar to you?
-		Only just.
+		Only just, like I saw it in a dream once.
+		merlin: I see. (Maybe have Merlin recommend finding some other clues)
 	set {convo_progress.merlin.galahadGossip} = true
 - (That dog running around...)
 	merlin: Ah, yes, him. Merrok, I believe he is called. A good man, once, now cursed to be a beast.
