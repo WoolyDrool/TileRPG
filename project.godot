@@ -34,7 +34,6 @@ GUIDE="*uid://daex7o8hw0efa"
 directories/dch_directory={
 "Viktor": "res://content/dialogic/characters/Viktor.dch",
 "arthur": "res://content/dialogic/characters/arthur.dch",
-"bedivere": "res://content/dialogic/characters/bedivere.dch",
 "bediwyr": "res://content/dialogic/characters/bediwyr.dch",
 "bors": "res://content/dialogic/characters/bors.dch",
 "brunor": "res://content/dialogic/characters/brunor.dch",
@@ -54,6 +53,7 @@ directories/dtl_directory={
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
 "bediwyrBeast": "res://content/dialogic/timelines/bediwyr/bediwyrBeast.dtl",
 "bediwyrHandler": "res://content/dialogic/timelines/bediwyr/bediwyrHandler.dtl",
+"bediwyrHelped": "res://content/dialogic/timelines/bediwyr/bediwyrHelped.dtl",
 "bediwyrIntro": "res://content/dialogic/timelines/bediwyr/bediwyrIntro.dtl",
 "borsFirstCall": "res://content/dialogic/timelines/borsFirstCall.dtl",
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
