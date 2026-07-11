@@ -59,8 +59,9 @@ directories/dtl_directory={
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
 "brunorIntro": "res://content/dialogic/timelines/brunorIntro.dtl",
 "debugHandler": "res://content/dialogic/timelines/debug/debugHandler.dtl",
-"galahadHandler": "res://content/dialogic/timelines/galahadHandler.dtl",
-"galahadIntro": "res://content/dialogic/timelines/galahadIntro.dtl",
+"galahadHandler": "res://content/dialogic/timelines/galahad/galahadHandler.dtl",
+"galahadIntro": "res://content/dialogic/timelines/galahad/galahadIntro.dtl",
+"galahadNeutral": "res://content/dialogic/timelines/galahad/galahadNeutral.dtl",
 "gawainHandler": "res://content/dialogic/timelines/gawain/gawainHandler.dtl",
 "gawainHints": "res://content/dialogic/timelines/gawain/gawainHints.dtl",
 "gawainTutorial": "res://content/dialogic/timelines/gawain/gawainTutorial.dtl",
@@ -69,8 +70,9 @@ directories/dtl_directory={
 "gwenIntro": "res://content/dialogic/timelines/gwenIntro.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/debug/journal_selector_testing_timeline.dtl",
-"lucanHandler": "res://content/dialogic/timelines/lucanHandler.dtl",
-"lucanIntro": "res://content/dialogic/timelines/lucanIntro.dtl",
+"lucanDistressed": "res://content/dialogic/timelines/lucan/lucanDistressed.dtl",
+"lucanHandler": "res://content/dialogic/timelines/lucan/lucanHandler.dtl",
+"lucanIntro": "res://content/dialogic/timelines/lucan/lucanIntro.dtl",
 "merlinHandler": "res://content/dialogic/timelines/merlin/merlinHandler.dtl",
 "merlinHints": "res://content/dialogic/timelines/merlin/merlinHints.dtl",
 "merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl",
@@ -129,6 +131,7 @@ variables={
 "arthurSolved": false
 },
 "bediwyr": {
+"bediwyrFixingDebugs": false,
 "bediwyrGreeted": false
 },
 "galahad": {

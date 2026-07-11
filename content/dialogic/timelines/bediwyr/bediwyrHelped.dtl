@@ -5,4 +5,7 @@ bediwyr: Maybe that's what brought you back here.
 Viktor: (Bediwyr agreeing to repair Sequence)
 bediwyr: I'll meet you at the smithy. I think I saw the other half of it somewhere around there.
 The other half of Sequence? Why would you have that?
-bediwyr: I don't like throwing things away if they might be useful. Sequence is a special blade.
+bediwyr: I don't like throwing things away if they might be useful. Sequence is a special blade, even part may have a place.
+I suppose I'm lucky, then. Is there anything else you'd like me to do?
+bediwyr: If you could check on Lucan, I would be most grateful.
+set {convo_progress.bediwyr.bediwyrFixingDebugs} = true

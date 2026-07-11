@@ -1,3 +1,5 @@
 if {convo_progress.lucan.lucanGreeted} == false:
 	jump lucanIntro/
+elif {convo_progress.bediwyr.bediwyrFixingDebugs} == true:
+	jump lucanDistressed/
 lucan: <Empty Text Event>
