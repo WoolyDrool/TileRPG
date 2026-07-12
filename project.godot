@@ -51,12 +51,14 @@ directories/dtl_directory={
 "LancelotIntro": "res://content/dialogic/timelines/LancelotIntro.dtl",
 "arthurHandler": "res://content/dialogic/timelines/arthurHandler.dtl",
 "arthurIntro": "res://content/dialogic/timelines/arthurIntro.dtl",
+"arthurJob": "res://content/dialogic/timelines/arthurJob.dtl",
 "bediwyrBeast": "res://content/dialogic/timelines/bediwyr/bediwyrBeast.dtl",
 "bediwyrHandler": "res://content/dialogic/timelines/bediwyr/bediwyrHandler.dtl",
 "bediwyrHelped": "res://content/dialogic/timelines/bediwyr/bediwyrHelped.dtl",
 "bediwyrIntro": "res://content/dialogic/timelines/bediwyr/bediwyrIntro.dtl",
 "borsFirstCall": "res://content/dialogic/timelines/borsFirstCall.dtl",
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
+"brunorDetails": "res://content/dialogic/timelines/brunorDetails.dtl",
 "brunorIntro": "res://content/dialogic/timelines/brunorIntro.dtl",
 "debugHandler": "res://content/dialogic/timelines/debug/debugHandler.dtl",
 "galahadHandler": "res://content/dialogic/timelines/galahad/galahadHandler.dtl",
@@ -70,6 +72,7 @@ directories/dtl_directory={
 "gwenIntro": "res://content/dialogic/timelines/gwenIntro.dtl",
 "introSegment": "res://content/dialogic/timelines/introSegment.dtl",
 "journal_selector_testing_timeline": "res://content/dialogic/timelines/debug/journal_selector_testing_timeline.dtl",
+"lancelotLimbFinding": "res://content/dialogic/timelines/lancelotLimbFinding.dtl",
 "lucanDistressed": "res://content/dialogic/timelines/lucan/lucanDistressed.dtl",
 "lucanHandler": "res://content/dialogic/timelines/lucan/lucanHandler.dtl",
 "lucanIntro": "res://content/dialogic/timelines/lucan/lucanIntro.dtl",
@@ -148,7 +151,12 @@ variables={
 "gwenOpinion": 0
 },
 "lancelot": {
+"lancelotArmCount": 0,
 "lancelotGreeted": false,
+"lancelotLLL": "lost",
+"lancelotLUL": "lost",
+"lancelotRLL": "lost",
+"lancelotRUL": "lost",
 "lancelotSolved": false
 },
 "lucan": {

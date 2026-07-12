@@ -1,0 +1,16 @@
+lancelot: Oh, what is it now, Percivel?
+- (Give arm) | [if {convo_progress.lancelot.lancelotArmCount} != 2.0] [else="hide"]
+	if {convo_progress.lancelot.lancelotArmCount} == 0.0:
+		if {convo_progress.lancelot.lancelotLUL} == "held" and {convo_progress.lancelot.lancelotRUL} == "held":
+			Lancelot, I've got your arms.
+			lancelot: My arms? Both of them? What are you doing with them?
+			Bringing them back. Unless you don't want it.
+			lancelot: I certainly do!
+		elif {convo_progress.lancelot.lancelotLUL} == "held" or {convo_progress.lancelot.lancelotRUL} == "held":
+			Lancelot, I've got your arms.
+			lancelot: My arms? Both of them? What are you doing with them?
+			Bringing them back. Unless you don't want it.
+			lancelot: I certainly do!
+	elif {convo_progress.lancelot.lancelotArmCount} == 1.0:
+		I found your other arm, Sir Lancelot.
+		lancelot: Give it here, then! I must have a complete set.
