@@ -78,7 +78,8 @@ directories/dtl_directory={
 "merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl",
 "merrokCaught": "res://content/dialogic/timelines/merrok/merrokCaught.dtl",
 "merrokHandler": "res://content/dialogic/timelines/merrok/merrokHandler.dtl",
-"merrokIntro": "res://content/dialogic/timelines/merrok/merrokIntro.dtl"
+"merrokIntro": "res://content/dialogic/timelines/merrok/merrokIntro.dtl",
+"merrokTracking": "res://content/dialogic/timelines/merrok/merrokTracking.dtl"
 }
 layout/style_directory={
 "": "res://content/dialogic/ui/tilerpg_dialogic_style.tres",

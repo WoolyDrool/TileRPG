@@ -2,10 +2,20 @@ arthur: Ser Percivel, I was under the impression you'd left our merry company fo
 An omen of a kingfisher appeared to me. I don't suppose you've noticed anything around here that might explain why my presence is required.
 arthur: I haven't, though to be honest, it's been some time since I was able to walk the grounds of Camlann in their wholeness. Even when my pain relents, I tire too quickly to make much exploration.
 arthur: What is it you require, Ser Percivel? I'm afraid I can't grant you much assistance, but I shall provide what I am able.
+- (Excalibur...)
+	arthur: Yes, that damned blade. If you ask me, and I suppose you are, it is the cause of all the suffering here.
+	- (Explain?)
+		arthur: Bediwyr refused to return it to the lake, saying it was too good a sword to return to Avalon. Alas, his actions broke a contract made between myself and the Lady Nimue. It was she who cursed us, as you have no doubt gathered.
+		I assumed it was some sort of fae meddling when I stopped aging, yeah. Do you know the terms of the curse?
+		arthur: Merlin has told me that we are cursed 'to be shackled in faire body and mind until our life's quest is completed by another.'
+		- (Sounds complicated.)
+			arthur: I imagine that was the point of the arrangement, yes. However, we in Camlann have had little luck in fulfilling those terms. Perhaps one from the outside would be capable, but it would be selfish of me to ask for your involvement.
+		- (Do you think that's why I'm here?)
+			arthur: It would be awfully convenient, wouldn't it? But I am no longer your king, and thus I cannot command you to act to break our curse if you do not wish to break it. After all, your shackles do not seem to be as bothersome as the rest of ours.
 - (The grail)
 	arthur: The Holy Grail, which you sought and Galahad acquired? Yes, I am aware of where it has gone, not that it does me any good.
 	(need a reason for Percy to ask for the grail in the first place)
 - (Your pain)
-	arthur: A wound of the thigh, done to me by the sword Marmiadoise. The wounds that sword makes never heal and thus are forever painful.
+	arthur: A wound of the thigh, done to me by the great sword Marmiadoise. The wounds that sword makes never heal and thus are forever painful.
 	arthur: There are some days when the ache is so dull, I feel I can be content with this other life. Then I am reminded starkly of my new limitations, that my existence is forever changed, and my mourning for what once was begins anew. Isn't it so strange, how the pain of it always feels fresh?
 	arthur: It's never anything significant, either. Just an offhand comment, and I am reminded that my life is inherently different than everyone else's. Some would say to look on the bright side, that every drawback must surely come with a positive. What, though, could be the opportunity placed in a restriction upon my physical capabilities where there was not one before? My world grows smaller, not larger, as I am forced to follow a path apart from my fellows. This loneliness is not chosen, not enjoyed. It is only suffering without foreseeable resolution and hardly any commiseration.

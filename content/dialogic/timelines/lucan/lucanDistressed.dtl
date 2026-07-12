@@ -1,2 +1,11 @@
 Hey, Lucan. Thought I'd check in on you.
 Viktor: (Something about helping out Lucan now.)
+lucan: Oh, that's not necessary. I can handle things here.
+- Please, I want to help.
+	if {questProgress.sequenceRepair.sequenceStatus} == "fixed":
+		Didn't you say one of the guests had lost something? Maybe I can help find it.
+		lucan: I don't know. It's really my job. You're just a guest.
+		I already helped Bediwyr with some pest control. Maybe you can think of me as a contractor for a bit.
+		Viktor: possible spot for a dialogue puzzle?
+	else:
+		Just tell me what I could do to help you.
