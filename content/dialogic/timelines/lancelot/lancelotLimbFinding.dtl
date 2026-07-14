@@ -14,3 +14,6 @@ lancelot: Oh, what is it now, Percivel?
 	elif {convo_progress.lancelot.lancelotArmCount} == 1.0:
 		I found your other arm, Sir Lancelot.
 		lancelot: Give it here, then! I must have a complete set.
+- (Give leg.)
+	if {convo_progress.lancelot.lancelotlegcount} == 0.0:
+		I've found your leg, Sir Lancelot.
