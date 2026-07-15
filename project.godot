@@ -60,6 +60,7 @@ directories/dtl_directory={
 "borsHandler": "res://content/dialogic/timelines/borsHandler.dtl",
 "brunorDetails": "res://content/dialogic/timelines/brunorDetails.dtl",
 "brunorIntro": "res://content/dialogic/timelines/brunorIntro.dtl",
+"brunorSins": "res://content/dialogic/timelines/brunorSins.dtl",
 "debugHandler": "res://content/dialogic/timelines/debug/debugHandler.dtl",
 "galahadHandler": "res://content/dialogic/timelines/galahad/galahadHandler.dtl",
 "galahadIntro": "res://content/dialogic/timelines/galahad/galahadIntro.dtl",
@@ -80,6 +81,7 @@ directories/dtl_directory={
 "merlinHints": "res://content/dialogic/timelines/merlin/merlinHints.dtl",
 "merlinIntro": "res://content/dialogic/timelines/merlin/merlinIntro.dtl",
 "merrokCaught": "res://content/dialogic/timelines/merrok/merrokCaught.dtl",
+"merrokConfession": "res://content/dialogic/timelines/merrok/merrokConfession.dtl",
 "merrokHandler": "res://content/dialogic/timelines/merrok/merrokHandler.dtl",
 "merrokIntro": "res://content/dialogic/timelines/merrok/merrokIntro.dtl",
 "merrokTracking": "res://content/dialogic/timelines/merrok/merrokTracking.dtl"
